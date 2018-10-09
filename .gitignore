@@ -1,0 +1,12 @@
+# Gitignore folders
+dev/
+downloader/
+errors/
+includes/
+media/
+shell/
+var/
+
+# Gitignore file
+.idea/
+favicon.ico
