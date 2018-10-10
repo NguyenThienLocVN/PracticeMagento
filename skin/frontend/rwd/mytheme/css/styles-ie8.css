@@ -3039,86 +3039,68 @@ body {
   clear: both;
 }
 
-/* ============================================ *
- * Header
- * ============================================ */
-/* line 32, ../scss/layout/_header.scss */
-.page-header {
-  max-width: 1260px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-/* line 38, ../scss/layout/_header.scss */
-.page-header-container {
-  position: relative;
-}
-
-/* line 44, ../scss/layout/_header.scss */
-.header-language-container,
-.page-header {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-}
-
-/* ============================================ *
- * Language switcher + welcome message
- * ============================================ */
-/* line 53, ../scss/layout/_header.scss */
+/* line 30, ../scss/layout/_header.scss */
 .header-language-background {
   padding: 10px;
   background-color: #202833;
 }
-/* line 57, ../scss/layout/_header.scss */
+/* line 34, ../scss/layout/_header.scss */
 .header-language-background .header-language-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 62, ../scss/layout/_header.scss */
+/* line 39, ../scss/layout/_header.scss */
 .header-language-background .header-language-container .menu-top .menu-top-left, .header-language-background .header-language-container .menu-top .menu-top-right {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
-/* line 66, ../scss/layout/_header.scss */
+/* line 43, ../scss/layout/_header.scss */
 .header-language-background .header-language-container .menu-top .menu-top-left .menu-item, .header-language-background .header-language-container .menu-top .menu-top-right .menu-item {
   height: 50px;
-  flex-basis: 5em;
+  flex-basis: 10em;
   justify-content: center;
 }
-/* line 76, ../scss/layout/_header.scss */
+/* line 53, ../scss/layout/_header.scss */
 .header-language-background:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 80, ../scss/layout/_header.scss */
+/* line 57, ../scss/layout/_header.scss */
 .header-language-background .form-language,
 .header-language-background .currency-switcher {
   float: left;
   margin-right: 10px;
 }
-/* line 86, ../scss/layout/_header.scss */
+/* line 63, ../scss/layout/_header.scss */
 .header-language-background .welcome-msg {
   float: right;
 }
 
-/* line 91, ../scss/layout/_header.scss */
+/* line 68, ../scss/layout/_header.scss */
+.header-language-container,
+.page-header {
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+}
+
+/* line 73, ../scss/layout/_header.scss */
 .page-header-container .store-language-container {
   float: right;
   max-width: 35%;
   padding: 13px 15px 10px 10px;
 }
-/* line 96, ../scss/layout/_header.scss */
+/* line 78, ../scss/layout/_header.scss */
 .page-header-container .store-language-container label {
   display: none;
 }
-/* line 99, ../scss/layout/_header.scss */
+/* line 81, ../scss/layout/_header.scss */
 .page-header-container .store-language-container select {
   max-width: 100%;
 }
 
-/* line 115, ../scss/layout/_header.scss */
+/* line 86, ../scss/layout/_header.scss */
 .header-language-background,
 .header-language-background a {
   color: #E6E6E6;
@@ -3127,7 +3109,7 @@ body {
 /* ============================================ *
  * Logo
  * ============================================ */
-/* line 132, ../scss/layout/_header.scss */
+/* line 95, ../scss/layout/_header.scss */
 .logo {
   display: block;
   float: left;
@@ -3137,42 +3119,28 @@ body {
   text-align: center;
   padding: 10px;
 }
-/* line 141, ../scss/layout/_header.scss */
+/* line 104, ../scss/layout/_header.scss */
 .logo img {
   max-width: 100%;
 }
-/* line 145, ../scss/layout/_header.scss */
+/* line 108, ../scss/layout/_header.scss */
 .logo .small {
   display: block;
 }
-/* line 148, ../scss/layout/_header.scss */
+/* line 111, ../scss/layout/_header.scss */
 .logo .large {
   display: none;
 }
 
-/* line 153, ../scss/layout/_header.scss */
+/* line 116, ../scss/layout/_header.scss */
 .logo:hover {
   opacity: 0.8;
-}
-
-/* line 161, ../scss/layout/_header.scss */
-.logo {
-  max-width: 300px;
-  min-height: 90px;
-}
-/* line 165, ../scss/layout/_header.scss */
-.logo .small {
-  display: none;
-}
-/* line 168, ../scss/layout/_header.scss */
-.logo .large {
-  display: block;
 }
 
 /* ============================================ *
  * Skip Links
  * ============================================ */
-/* line 179, ../scss/layout/_header.scss */
+/* line 125, ../scss/layout/_header.scss */
 .skip-links {
   clear: both;
   overflow: hidden;
@@ -3180,15 +3148,7 @@ body {
   border-bottom: 1px solid #EDEDED;
 }
 
-/* line 190, ../scss/layout/_header.scss */
-.skip-links {
-  border: 0;
-}
-
-/* -------------------------------------------- *
- * Skip - Link
- */
-/* line 200, ../scss/layout/_header.scss */
+/* line 132, ../scss/layout/_header.scss */
 .skip-link {
   position: relative;
   float: left;
@@ -3200,28 +3160,20 @@ body {
   text-align: center;
 }
 
-/* line 211, ../scss/layout/_header.scss */
+/* line 143, ../scss/layout/_header.scss */
 a.skip-link {
   text-decoration: none;
 }
 
-/* line 215, ../scss/layout/_header.scss */
+/* line 147, ../scss/layout/_header.scss */
 .skip-link:not(.skip-active):hover {
   opacity: 0.8;
 }
 
-/* line 237, ../scss/layout/_header.scss */
-.skip-link {
-  width: 25%;
-}
-
-/* -------------------------------------------- *
- * Skip Link - Active
- */
 /* -------------------------------------------- *
  * Skip Link - Icon
  */
-/* line 263, ../scss/layout/_header.scss */
+/* line 155, ../scss/layout/_header.scss */
 .skip-link .icon {
   display: inline-block;
   width: 30px;
@@ -3229,52 +3181,99 @@ a.skip-link {
   vertical-align: middle;
 }
 
-/* line 270, ../scss/layout/_header.scss */
+/* line 162, ../scss/layout/_header.scss */
 .skip-link.skip-nav .icon,
 .skip-link.skip-cart:not(.no-count) .icon {
-  margin-right: 3px;
-}
-
-/* line 277, ../scss/layout/_header.scss */
-.skip-link .icon {
   margin-right: 3px;
 }
 
 /* -------------------------------------------- *
  * Skip Link - Label
  */
-/* line 287, ../scss/layout/_header.scss */
+/* line 171, ../scss/layout/_header.scss */
 .skip-link .label {
   display: none;
-}
-
-/* line 295, ../scss/layout/_header.scss */
-.skip-link .label {
-  display: inline;
 }
 
 /* ============================================ *
  * Skip Content
  * ============================================ */
-/* line 305, ../scss/layout/_header.scss */
+/* line 179, ../scss/layout/_header.scss */
 .skip-content {
   display: none;
 }
 
-/* line 309, ../scss/layout/_header.scss */
+/* line 183, ../scss/layout/_header.scss */
 .skip-content.skip-active {
   display: block;
   background: #EDEDED;
 }
 
-/* ============================================ *
- * Global Header Navigation
- * ============================================ */
-/* line 345, ../scss/layout/_header.scss */
+/* line 190, ../scss/layout/_header.scss */
 .account-cart-wrapper {
   position: absolute;
   top: 0px;
   right: 0px;
+}
+
+/* line 218, ../scss/layout/_header.scss */
+.skip-link {
+  width: 25%;
+}
+
+/* line 221, ../scss/layout/_header.scss */
+.skip-link .icon {
+  margin-right: 3px;
+}
+
+/* line 224, ../scss/layout/_header.scss */
+.skip-link .label {
+  display: inline;
+}
+
+/* line 280, ../scss/layout/_header.scss */
+.page-header {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* line 286, ../scss/layout/_header.scss */
+.page-header-container {
+  position: relative;
+}
+
+/* line 293, ../scss/layout/_header.scss */
+.header-language-container {
+  height: 20px;
+}
+/* line 295, ../scss/layout/_header.scss */
+.header-language-container .menu-top {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 298, ../scss/layout/_header.scss */
+.header-language-container .menu-top .menu-top-left, .header-language-container .menu-top .menu-top-right {
+  width: 45%;
+}
+
+/* line 304, ../scss/layout/_header.scss */
+.skip-links {
+  border: 0;
+}
+
+/* line 310, ../scss/layout/_header.scss */
+.logo {
+  max-width: 300px;
+  min-height: 90px;
+}
+/* line 314, ../scss/layout/_header.scss */
+.logo .small {
+  display: none;
+}
+/* line 317, ../scss/layout/_header.scss */
+.logo .large {
+  display: block;
 }
 
 /* ============================================ *

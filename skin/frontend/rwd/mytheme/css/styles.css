@@ -824,7 +824,7 @@ body:not(.customer-account) .block:first-child .block-title {
   margin-right: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 233, ../scss/core/_common.scss */
   .sidebar .block:not(.block-layered-nav) {
     margin-bottom: 0;
@@ -1125,7 +1125,7 @@ a.button:hover {
   color: #246b8f;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 436, ../scss/core/_common.scss */
   .col2-set .buttons-set .button,
   .col2-set .buttons-set .button2 {
@@ -1309,7 +1309,7 @@ a.button:hover {
   padding: 0 7px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 605, ../scss/core/_common.scss */
   .breadcrumbs {
     display: none;
@@ -1587,7 +1587,7 @@ a.button:hover {
     width: 25%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 857, ../scss/core/_common.scss */
   .col-left,
   .col-right,
@@ -1639,7 +1639,7 @@ a.button:hover {
   width: 50%;
   padding: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 898, ../scss/core/_common.scss */
   .col2-set .col-1,
   .col2-set .col-2 {
@@ -1685,7 +1685,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Top Container
  */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 946, ../scss/core/_common.scss */
   .top-container {
     max-width: 1260px;
@@ -2259,7 +2259,7 @@ span.weee {
   border: 1px solid #EDEDED;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 1430, ../scss/core/_common.scss */
   body .product-img-box .product-image:hover {
     border-color: #EDEDED;
@@ -2642,7 +2642,7 @@ span.weee {
     display: none;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 1764, ../scss/core/_common.scss */
   .col1-layout .sorter,
   .col1-layout .pager {
@@ -3616,97 +3616,68 @@ body {
   clear: both;
 }
 
-/* ============================================ *
- * Header
- * ============================================ */
-@media only screen and (min-width: 769px) {
-  /* line 32, ../scss/layout/_header.scss */
-  .page-header {
-    max-width: 1260px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-
-  /* line 38, ../scss/layout/_header.scss */
-  .page-header-container {
-    position: relative;
-  }
-}
-/* line 44, ../scss/layout/_header.scss */
-.header-language-container,
-.page-header {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-}
-
-/* ============================================ *
- * Language switcher + welcome message
- * ============================================ */
-/* line 53, ../scss/layout/_header.scss */
+/* line 30, ../scss/layout/_header.scss */
 .header-language-background {
   padding: 10px;
   background-color: #202833;
 }
-/* line 57, ../scss/layout/_header.scss */
+/* line 34, ../scss/layout/_header.scss */
 .header-language-background .header-language-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 62, ../scss/layout/_header.scss */
+/* line 39, ../scss/layout/_header.scss */
 .header-language-background .header-language-container .menu-top .menu-top-left, .header-language-background .header-language-container .menu-top .menu-top-right {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
-/* line 66, ../scss/layout/_header.scss */
+/* line 43, ../scss/layout/_header.scss */
 .header-language-background .header-language-container .menu-top .menu-top-left .menu-item, .header-language-background .header-language-container .menu-top .menu-top-right .menu-item {
   height: 50px;
-  flex-basis: 5em;
+  flex-basis: 10em;
   justify-content: center;
 }
-/* line 76, ../scss/layout/_header.scss */
+/* line 53, ../scss/layout/_header.scss */
 .header-language-background:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 80, ../scss/layout/_header.scss */
+/* line 57, ../scss/layout/_header.scss */
 .header-language-background .form-language,
 .header-language-background .currency-switcher {
   float: left;
   margin-right: 10px;
 }
-/* line 86, ../scss/layout/_header.scss */
+/* line 63, ../scss/layout/_header.scss */
 .header-language-background .welcome-msg {
   float: right;
 }
 
-/* line 91, ../scss/layout/_header.scss */
+/* line 68, ../scss/layout/_header.scss */
+.header-language-container,
+.page-header {
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+}
+
+/* line 73, ../scss/layout/_header.scss */
 .page-header-container .store-language-container {
   float: right;
   max-width: 35%;
   padding: 13px 15px 10px 10px;
 }
-/* line 96, ../scss/layout/_header.scss */
+/* line 78, ../scss/layout/_header.scss */
 .page-header-container .store-language-container label {
   display: none;
 }
-/* line 99, ../scss/layout/_header.scss */
+/* line 81, ../scss/layout/_header.scss */
 .page-header-container .store-language-container select {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 479px) {
-  /* line 105, ../scss/layout/_header.scss */
-  .page-header-container .store-language-container {
-    padding-top: 8px;
-  }
-  /* line 108, ../scss/layout/_header.scss */
-  .page-header-container .store-language-container select {
-    font-size: 12px;
-  }
-}
-/* line 115, ../scss/layout/_header.scss */
+/* line 86, ../scss/layout/_header.scss */
 .header-language-background,
 .header-language-background a {
   color: #E6E6E6;
@@ -3715,7 +3686,7 @@ body {
 /* ============================================ *
  * Logo
  * ============================================ */
-/* line 132, ../scss/layout/_header.scss */
+/* line 95, ../scss/layout/_header.scss */
 .logo {
   display: block;
   float: left;
@@ -3725,43 +3696,28 @@ body {
   text-align: center;
   padding: 10px;
 }
-/* line 141, ../scss/layout/_header.scss */
+/* line 104, ../scss/layout/_header.scss */
 .logo img {
   max-width: 100%;
 }
-/* line 145, ../scss/layout/_header.scss */
+/* line 108, ../scss/layout/_header.scss */
 .logo .small {
   display: block;
 }
-/* line 148, ../scss/layout/_header.scss */
+/* line 111, ../scss/layout/_header.scss */
 .logo .large {
   display: none;
 }
 
-/* line 153, ../scss/layout/_header.scss */
+/* line 116, ../scss/layout/_header.scss */
 .logo:hover {
   opacity: 0.8;
 }
 
-@media only screen and (min-width: 769px) {
-  /* line 161, ../scss/layout/_header.scss */
-  .logo {
-    max-width: 300px;
-    min-height: 90px;
-  }
-  /* line 165, ../scss/layout/_header.scss */
-  .logo .small {
-    display: none;
-  }
-  /* line 168, ../scss/layout/_header.scss */
-  .logo .large {
-    display: block;
-  }
-}
 /* ============================================ *
  * Skip Links
  * ============================================ */
-/* line 179, ../scss/layout/_header.scss */
+/* line 125, ../scss/layout/_header.scss */
 .skip-links {
   clear: both;
   overflow: hidden;
@@ -3769,16 +3725,7 @@ body {
   border-bottom: 1px solid #EDEDED;
 }
 
-@media only screen and (min-width: 769px) {
-  /* line 190, ../scss/layout/_header.scss */
-  .skip-links {
-    border: 0;
-  }
-}
-/* -------------------------------------------- *
- * Skip - Link
- */
-/* line 200, ../scss/layout/_header.scss */
+/* line 132, ../scss/layout/_header.scss */
 .skip-link {
   position: relative;
   float: left;
@@ -3790,52 +3737,20 @@ body {
   text-align: center;
 }
 
-/* line 211, ../scss/layout/_header.scss */
+/* line 143, ../scss/layout/_header.scss */
 a.skip-link {
   text-decoration: none;
 }
 
-/* line 215, ../scss/layout/_header.scss */
+/* line 147, ../scss/layout/_header.scss */
 .skip-link:not(.skip-active):hover {
   opacity: 0.8;
 }
 
-@media only screen and (max-width: 768px) {
-  /* line 223, ../scss/layout/_header.scss */
-  .skip-link {
-    border-right: 1px solid #EDEDED;
-  }
-
-  /* line 227, ../scss/layout/_header.scss */
-  .skip-link:last-child {
-    border-right: 0;
-  }
-}
-@media only screen and (min-width: 500px) {
-  /* line 237, ../scss/layout/_header.scss */
-  .skip-link {
-    width: 25%;
-  }
-}
-/* -------------------------------------------- *
- * Skip Link - Active
- */
-@media only screen and (max-width: 768px) {
-  /* line 248, ../scss/layout/_header.scss */
-  .skip-link.skip-active {
-    background: #EDEDED;
-    color: inherit;
-  }
-
-  /* line 253, ../scss/layout/_header.scss */
-  .skip-link.skip-active span {
-    color: inherit;
-  }
-}
 /* -------------------------------------------- *
  * Skip Link - Icon
  */
-/* line 263, ../scss/layout/_header.scss */
+/* line 155, ../scss/layout/_header.scss */
 .skip-link .icon {
   display: inline-block;
   width: 30px;
@@ -3843,51 +3758,96 @@ a.skip-link {
   vertical-align: middle;
 }
 
-/* line 270, ../scss/layout/_header.scss */
+/* line 162, ../scss/layout/_header.scss */
 .skip-link.skip-nav .icon,
 .skip-link.skip-cart:not(.no-count) .icon {
   margin-right: 3px;
 }
 
-@media only screen and (min-width: 500px) {
-  /* line 277, ../scss/layout/_header.scss */
-  .skip-link .icon {
-    margin-right: 3px;
-  }
-}
 /* -------------------------------------------- *
  * Skip Link - Label
  */
-/* line 287, ../scss/layout/_header.scss */
+/* line 171, ../scss/layout/_header.scss */
 .skip-link .label {
   display: none;
 }
 
-@media only screen and (min-width: 500px) {
-  /* line 295, ../scss/layout/_header.scss */
-  .skip-link .label {
-    display: inline;
-  }
-}
 /* ============================================ *
  * Skip Content
  * ============================================ */
-/* line 305, ../scss/layout/_header.scss */
+/* line 179, ../scss/layout/_header.scss */
 .skip-content {
   display: none;
 }
 
-/* line 309, ../scss/layout/_header.scss */
+/* line 183, ../scss/layout/_header.scss */
 .skip-content.skip-active {
   display: block;
   background: #EDEDED;
 }
 
-/* ============================================ *
- * Global Header Navigation
- * ============================================ */
-@media only screen and (max-width: 768px) {
-  /* line 322, ../scss/layout/_header.scss */
+/* line 190, ../scss/layout/_header.scss */
+.account-cart-wrapper {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 190, ../scss/layout/_header.scss */
+  .account-cart-wrapper {
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  /* line 203, ../scss/layout/_header.scss */
+  .page-header-container .store-language-container {
+    padding-top: 8px;
+  }
+  /* line 206, ../scss/layout/_header.scss */
+  .page-header-container .store-language-container select {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  /* line 218, ../scss/layout/_header.scss */
+  .skip-link {
+    width: 25%;
+  }
+
+  /* line 221, ../scss/layout/_header.scss */
+  .skip-link .icon {
+    margin-right: 3px;
+  }
+
+  /* line 224, ../scss/layout/_header.scss */
+  .skip-link .label {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 235, ../scss/layout/_header.scss */
+  .skip-link {
+    border-right: 1px solid #EDEDED;
+  }
+
+  /* line 239, ../scss/layout/_header.scss */
+  .skip-link:last-child {
+    border-right: 0;
+  }
+
+  /* line 243, ../scss/layout/_header.scss */
+  .skip-link.skip-active {
+    background: #EDEDED;
+    color: inherit;
+  }
+
+  /* line 248, ../scss/layout/_header.scss */
+  .skip-link.skip-active span {
+    color: inherit;
+  }
+
+  /* line 252, ../scss/layout/_header.scss */
   #header-account li a,
   .nav-primary a.level0 {
     padding: 0 15px 0 25px;
@@ -3898,32 +3858,71 @@ a.skip-link {
     line-height: 30px;
   }
 
-  /* line 332, ../scss/layout/_header.scss */
+  /* line 262, ../scss/layout/_header.scss */
   #header-account li:last-child a,
   .nav-primary li.level0:last-child a.level0 {
     border-bottom: 0;
   }
 
-  /* line 337, ../scss/layout/_header.scss */
+  /* line 267, ../scss/layout/_header.scss */
   .no-touch #header-account a:hover,
   .no-touch .nav-primary a:hover {
     background-color: #F4F4F4;
     text-decoration: none;
   }
 }
-/* line 345, ../scss/layout/_header.scss */
-.account-cart-wrapper {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-@media only screen and (max-width: 768px) {
-  /* line 345, ../scss/layout/_header.scss */
-  .account-cart-wrapper {
-    position: static;
+@media only screen and (min-width: 768px) {
+  /* line 280, ../scss/layout/_header.scss */
+  .page-header {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  /* line 286, ../scss/layout/_header.scss */
+  .page-header-container {
+    position: relative;
+  }
+
+  /* line 293, ../scss/layout/_header.scss */
+  .header-language-container {
+    height: 20px;
+  }
+  /* line 295, ../scss/layout/_header.scss */
+  .header-language-container .menu-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* line 298, ../scss/layout/_header.scss */
+  .header-language-container .menu-top .menu-top-left, .header-language-container .menu-top .menu-top-right {
+    width: 45%;
+  }
+
+  /* line 304, ../scss/layout/_header.scss */
+  .skip-links {
+    border: 0;
+  }
+
+  /* line 310, ../scss/layout/_header.scss */
+  .logo {
+    max-width: 300px;
+    min-height: 90px;
+  }
+  /* line 314, ../scss/layout/_header.scss */
+  .logo .small {
+    display: none;
+  }
+  /* line 317, ../scss/layout/_header.scss */
+  .logo .large {
+    display: block;
   }
 }
-
+@media only screen and (min-width: 1280px) {
+  /* line 331, ../scss/layout/_header.scss */
+  .header-language-container .menu-top .menu-top-left, .header-language-container .menu-top .menu-top-right {
+    width: 33%;
+  }
+}
 /* ============================================ *
  * Nav - Skip Link
  * ============================================ */
@@ -3956,7 +3955,7 @@ a.skip-link {
     width: 25%;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 65, ../scss/layout/_header-nav.scss */
   .skip-nav {
     display: none;
@@ -3965,13 +3964,13 @@ a.skip-link {
 /* ============================================ *
  * Nav - Skip Content
  * ============================================ */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 77, ../scss/layout/_header-nav.scss */
   #header-nav {
     padding: 5px 0;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 87, ../scss/layout/_header-nav.scss */
   #header-nav {
     display: block;
@@ -3982,7 +3981,7 @@ a.skip-link {
 /* ============================================ *
  * Nav Primary
  * ============================================ */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 99, ../scss/layout/_header-nav.scss */
   .nav-primary {
     display: block;
@@ -4024,7 +4023,7 @@ a.skip-link {
 /* ============================================ *
  * Small Viewports - Accordion Style Menu
  * ============================================ */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 150, ../scss/layout/_header-nav.scss */
   .nav-primary a.level0,
   .nav-primary a {
@@ -4084,7 +4083,7 @@ a.skip-link {
 /* ============================================ *
  * Large Viewports - Dropdown Menu
  * ============================================ */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 200, ../scss/layout/_header-nav.scss */
   .nav-primary {
     /* Default styles for 1+ drop-down menus */
@@ -4187,7 +4186,7 @@ a.skip-link {
   background-position: 4px -146px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 48, ../scss/layout/_header-search.scss */
   .skip-search {
     display: none;
@@ -4201,7 +4200,7 @@ a.skip-link {
   padding: 20px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 66, ../scss/layout/_header-search.scss */
   #header-search {
     display: block;
@@ -4286,7 +4285,7 @@ a.skip-link {
   background-position: 4px -44px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 52, ../scss/layout/_header-account.scss */
   .skip-account {
     float: none;
@@ -4359,7 +4358,7 @@ a.skip-link {
   background-position: 0px -95px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 51, ../scss/layout/_header-cart.scss */
   .skip-cart {
     width: auto;
@@ -4417,7 +4416,7 @@ a.skip-link {
     margin-left: -12px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 110, ../scss/layout/_header-cart.scss */
   .skip-cart {
     color: #3399CC;
@@ -4752,7 +4751,7 @@ a.skip-link {
   margin-top: 30px;
   padding: 30px 0;
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1279px) {
   /* line 204, ../scss/layout/_footer.scss */
   .footer .links {
     width: 22.65625%;
@@ -4770,7 +4769,7 @@ a.skip-link {
     margin: 0 auto 30px auto;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 222, ../scss/layout/_footer.scss */
   .footer .form-language,
   .footer .currency-switcher {
@@ -5497,7 +5496,7 @@ p.product-name a:hover {
   color: #A0A0A0;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 500, ../scss/module/_product-list.scss */
   .block-layered-nav .block-content > dl > dt {
     padding-left: 10px;
@@ -5507,7 +5506,7 @@ p.product-name a:hover {
     display: none;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 510, ../scss/module/_product-list.scss */
   .sidebar .block.block-layered-nav {
     border-bottom: none;
@@ -5843,7 +5842,7 @@ p.product-name a:hover {
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 200, ../scss/module/_catalog-product.scss */
   .product-view .add-to-cart-wrapper {
     float: none;
@@ -6211,7 +6210,7 @@ p.product-name a:hover {
   clear: both;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 27, ../scss/mixin/_toggle-content.scss */
   .product-collateral .toggle-tabs {
     display: block;
@@ -6289,7 +6288,7 @@ p.product-name a:hover {
     display: block;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 123, ../scss/mixin/_toggle-content.scss */
   .product-collateral .toggle-tabs {
     display: none;
@@ -6405,7 +6404,7 @@ p.product-name a:hover {
     display: block;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 559, ../scss/module/_catalog-product.scss */
   .product-view .product-shop,
   .product-view .add-to-cart-wrapper,
@@ -6418,7 +6417,7 @@ p.product-name a:hover {
     padding-left: 0;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 573, ../scss/module/_catalog-product.scss */
   .product-view .product-shop .product-name {
     display: block;
@@ -6683,7 +6682,7 @@ p.product-name a:hover {
   background: 0;
   color: #636363;
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1279px) {
   /* line 794, ../scss/module/_catalog-product.scss */
   .product-options-bottom .product-pricing,
   .product-options-bottom .tier-prices {
@@ -6858,7 +6857,7 @@ p.product-name a:hover {
   width: 450px;
   z-index: 100;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 59, ../scss/module/_catalog-msrp.scss */
   .map-popup.map-popup-right {
     left: 10px !important;
@@ -6869,7 +6868,7 @@ p.product-name a:hover {
     right: 10px !important;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 49, ../scss/module/_catalog-msrp.scss */
   .map-popup {
     width: 100%;
@@ -7490,7 +7489,7 @@ p.product-name a:hover {
   padding-left: 15px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 405, ../scss/module/_checkout-cart.scss */
   .cart-table th {
     font-size: 12px;
@@ -7796,7 +7795,7 @@ p.product-name a:hover {
   background-color: gainsboro;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 731, ../scss/module/_checkout-cart.scss */
   .shipping .shipping-form .form-list > li {
     width: 100%;
@@ -7871,7 +7870,7 @@ p.product-name a:hover {
     text-align: right;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 808, ../scss/module/_checkout-cart.scss */
   .cart .cart-totals table tfoot td {
     font-size: 18px;
@@ -8223,7 +8222,7 @@ p.product-name a:hover {
   padding-top: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 215, ../scss/module/_checkout-onepage.scss */
   .opc #opc-login .description,
   .opc #opc-login p.required {
@@ -8664,7 +8663,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   margin-left: 200px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 616, ../scss/module/_checkout-onepage.scss */
   .gift-message-form .giftmessage-area {
     max-width: 100%;
@@ -8863,7 +8862,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   padding: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 191, ../scss/module/_configurableswatches.scss */
   #narrow-by-list dd .configurable-swatch-list li:nth-child(odd) {
     clear: left;
@@ -9011,7 +9010,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
     border-left: 1px solid #EDEDED;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   /* line 80, ../scss/module/_customer.scss */
   .customer-account-login .col2-set .col-1 {
     padding-right: 0;
@@ -9033,7 +9032,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
     border-top: 1px solid #EDEDED;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 105, ../scss/module/_customer.scss */
   .customer-account-login .col2-set p.required {
     display: none;
@@ -9389,7 +9388,7 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
 .my-account .addresses-list .item p {
   margin-top: 10px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 489, ../scss/module/_customer.scss */
   .my-account .addresses-list .col-1,
   .my-account .addresses-list .col-2 {
@@ -9598,7 +9597,7 @@ ol#cart-sidebar-reorder p.product-name {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1279px) {
   /* line 712, ../scss/module/_customer.scss */
   .dashboard .col2-set .col-1,
   .dashboard .col2-set .col-2 {
@@ -9622,7 +9621,7 @@ ol#cart-sidebar-reorder p.product-name {
     top: -12px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 748, ../scss/module/_customer.scss */
   body.customer-account .data-table.orders th.ship,
   body.customer-account .data-table.orders td.ship,
@@ -9829,7 +9828,7 @@ body.newsletter-manage-index .my-account .form-list {
 /* ============================================ *
  * PayPal
  * ============================================ */
-@media only screen and (max-width: 868px) and (min-width: 769px) {
+@media only screen and (max-width: 867px) and (min-width: 768px) {
   /* line 34, ../scss/module/_paypal.scss */
   .paypal-review-order .col2-set .col-1,
   .paypal-review-order .col2-set .col-2 {
@@ -9853,7 +9852,7 @@ body.newsletter-manage-index .my-account .form-list {
 .paypal-review-order .buttons-set button {
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 59, ../scss/module/_paypal.scss */
   .paypal-review-order .col-1 {
     padding-bottom: 0;
@@ -9911,13 +9910,13 @@ body.newsletter-manage-index .my-account .form-list {
   margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 113, ../scss/module/_paypal.scss */
   .bml-ad.small {
     display: block;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 119, ../scss/module/_paypal.scss */
   .bml-ad.large {
     display: block;
@@ -10237,7 +10236,7 @@ div.paypal-logo span > img {
   text-indent: -9999px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 295, ../scss/module/_review.scss */
   body.review-product-list .product-view .product-shop .price-info {
     padding-left: 0;
@@ -10345,7 +10344,7 @@ div.paypal-logo span > img {
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 438, ../scss/module/_review.scss */
   .review-product-view .product-review .product-img-box {
     max-width: 100%;
@@ -10710,7 +10709,7 @@ div.paypal-logo span > img {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1279px) {
   /* line 206, ../scss/module/_wishlist.scss */
   #wishlist-table.clean-table td {
     padding-left: 10px;
@@ -10736,7 +10735,7 @@ div.paypal-logo span > img {
     font-size: 13px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 241, ../scss/module/_wishlist.scss */
   #wishlist-table:after {
     content: '';
@@ -10910,7 +10909,7 @@ div.paypal-logo span > img {
 .header-minicart {
   display: inline-block;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 30, ../scss/module/_checkout-cart-minicart.scss */
   .header-minicart {
     display: block;
@@ -11129,7 +11128,7 @@ div.paypal-logo span > img {
   display: block;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 218, ../scss/module/_checkout-cart-minicart.scss */
   .checkout-types.minicart {
     float: none;
@@ -11142,7 +11141,7 @@ div.paypal-logo span > img {
     z-index: 1;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 233, ../scss/module/_checkout-cart-minicart.scss */
   .header-minicart .subtotal .label {
     color: #636363;
@@ -11366,7 +11365,7 @@ div.paypal-logo span > img {
   font-size: 13px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 96, ../scss/module/_account-reviews.scss */
   .product-review .ratings-table tr {
     float: none;
@@ -11584,7 +11583,7 @@ div.paypal-logo span > img {
   margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 175, ../scss/module/_cms.scss */
   #contactForm {
     padding-left: 0;
@@ -11659,7 +11658,7 @@ div.paypal-logo span > img {
     max-width: 86%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 72, ../scss/module/_cookies.scss */
   .notice-cookie {
     padding: 0 20px;
@@ -11758,7 +11757,7 @@ div.paypal-logo span > img {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 74, ../scss/module/_tags.scss */
   .tags-list > li,
   .tags-list {
@@ -12034,7 +12033,7 @@ body.customer-account .my-account .title-buttons.recurring-profiles-title-button
 .sidebar .widget-addbysku .sku-table .input-text:not(.qty) {
   width: 100%;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 37, ../scss/module/_widget.scss */
   .sidebar .widget-addbysku .sku-table .input-text:not(.qty) {
     max-width: 100px;
@@ -12052,7 +12051,7 @@ body.customer-account .my-account .title-buttons.recurring-profiles-title-button
   width: 100%;
 }
 
-@media only screen and (min-width: 1199px) {
+@media only screen and (min-width: 1279px) {
   /* line 64, ../scss/module/_widget.scss */
   .col2-left-layout .col-main .widget,
   .col2-right-layout .col-main .widget,
@@ -12157,7 +12156,7 @@ body.customer-account .my-account .title-buttons.recurring-profiles-title-button
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   /* line 73, ../scss/module/_widget.scss */
   .col1-layout .col-main .widget {
     /* Config: Columns + flexible gutter */
@@ -12423,7 +12422,7 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
     padding-left: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 198, ../scss/module/_checkout-multi-address.scss */
   body[class*="checkout-multishipping-"] .checkout-progress span {
     width: 12px;
