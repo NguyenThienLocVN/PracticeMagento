@@ -52,14 +52,26 @@
 
 .header-language-background {
     padding: $gap;
-    background-color: $c-action;
-    text-transform: uppercase;
+    background-color: #202833;
 
     .header-language-container {
         max-width: $max-content-width;
         margin-left: auto;
         margin-right: auto;
+        .menu-top{
+            .menu-top-left, .menu-top-right{
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                .menu-item{
+                    height: 50px;
+                    flex-basis: 5em;
+                    justify-content: center;
+                }
+            }
+        }
     }
+
 
     &:after {
         @include clearfix;
@@ -108,7 +120,7 @@
 @include bp(max-width, $bp-medium) {
 
     .header-language-background {
-        display: none;
+
     }
 
 }
