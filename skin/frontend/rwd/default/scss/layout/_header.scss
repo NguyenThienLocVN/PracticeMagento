@@ -50,7 +50,7 @@
  * Language switcher + welcome message
  * ============================================ */
 
-.header-language-background {
+.-background {
     padding: $gap;
     background-color: $c-action;
     text-transform: uppercase;
@@ -100,7 +100,7 @@
     }
 }
 
-.header-language-background,
+.background,
 .header-language-background a {
     color: $c-text-white;
 }

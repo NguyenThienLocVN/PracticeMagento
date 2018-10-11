@@ -3039,108 +3039,127 @@ body {
   clear: both;
 }
 
-/* line 30, ../scss/layout/_header.scss */
-.header-language-background {
+/* line 27, ../scss/layout/_header.scss */
+.hidden-element {
+  display: none;
+}
+
+/* line 32, ../scss/layout/_header.scss */
+.header-menu-background {
   padding: 10px;
   background-color: #202833;
 }
-/* line 34, ../scss/layout/_header.scss */
-.header-language-background .header-language-container {
+/* line 36, ../scss/layout/_header.scss */
+.header-menu-background .header-menu-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 39, ../scss/layout/_header.scss */
-.header-language-background .header-language-container .menu-top .menu-top-left, .header-language-background .header-language-container .menu-top .menu-top-right {
+/* line 41, ../scss/layout/_header.scss */
+.header-menu-background .header-menu-container .menu-top .menu-top-left, .header-menu-background .header-menu-container .menu-top .menu-top-right {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
-/* line 43, ../scss/layout/_header.scss */
-.header-language-background .header-language-container .menu-top .menu-top-left .menu-item, .header-language-background .header-language-container .menu-top .menu-top-right .menu-item {
+/* line 45, ../scss/layout/_header.scss */
+.header-menu-background .header-menu-container .menu-top .menu-top-left .menu-item, .header-menu-background .header-menu-container .menu-top .menu-top-right .menu-item {
   height: 50px;
   flex-basis: 10em;
   justify-content: center;
 }
-/* line 53, ../scss/layout/_header.scss */
-.header-language-background:after {
+/* line 55, ../scss/layout/_header.scss */
+.header-menu-background:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 57, ../scss/layout/_header.scss */
-.header-language-background .form-language,
-.header-language-background .currency-switcher {
+/* line 59, ../scss/layout/_header.scss */
+.header-menu-background .form-language,
+.header-menu-background .currency-switcher {
   float: left;
   margin-right: 10px;
 }
-/* line 63, ../scss/layout/_header.scss */
-.header-language-background .welcome-msg {
+/* line 65, ../scss/layout/_header.scss */
+.header-menu-background .welcome-msg {
   float: right;
 }
 
-/* line 68, ../scss/layout/_header.scss */
-.header-language-container,
+/* line 70, ../scss/layout/_header.scss */
+.header-menu-container,
 .page-header {
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
-/* line 73, ../scss/layout/_header.scss */
-.page-header-container .store-language-container {
+/* line 75, ../scss/layout/_header.scss */
+.page-header-container .store-menu-container {
   float: right;
   max-width: 35%;
   padding: 13px 15px 10px 10px;
 }
-/* line 78, ../scss/layout/_header.scss */
-.page-header-container .store-language-container label {
+/* line 80, ../scss/layout/_header.scss */
+.page-header-container .store-menu-container label {
   display: none;
 }
-/* line 81, ../scss/layout/_header.scss */
-.page-header-container .store-language-container select {
+/* line 83, ../scss/layout/_header.scss */
+.page-header-container .store-menu-container select {
   max-width: 100%;
 }
 
-/* line 86, ../scss/layout/_header.scss */
-.header-language-background,
-.header-language-background a {
+/* line 88, ../scss/layout/_header.scss */
+.header-menu-background,
+.header-menu-background a {
   color: #E6E6E6;
 }
 
 /* ============================================ *
  * Logo
  * ============================================ */
-/* line 95, ../scss/layout/_header.scss */
+/* line 97, ../scss/layout/_header.scss */
 .logo {
-  display: block;
-  float: left;
-  width: 65%;
-  min-width: 100px;
-  min-height: 44px;
-  text-align: center;
+  display: flex;
   padding: 10px;
 }
-/* line 104, ../scss/layout/_header.scss */
+/* line 100, ../scss/layout/_header.scss */
 .logo img {
-  max-width: 100%;
-}
-/* line 108, ../scss/layout/_header.scss */
-.logo .small {
-  display: block;
-}
-/* line 111, ../scss/layout/_header.scss */
-.logo .large {
-  display: none;
+  margin: auto;
 }
 
-/* line 116, ../scss/layout/_header.scss */
+/* line 105, ../scss/layout/_header.scss */
 .logo:hover {
   opacity: 0.8;
+}
+
+/* line 113, ../scss/layout/_header.scss */
+.search-bar {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+}
+/* line 118, ../scss/layout/_header.scss */
+.search-bar .search-input {
+  width: 70%;
+  border-radius: 5px 0 0 5px;
+  background: #fff;
+  border: solid 0.5px lightgrey;
+  height: 40px;
+}
+/* line 125, ../scss/layout/_header.scss */
+.search-bar .search-button {
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #d13638;
+  color: #fff;
+  width: 30%;
+  cursor: pointer;
+  height: 40px;
 }
 
 /* ============================================ *
  * Skip Links
  * ============================================ */
-/* line 125, ../scss/layout/_header.scss */
+/* line 142, ../scss/layout/_header.scss */
 .skip-links {
   clear: both;
   overflow: hidden;
@@ -3148,7 +3167,7 @@ body {
   border-bottom: 1px solid #EDEDED;
 }
 
-/* line 132, ../scss/layout/_header.scss */
+/* line 149, ../scss/layout/_header.scss */
 .skip-link {
   position: relative;
   float: left;
@@ -3160,12 +3179,12 @@ body {
   text-align: center;
 }
 
-/* line 143, ../scss/layout/_header.scss */
+/* line 160, ../scss/layout/_header.scss */
 a.skip-link {
   text-decoration: none;
 }
 
-/* line 147, ../scss/layout/_header.scss */
+/* line 164, ../scss/layout/_header.scss */
 .skip-link:not(.skip-active):hover {
   opacity: 0.8;
 }
@@ -3173,7 +3192,7 @@ a.skip-link {
 /* -------------------------------------------- *
  * Skip Link - Icon
  */
-/* line 155, ../scss/layout/_header.scss */
+/* line 172, ../scss/layout/_header.scss */
 .skip-link .icon {
   display: inline-block;
   width: 30px;
@@ -3181,99 +3200,122 @@ a.skip-link {
   vertical-align: middle;
 }
 
-/* line 162, ../scss/layout/_header.scss */
+/* line 179, ../scss/layout/_header.scss */
 .skip-link.skip-nav .icon,
 .skip-link.skip-cart:not(.no-count) .icon {
   margin-right: 3px;
 }
 
-/* -------------------------------------------- *
- * Skip Link - Label
- */
-/* line 171, ../scss/layout/_header.scss */
+/* line 183, ../scss/layout/_header.scss */
 .skip-link .label {
   display: none;
 }
 
-/* ============================================ *
- * Skip Content
- * ============================================ */
-/* line 179, ../scss/layout/_header.scss */
+/* line 187, ../scss/layout/_header.scss */
 .skip-content {
   display: none;
 }
 
-/* line 183, ../scss/layout/_header.scss */
+/* line 191, ../scss/layout/_header.scss */
 .skip-content.skip-active {
   display: block;
   background: #EDEDED;
 }
 
-/* line 190, ../scss/layout/_header.scss */
+/* line 196, ../scss/layout/_header.scss */
 .account-cart-wrapper {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
-/* line 218, ../scss/layout/_header.scss */
+/* line 220, ../scss/layout/_header.scss */
 .skip-link {
   width: 25%;
 }
 
-/* line 221, ../scss/layout/_header.scss */
+/* line 223, ../scss/layout/_header.scss */
 .skip-link .icon {
   margin-right: 3px;
 }
 
-/* line 224, ../scss/layout/_header.scss */
+/* line 226, ../scss/layout/_header.scss */
 .skip-link .label {
   display: inline;
 }
 
-/* line 280, ../scss/layout/_header.scss */
-.page-header {
+/* line 271, ../scss/layout/_header.scss */
+.page-header, .header-menu-background {
   max-width: 1260px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
-/* line 286, ../scss/layout/_header.scss */
+/* line 277, ../scss/layout/_header.scss */
 .page-header-container {
   position: relative;
 }
-
-/* line 293, ../scss/layout/_header.scss */
-.header-language-container {
-  height: 20px;
+/* line 279, ../scss/layout/_header.scss */
+.page-header-container .top-features {
+  display: flex;
+  align-items: center;
 }
-/* line 295, ../scss/layout/_header.scss */
-.header-language-container .menu-top {
+
+/* line 286, ../scss/layout/_header.scss */
+.header-menu-container {
+  padding: 5px 0;
+  height: 30px;
+}
+/* line 290, ../scss/layout/_header.scss */
+.header-menu-container .menu-top {
   display: flex;
   justify-content: space-between;
 }
-/* line 298, ../scss/layout/_header.scss */
-.header-language-container .menu-top .menu-top-left, .header-language-container .menu-top .menu-top-right {
+/* line 293, ../scss/layout/_header.scss */
+.header-menu-container .menu-top .menu-top-left, .header-menu-container .menu-top .menu-top-right {
   width: 45%;
 }
 
-/* line 304, ../scss/layout/_header.scss */
-.skip-links {
-  border: 0;
+/* line 299, ../scss/layout/_header.scss */
+.logo {
+  float: left;
+  width: 20%;
 }
 
-/* line 310, ../scss/layout/_header.scss */
-.logo {
-  max-width: 300px;
-  min-height: 90px;
+/* line 304, ../scss/layout/_header.scss */
+.search-bar {
+  width: 60%;
+  float: left;
+}
+/* line 307, ../scss/layout/_header.scss */
+.search-bar .search-input {
+  width: 70%;
+  border-radius: 5px 0 0 5px;
+  background: #fff;
+  border: solid 0.5px lightgrey;
+  height: 40px;
 }
 /* line 314, ../scss/layout/_header.scss */
-.logo .small {
-  display: none;
+.search-bar .search-button {
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #d13638;
+  color: #fff;
+  width: 30%;
+  cursor: pointer;
+  height: 40px;
 }
-/* line 317, ../scss/layout/_header.scss */
-.logo .large {
-  display: block;
+
+/* line 326, ../scss/layout/_header.scss */
+.account-cart-wrapper {
+  width: 20%;
+  float: right;
+}
+
+/* line 331, ../scss/layout/_header.scss */
+.skip-links {
+  display: none;
 }
 
 /* ============================================ *

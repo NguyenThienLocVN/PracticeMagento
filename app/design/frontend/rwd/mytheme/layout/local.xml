@@ -4,5 +4,16 @@
         <reference name="root">
             <remove name="global_notices" />
         </reference>
+
+        <reference name="top.links">
+            <action method="unsetChild">
+                <name>wishlist_link</name>
+            </action>
+            <!--<remove name="wishlist_link" />-->
+        </reference>
+
+        <reference name="header">
+            <block type="core/template" name="wishlist_link" as="wishlist_link"/>
+        </reference>
     </default>
 </layout>

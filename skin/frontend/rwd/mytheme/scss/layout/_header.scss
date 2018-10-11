@@ -23,15 +23,17 @@
 // @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 //
 
+//========Common style=========
+.hidden-element{display: none;}
 
 //======================================
 // Top navigation - Menu top
 //=======================================
-.header-language-background {
+.header-menu-background {
     padding: $gap;
     background-color: #202833;
 
-    .header-language-container {
+    .header-menu-container {
         max-width: $max-content-width;
         margin-left: auto;
         margin-right: auto;
@@ -65,12 +67,12 @@
     }
 }
 
-.header-language-container,
+.header-menu-container,
 .page-header {
     font-family: $f-stack-special;
 }
 
-.page-header-container .store-language-container {
+.page-header-container .store-menu-container {
     float: right;
     max-width: 35%;
     padding: 13px 15px 10px 10px;
@@ -83,8 +85,8 @@
     }
 }
 
-.header-language-background,
-.header-language-background a {
+.header-menu-background,
+.header-menu-background a {
     color: $c-text-white;
 }
 
@@ -93,28 +95,43 @@
  * ============================================ */
 
 .logo {
-    display: block;
-    float: left;
-    width: 65%;
-    min-width: 100px;
-    min-height: 44px;
-    text-align: center;
+    display: flex;
     padding: $gap;
-
     img {
-        max-width: 100%;
-    }
-
-    .small {
-        display: block;
-    }
-    .large {
-        display: none;
+        margin: auto;
     }
 }
 
 .logo:hover {
     opacity: 0.8;
+}
+
+//=============================================
+// Search bar
+//=============================================
+
+.search-bar{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+  .search-input{
+    width: 70%;
+    border-radius: 5px 0 0 5px;
+    background: #fff;
+    border: solid 0.5px lightgrey;
+    height: 40px
+  }
+  .search-button{
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #d13638;
+    color: #fff;
+    width: 30%;
+    cursor: pointer;
+    height: 40px;
+  }
 }
 
 
@@ -163,18 +180,9 @@ a.skip-link {
 .skip-link.skip-cart:not(.no-count) .icon {
     margin-right: 3px;
 }
-
-/* -------------------------------------------- *
- * Skip Link - Label
- */
-
 .skip-link .label {
     display: none;
 }
-
-/* ============================================ *
- * Skip Content
- * ============================================ */
 
 .skip-content {
     display: none;
@@ -185,22 +193,16 @@ a.skip-link {
     background: #EDEDED;
 }
 
-
-
 .account-cart-wrapper {
-    position: absolute;
-    top:0px;
-    right:0px;
-
-    @include bp(max-width, $bp-medium) {
-        position: static;
-    }
+        position: relative;
+        display: flex;
+        justify-content: space-around;
 }
 
 
 //=============== Small device max-width: 479px ============================
 @include bp(max-width, $bp-xsmall) {
-    .page-header-container .store-language-container {
+    .page-header-container .store-menu-container {
         padding-top: 8px;
 
         select {
@@ -228,17 +230,6 @@ a.skip-link {
 
 @include bp(max-width, $bp-medium) {
 
-    .header-language-background {
-
-    }
-
-    .skip-link {
-        border-right: 1px solid #EDEDED;
-    }
-
-    .skip-link:last-child {
-        border-right: 0;
-    }
 
     .skip-link.skip-active {
         background: #EDEDED;
@@ -277,7 +268,7 @@ a.skip-link {
 
 @include bp(min-width, $bp-medium + 1) {
 
-  .page-header {
+  .page-header, .header-menu-background {
     max-width: $max-container-width;
     margin: 0 auto;
     padding: 0 $trim;
@@ -285,13 +276,17 @@ a.skip-link {
 
   .page-header-container {
     position: relative;
+    .top-features{
+      display: flex;
+      align-items: center;
+    }
   }
 
-  //======================================
-  // Top navigation - Menu top
-  //=======================================
-  .header-language-container {
-    height: 20px;
+  //Top menu
+  .header-menu-container {
+    padding: 5px 0;
+    height: 30px;
+
     .menu-top{
       display: flex;
       justify-content: space-between;
@@ -301,36 +296,71 @@ a.skip-link {
     }
   }
 
-  .skip-links {
-    border: 0;
+  .logo {
+    float: left;
+    width: 20%;
   }
 
-
-
-  .logo {
-    max-width: 300px;
-    min-height: 90px;
-
-    .small {
-      display: none;
+  .search-bar{
+    width: 60%;
+    float: left;
+    .search-input{
+      width: 70%;
+      border-radius: 5px 0 0 5px;
+      background: #fff;
+      border: solid 0.5px lightgrey;
+      height: 40px
     }
-    .large {
-      display: block;
+    .search-button{
+      border: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background: #d13638;
+      color: #fff;
+      width: 30%;
+      cursor: pointer;
+      height: 40px;
     }
+  }
+
+  .account-cart-wrapper {
+    width: 20%;
+    float: right;
+  }
+
+  .skip-links {
+    display: none;
   }
 
 }
 
 //================ Desktop 1280 x 800 =============
 @include bp(min-width, $bp-xlarge + 1) {
+  .hidden-element{display: block;}
+
+
     //======================================
     // Top navigation - Menu top
     //=======================================
-    .header-language-container {
+    .header-menu-container {
         .menu-top{
             .menu-top-left, .menu-top-right{
                 width: 33%;
             }
         }
     }
+
+//  Search bar
+  .search-bar{
+    .category-button{
+      width: 20%;
+      border: none;
+      background: lightgrey;
+      border-radius: 5px 0 0 5px;
+      cursor: pointer;
+    }
+    .search-input{
+      border-radius: unset;
+    }
+  }
 }

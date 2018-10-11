@@ -1,7 +1,6 @@
 # Gitignore folders
 dev/
 downloader/
-errors/
 includes/
 media/
 shell/
