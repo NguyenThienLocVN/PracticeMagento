@@ -2,245 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="995380b1-399f-41cf-926e-b37a54ea5cf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/etc/theme.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/bg_x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/demo-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/demo_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/icon_sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/icon_sprite@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/logo_email.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/logo_print.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/col_left_callout.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/col_right_callout.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/homepage_banner_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/homepage_banner_1@2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/homepage_banner_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/homepage_callout_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/homepage_callout_1@2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/homepage_callout_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/homepage_callout_2@2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/homepage_callout_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/homepage_callout_3@2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/media/logo_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/opc-ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/social_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/social_icons@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/configurableswatches/configurable-swatch-prices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/configurableswatches/product-media.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/configurableswatches/swatches-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/configurableswatches/swatches-product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/elevatezoom/jquery.elevateZoom-3.0.8.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/elevatezoom/jquery.elevatezoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/enquire.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/fastclick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/imagesloaded.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/jquery.cycle2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/jquery.cycle2.swipe.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/matchMedia.addListener.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/matchMedia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/modernizr.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/selectivizr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/minicart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/msrp_rwd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/opcheckout_rwd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/slideshow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_var.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/scaffold-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/styles-ie8.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/html/header.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/html/header.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/switch/languages.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/switch/languages.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/04a574b9dcb788863f265d0854fa0662dfc4ec26/_base.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/04a574b9dcb788863f265d0854fa0662dfc4ec26/_sprite-img.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/15fb33e3c82ecfc300ca0446078155b1f830ba96/_core.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/15fb33e3c82ecfc300ca0446078155b1f830ba96/_framework.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/15fb33e3c82ecfc300ca0446078155b1f830ba96/_var.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/15fb33e3c82ecfc300ca0446078155b1f830ba96/scaffold-forms.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/15fb33e3c82ecfc300ca0446078155b1f830ba96/styles-ie8.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/15fb33e3c82ecfc300ca0446078155b1f830ba96/styles.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/23d5ef384c29bd24badd6f68776d8714160be6c3/_compass.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/24b1b9430c0a1deb5634e93b6347a6c64cba5aa3/_black.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/24b1b9430c0a1deb5634e93b6347a6c64cba5aa3/_white.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/34d6b06780dc1bc120d2fb8126ac6e6373b8cb85/_hover-link.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/34d6b06780dc1bc120d2fb8126ac6e6373b8cb85/_link-colors.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/34d6b06780dc1bc120d2fb8126ac6e6373b8cb85/_unstyled-link.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/3cfdfa2319a84d57fd3df87137224cabaa0ebf70/_footer.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/3cfdfa2319a84d57fd3df87137224cabaa0ebf70/_global.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/3cfdfa2319a84d57fd3df87137224cabaa0ebf70/_header-account.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/3cfdfa2319a84d57fd3df87137224cabaa0ebf70/_header-cart.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/3cfdfa2319a84d57fd3df87137224cabaa0ebf70/_header-nav.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/3cfdfa2319a84d57fd3df87137224cabaa0ebf70/_header-search.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/3cfdfa2319a84d57fd3df87137224cabaa0ebf70/_header.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_account-orders.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_account-reviews.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_billing-agreements.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_captcha.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_catalog-compare.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_catalog-msrp.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_catalog-product.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_checkout-cart-minicart.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_checkout-cart.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_checkout-multi-address.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_checkout-onepage.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_checkout-success.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_cms.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_configurableswatches.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_contacts.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_cookies.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_customer.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_paypal.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_popular-terms.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_pricing_conditions.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_product-list.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_recurring-profiles.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_review.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_search.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_slideshow.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_tags.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_widget.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/4d784f9f2d8826f9b0bc07d0c03d0b1c33060b4e/_wishlist.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/5daacabd2833b3a5e8128832c92d10b1be4f213c/_plugin.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/63fd8aa4207381ea2a5f6568fa7f0de006f7ff1b/_breakpoint.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/63fd8aa4207381ea2a5f6568fa7f0de006f7ff1b/_clearfix.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/63fd8aa4207381ea2a5f6568fa7f0de006f7ff1b/_if-resolution.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/63fd8aa4207381ea2a5f6568fa7f0de006f7ff1b/_image-replacement.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/63fd8aa4207381ea2a5f6568fa7f0de006f7ff1b/_loading-overlay.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/63fd8aa4207381ea2a5f6568fa7f0de006f7ff1b/_menu.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/63fd8aa4207381ea2a5f6568fa7f0de006f7ff1b/_not-selectable.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/63fd8aa4207381ea2a5f6568fa7f0de006f7ff1b/_toggle-content.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/63fd8aa4207381ea2a5f6568fa7f0de006f7ff1b/_triangle.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/63fd8aa4207381ea2a5f6568fa7f0de006f7ff1b/_typography.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/6df777ee3b65b7516d0ac997dcd3c1fd4e01d050/_css3.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/6df777ee3b65b7516d0ac997dcd3c1fd4e01d050/_support.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/6df777ee3b65b7516d0ac997dcd3c1fd4e01d050/_typography.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/6df777ee3b65b7516d0ac997dcd3c1fd4e01d050/_utilities.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/_css3.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/_support.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/css3/_background-size.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/css3/_images.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/css3/_inline-block.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/typography/_links.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/typography/_lists.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/typography/_text.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/typography/text/_replacement.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/utilities/general/_float.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/usr/share/compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/7f14bd7ad205d2fe0408374db7f1af8534773a39/_alternating-rows-and-columns.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/7f14bd7ad205d2fe0408374db7f1af8534773a39/_borders.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/7f14bd7ad205d2fe0408374db7f1af8534773a39/_scaffolding.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/8c788c8b1d8fa906da36196695c6206e2aef9fe6/_clearfix.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/8c788c8b1d8fa906da36196695c6206e2aef9fe6/_float.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/8c788c8b1d8fa906da36196695c6206e2aef9fe6/_hacks.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/8c788c8b1d8fa906da36196695c6206e2aef9fe6/_min.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/8c788c8b1d8fa906da36196695c6206e2aef9fe6/_reset.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/8c788c8b1d8fa906da36196695c6206e2aef9fe6/_tag-cloud.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/968647386db2a8391c43e3caac39c31d385ffd1a/_color.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/968647386db2a8391c43e3caac39c31d385ffd1a/_general.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/968647386db2a8391c43e3caac39c31d385ffd1a/_sprites.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/968647386db2a8391c43e3caac39c31d385ffd1a/_tables.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/9c558eea006213f24c3a6083d37a99244cd41f21/_normalize.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/9e5e64a19dcc48d5a907402d44291a30c3e7e94b/_ellipsis.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/9e5e64a19dcc48d5a907402d44291a30c3e7e94b/_force-wrap.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/9e5e64a19dcc48d5a907402d44291a30c3e7e94b/_nowrap.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/9e5e64a19dcc48d5a907402d44291a30c3e7e94b/_replacement.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_animation.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_appearance.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_background-clip.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_background-origin.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_background-size.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_border-radius.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_box-shadow.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_box-sizing.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_columns.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_deprecated-support.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_filter.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_flexbox.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_font-face.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_hyphenation.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_images.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_inline-block.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_opacity.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_regions.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_text-shadow.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_transform.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_transition.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/af1289ca7f010b3d69f8884f2e2c729a035d2186/_user-interface.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/b499ab7a9e7ab2f670577c3d5e1c8a8341b9ef03/_common.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/b499ab7a9e7ab2f670577c3d5e1c8a8341b9ef03/_form.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/b499ab7a9e7ab2f670577c3d5e1c8a8341b9ef03/_reset.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/b499ab7a9e7ab2f670577c3d5e1c8a8341b9ef03/_table.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/b7214e687b1e7e64010120db4cced0edfb47477b/_bullets.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/b7214e687b1e7e64010120db4cced0edfb47477b/_horizontal-list.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/b7214e687b1e7e64010120db4cced0edfb47477b/_inline-block-list.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/b7214e687b1e7e64010120db4cced0edfb47477b/_inline-list.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/c72ca4cb11b5180ff6addaf61bd8a5812fcc77ef/_brightness.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/c72ca4cb11b5180ff6addaf61bd8a5812fcc77ef/_contrast.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/cc5c8cad7c31fa45a998a22ca5156cd3c8ae244e/_grid-background.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/ccbaed75e65ce9506ff5cd281367a2316dbd3082/_utilities.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/dff6a38c198f5bc43f7761ba34bd2f77c7ae40c3/_links.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/dff6a38c198f5bc43f7761ba34bd2f77c7ae40c3/_lists.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/dff6a38c198f5bc43f7761ba34bd2f77c7ae40c3/_text.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/dff6a38c198f5bc43f7761ba34bd2f77c7ae40c3/_units.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/.sass-cache/dff6a38c198f5bc43f7761ba34bd2f77c7ae40c3/_vertical_rhythm.scssc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/skin/frontend/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/skin/frontend/config.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/css/scaffold-forms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/css/styles-ie8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/bg_x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/demo-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/demo_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/icon_sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/icon_sprite@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/logo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/logo_email.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/logo_print.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/opc-ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/social_icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/images/social_icons@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/configurableswatches/configurable-swatch-prices.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/configurableswatches/product-media.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/configurableswatches/swatches-list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/configurableswatches/swatches-product.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/elevatezoom/jquery.elevateZoom-3.0.8.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/elevatezoom/jquery.elevatezoom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/enquire.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/fastclick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/imagesloaded.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/jquery.cycle2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/jquery.cycle2.swipe.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/matchMedia.addListener.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/matchMedia.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/modernizr.custom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/lib/selectivizr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/minicart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/msrp_rwd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/opcheckout_rwd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/slideshow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_framework.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_var.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/content/_category.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/content/_home.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/core/_common.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/core/_form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/core/_reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/core/_table.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/function/_black.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/function/_white.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_header-account.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_header-cart.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_header-nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_header-search.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/mixin/_breakpoint.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/mixin/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/mixin/_if-resolution.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/mixin/_image-replacement.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/mixin/_loading-overlay.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/mixin/_menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/mixin/_not-selectable.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/mixin/_toggle-content.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/mixin/_triangle.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/mixin/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_account-orders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_account-reviews.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_billing-agreements.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_captcha.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_catalog-compare.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_catalog-msrp.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_catalog-product.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_checkout-cart-minicart.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_checkout-cart.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_checkout-multi-address.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_checkout-onepage.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_checkout-success.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_cms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_configurableswatches.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_contacts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_cookies.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_customer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_paypal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_popular-terms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_pricing_conditions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_product-list.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_recurring-profiles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_review.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_search.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_slideshow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_tags.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_widget.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/module/_wishlist.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/override/_plugin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/scaffold-forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/styles-ie8.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/vendor/_normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skin/frontend/rwd/default/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/skin/frontend/rwd/default/scss/layout/_header.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -260,33 +78,33 @@
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.29" value="2" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="28" />
+          <entry key="css" value="37" />
           <entry key="gitignore" value="3" />
           <entry key="htaccess" value="6" />
           <entry key="js" value="1" />
-          <entry key="php" value="2" />
-          <entry key="phtml" value="30" />
-          <entry key="rb" value="14" />
-          <entry key="scss" value="55" />
-          <entry key="xml" value="10" />
+          <entry key="php" value="6" />
+          <entry key="phtml" value="34" />
+          <entry key="rb" value="21" />
+          <entry key="scss" value="78" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="28" />
+          <entry key="CSS" value="37" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="32" />
-          <entry key="PLAIN_TEXT" value="17" />
-          <entry key="SCSS" value="55" />
-          <entry key="XML" value="10" />
+          <entry key="PHP" value="40" />
+          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="SCSS" value="78" />
+          <entry key="XML" value="13" />
           <entry key="htaccess" value="6" />
         </counts>
       </usages-collector>
@@ -295,19 +113,20 @@
           <entry key="css" value="2" />
           <entry key="gitignore" value="35" />
           <entry key="htaccess" value="4" />
-          <entry key="phtml" value="420" />
-          <entry key="rb" value="29" />
-          <entry key="scss" value="1851" />
-          <entry key="xml" value="523" />
+          <entry key="php" value="196" />
+          <entry key="phtml" value="722" />
+          <entry key="rb" value="124" />
+          <entry key="scss" value="2305" />
+          <entry key="xml" value="763" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="PHP" value="420" />
-          <entry key="PLAIN_TEXT" value="64" />
-          <entry key="SCSS" value="1851" />
-          <entry key="XML" value="523" />
+          <entry key="PHP" value="918" />
+          <entry key="PLAIN_TEXT" value="159" />
+          <entry key="SCSS" value="2305" />
+          <entry key="XML" value="763" />
           <entry key="htaccess" value="4" />
         </counts>
       </usages-collector>
@@ -316,33 +135,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/switch/languages.phtml">
+        <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_var.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/config.rb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mytheme/etc/theme.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="15">
+              <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+        <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+            <state relative-caret-position="275">
+              <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -350,23 +155,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/html/header.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="45" column="50" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="50" />
+            <state relative-caret-position="165">
+              <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Page/Block/Html/Header.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$c-action</find>
-      <find>header-language-container</find>
       <find>.header-language-container</find>
       <find>.header-language-background</find>
       <find>flex</find>
@@ -395,6 +193,8 @@
       <find>skip-active</find>
       <find>mod_rewrite</find>
       <find>logo</find>
+      <find>uppercase</find>
+      <find>page-header</find>
     </findStrings>
     <replaceStrings>
       <replace>header-menu-background</replace>
@@ -406,19 +206,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/skin/frontend/config.rb" />
         <option value="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/core/_common.scss" />
-        <option value="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_var.scss" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/page/template/links.phtml" />
-        <option value="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/styles.scss" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/layout/local.xml" />
-        <option value="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_header.scss" />
         <option value="$PROJECT_DIR$/skin/frontend/rwd/mytheme/css/styles.css" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/html/header.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/switch/languages.phtml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/etc/theme.xml" />
         <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/default/scss/layout/_header.scss" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_header.scss" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/config.rb" />
+        <option value="$PROJECT_DIR$/app/etc/modules/Loc_Test.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Loc/Test/Model/Test.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Loc/Test/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Loc/Test/data/loc_test_setup/data-install-0.0.1.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Loc/Test/sql/loc_test_setup/install-0.0.1.php" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/local/_header.scss" />
+        <option value="$PROJECT_DIR$/skin/frontend/config.rb" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/switch/languages.phtml" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_var.scss" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/html/header.phtml" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/styles.scss" />
       </list>
     </option>
   </component>
@@ -441,7 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -482,7 +289,7 @@
               <item name="design" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="rwd" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="mytheme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
@@ -492,16 +299,110 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="rwd" type="462c0819:PsiDirectoryNode" />
               <item name="mytheme" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="design" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="rwd" type="462c0819:PsiDirectoryNode" />
+              <item name="mytheme" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="design" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="rwd" type="462c0819:PsiDirectoryNode" />
+              <item name="mytheme" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="design" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="rwd" type="462c0819:PsiDirectoryNode" />
+              <item name="mytheme" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="switch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
               <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
               <item name="skin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
+              <item name="skin" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
+              <item name="skin" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="rwd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
+              <item name="skin" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="rwd" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
+              <item name="skin" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="rwd" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
+              <item name="skin" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="rwd" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
+              <item name="skin" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="rwd" type="462c0819:PsiDirectoryNode" />
+              <item name="mytheme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeMagento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeMagento" type="462c0819:PsiDirectoryNode" />
+              <item name="skin" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="rwd" type="462c0819:PsiDirectoryNode" />
+              <item name="mytheme" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -512,14 +413,15 @@
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.sass.extensions.compass.CompassConfigurableProvider$1" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/skin/frontend/rwd/mytheme" />
+      <recent name="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/local" />
+      <recent name="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout" />
       <recent name="$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss" />
       <recent name="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/switch" />
-      <recent name="$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/html" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -553,12 +455,13 @@
       <workItem from="1539173277993" duration="9185000" />
       <workItem from="1539221896053" duration="25816000" />
       <workItem from="1539275935460" duration="1697000" />
-      <workItem from="1539308563613" duration="2238000" />
+      <workItem from="1539308563613" duration="4726000" />
+      <workItem from="1539314130124" duration="13233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70133000" />
+    <option name="totallyTimeSpent" value="85854000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,7 +476,7 @@
     <frame x="0" y="27" width="1600" height="826" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32110682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32561132" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -585,9 +488,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32902297" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.15373564" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3275862" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.18534483" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -611,15 +514,6 @@
     <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/scaffold-forms.scss" />
     <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/js/app.js" />
     <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/css/scaffold-forms.css" />
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/scss/layout/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="56" lean-forward="true" selection-end-line="341" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/css/styles-ie8.css" />
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_core.scss" />
     <entry file="file://$PROJECT_DIR$/app/design/adminhtml/default/default/layout/customer.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1461" />
@@ -628,7 +522,6 @@
     <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/content/_home.scss" />
     <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/core/_common.scss" />
     <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/styles-ie8.scss" />
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_var.scss" />
     <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/page/template/container.phtml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -653,7 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/styles.scss" />
     <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalogsearch/form.mini.phtml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -668,13 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="30" column="9" lean-forward="true" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/page/switch/languages.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="44" lean-forward="true" selection-end-line="44" />
         </state>
       </provider>
     </entry>
@@ -700,9 +585,6 @@
         <state relative-caret-position="-256" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Page/Block/Html/Header.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -710,34 +592,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/html/header.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155715" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4561" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/switch/languages.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/etc/theme.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/config.rb">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/page/switch/languages.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="44" lean-forward="true" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Page/Block/Html/Header.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/css/styles-ie8.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_core.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mytheme/etc/theme.xml">
@@ -747,10 +625,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/scss/content/_home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+        <state relative-caret-position="-1440" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/scss/content/_category.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/layout/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Loc/Test/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Loc/Test/Model/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Loc/Test/data/loc_test_setup/data-install-0.0.1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Loc/Test/sql/loc_test_setup/install-0.0.1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/etc/modules/Loc_Test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/local/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="4424" column="16" selection-start-line="4424" selection-start-column="16" selection-end-line="4424" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/switch/languages.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/scss/layout/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mytheme/template/page/html/header.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/_var.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mytheme/scss/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
         </state>
       </provider>
     </entry>

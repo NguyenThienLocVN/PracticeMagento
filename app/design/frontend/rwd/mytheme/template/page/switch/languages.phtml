@@ -33,11 +33,19 @@
 ?>
 <?php if(count($this->getStores())>1): ?>
     <div class="form-language">
-        <select id="select-language" title="<?php echo $this->__('Your Language') ?>" onchange="window.location.href=this.value">
-            <?php foreach ($this->getStores() as $_lang): ?>
-                <?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? ' selected="selected"' : '' ?>
-                <option value="<?php echo $_lang->getCurrentUrl() ?>"<?php echo $_selected ?>><?php echo $this->escapeHtml($_lang->getName()) ?></option>
-            <?php endforeach; ?>
-        </select>
+
+        <div class="drop-down-button"> <?php echo $this->__('Your Language') ?> </div>
+
+                <ul class="drop-down-content">
+                    <?php foreach ($this->getStores() as $_lang): ?>
+                        <?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? ' class="selected"' : '' ?>
+                        <li <?php echo $_selected ?>>
+                            <a href="<?php echo $_lang->getCurrentUrl() ?>"><?php echo $this->escapeHtml($_lang->getName()) ?></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </li>
+
+
     </div>
 <?php endif; ?>
