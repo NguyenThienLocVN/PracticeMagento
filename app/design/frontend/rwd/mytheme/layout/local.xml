@@ -5,15 +5,14 @@
             <remove name="global_notices" />
         </reference>
 
-        <reference name="top.links">
-            <action method="unsetChild">
-                <name>wishlist_link</name>
-            </action>
-            <!--<remove name="wishlist_link" />-->
+        <reference name="footer">
+            <remove name="cms_footer_links_sm"/>
+            <remove name="footer_links" />
+            <remove name="footer_links2" />
+
+            <block type="core/template" name="block-bottom-center" template="block-bottom-center.phtml"/>
+            <block type="core/template" name="block-bottom-right" template="block-bottom-right.phtml"/>
         </reference>
 
-        <reference name="header">
-            <block type="core/template" name="wishlist_link" as="wishlist_link"/>
-        </reference>
     </default>
 </layout>

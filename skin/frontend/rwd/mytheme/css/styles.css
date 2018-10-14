@@ -12496,30 +12496,83 @@ div.calendar table td.button {
   text-transform: none;
 }
 
-/* line 36, ../scss/styles.scss */
+/* line 37, ../scss/styles.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 41, ../scss/styles.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+/* line 47, ../scss/styles.scss */
+.hidden-element {
+  display: none;
+}
+
+/* line 48, ../scss/styles.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 49, ../scss/styles.scss */
+ul {
+  list-style: none;
+}
+
+/* line 50, ../scss/styles.scss */
+.big {
+  font-size: 25px;
+}
+
+/* line 54, ../scss/styles.scss */
 .header-menu-background {
   padding: 10px;
   background-color: #202833;
 }
-/* line 40, ../scss/styles.scss */
+/* line 58, ../scss/styles.scss */
 .header-menu-background .header-menu-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
 }
-/* line 45, ../scss/styles.scss */
+/* line 63, ../scss/styles.scss */
 .header-menu-background .header-menu-container .menu-top-left, .header-menu-background .header-menu-container .menu-top-right {
   display: flex;
   justify-content: space-between;
   text-align: center;
   padding: 5px 0;
 }
-/* line 53, ../scss/styles.scss */
-.header-menu-background .header-menu-container .menu-top-left .language .drop-down-content, .header-menu-background .header-menu-container .menu-top-right .language .drop-down-content {
+/* line 71, ../scss/styles.scss */
+.header-menu-background .header-menu-container .menu-top-left .form-language .drop-down-content, .header-menu-background .header-menu-container .menu-top-right .form-language .drop-down-content {
   display: none;
+  position: absolute;
+  background-color: #202833;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
-/* line 58, ../scss/styles.scss */
+/* line 78, ../scss/styles.scss */
+.header-menu-background .header-menu-container .menu-top-left .form-language .drop-down-content li:hover, .header-menu-background .header-menu-container .menu-top-right .form-language .drop-down-content li:hover {
+  background: #fff;
+}
+/* line 80, ../scss/styles.scss */
+.header-menu-background .header-menu-container .menu-top-left .form-language .drop-down-content li:hover a, .header-menu-background .header-menu-container .menu-top-right .form-language .drop-down-content li:hover a {
+  color: #202833;
+}
+/* line 85, ../scss/styles.scss */
+.header-menu-background .header-menu-container .menu-top-left .form-language:hover .drop-down-content, .header-menu-background .header-menu-container .menu-top-right .form-language:hover .drop-down-content {
+  display: block;
+}
+/* line 86, ../scss/styles.scss */
+.header-menu-background .header-menu-container .menu-top-left .form-language:active .drop-down-content, .header-menu-background .header-menu-container .menu-top-right .form-language:active .drop-down-content {
+  display: block;
+}
+/* line 88, ../scss/styles.scss */
 .header-menu-background .header-menu-container .menu-top-left .menu-item, .header-menu-background .header-menu-container .menu-top-right .menu-item {
   flex: 1;
   flex-basis: 10em;
@@ -12527,42 +12580,206 @@ div.calendar table td.button {
   display: flex;
   align-items: center;
 }
-/* line 64, ../scss/styles.scss */
+/* line 94, ../scss/styles.scss */
 .header-menu-background .header-menu-container .menu-top-left .menu-item a, .header-menu-background .header-menu-container .menu-top-right .menu-item a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 73, ../scss/styles.scss */
+/* line 103, ../scss/styles.scss */
 .page-header {
   max-width: 1260px;
   margin: 0 auto;
 }
-/* line 76, ../scss/styles.scss */
-.page-header .logo-search-more {
+/* line 106, ../scss/styles.scss */
+.page-header .logo-search-widget {
   padding: 10px;
 }
-/* line 78, ../scss/styles.scss */
-.page-header .logo-search-more .main-logo {
+/* line 110, ../scss/styles.scss */
+.page-header .logo-search-widget .main-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* line 117, ../scss/styles.scss */
+.page-header .logo-search-widget .search-bar {
+  padding: 10px;
+}
+/* line 119, ../scss/styles.scss */
+.page-header .logo-search-widget .search-bar .category-button {
+  width: 140px;
+  border: none;
+  background: lightgrey;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+/* line 126, ../scss/styles.scss */
+.page-header .logo-search-widget .search-bar .box-input {
+  display: flex;
+}
+/* line 128, ../scss/styles.scss */
+.page-header .logo-search-widget .search-bar .box-input .button-search {
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #d13638;
+  color: #fff;
+  width: 30%;
+  cursor: pointer;
+}
+/* line 141, ../scss/styles.scss */
+.page-header .logo-search-widget .account-cart {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* line 146, ../scss/styles.scss */
+.page-header .logo-search-widget .skip-link {
+  border: none;
+}
+
+/* line 151, ../scss/styles.scss */
+.subscribe {
+  width: 100%;
+  background-color: #d13638;
+  height: 120px;
+  color: #fff;
+}
+/* line 156, ../scss/styles.scss */
+.subscribe .subscribe-text {
+  display: none;
+}
+/* line 157, ../scss/styles.scss */
+.subscribe .subscribe-button {
+  background: #202833;
+  color: #fff;
+  border-radius: 0 30px 30px 0;
+  padding: 5px;
+  border: none;
+}
+/* line 164, ../scss/styles.scss */
+.subscribe .block-content {
+  display: flex;
+  padding-top: 40px;
+  width: 90%;
+  margin: auto;
+}
+/* line 169, ../scss/styles.scss */
+.subscribe .block-content input {
+  width: 100%;
+  border: none;
+  border-radius: 30px 0 0 30px;
+}
+
+/* line 180, ../scss/styles.scss */
+.footer address {
+  color: #636363;
+}
+
+/* line 185, ../scss/styles.scss */
+.bottom-box-1, .bottom-box-2, .bottom-box-3 {
+  padding: 10px;
+}
+
+/* line 188, ../scss/styles.scss */
+.bottom-box-logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
 
 @media only screen and (min-width: 768px) {
-  /* line 88, ../scss/styles.scss */
+  /* line 196, ../scss/styles.scss */
   .header-menu-container {
     display: flex;
     justify-content: space-between;
   }
-  /* line 91, ../scss/styles.scss */
+  /* line 199, ../scss/styles.scss */
   .header-menu-container .menu-top-left, .header-menu-container .menu-top-right {
     width: 45%;
   }
+
+  /* line 205, ../scss/styles.scss */
+  .page-header .logo-search-widget {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  /* line 211, ../scss/styles.scss */
+  .page-header .logo-search-widget .main-logo {
+    width: 20%;
+  }
+  /* line 216, ../scss/styles.scss */
+  .page-header .logo-search-widget .search-bar {
+    width: 60%;
+    display: flex;
+  }
+  /* line 219, ../scss/styles.scss */
+  .page-header .logo-search-widget .search-bar #search_mini_form {
+    width: 100%;
+  }
+  /* line 223, ../scss/styles.scss */
+  .page-header .logo-search-widget .account-cart {
+    width: 20%;
+  }
+
+  /* line 230, ../scss/styles.scss */
+  #header-account.skip-active {
+    top: 80px;
+  }
+
+  /* line 236, ../scss/styles.scss */
+  .subscribe .subscribe-text {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+  }
+  /* line 241, ../scss/styles.scss */
+  .subscribe .block-content {
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+  }
+
+  /* line 249, ../scss/styles.scss */
+  .bottom-box-1, .bottom-box-2, .bottom-box-3 {
+    width: 32%;
+    float: left;
+  }
+  /* line 252, ../scss/styles.scss */
+  .bottom-box-1 .title, .bottom-box-2 .title, .bottom-box-3 .title {
+    padding: 20px 0;
+  }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 100, ../scss/styles.scss */
+  /* line 260, ../scss/styles.scss */
+  .hidden-element {
+    display: block;
+  }
+
+  /* line 263, ../scss/styles.scss */
   .header-menu-container .menu-top-left, .header-menu-container .menu-top-right {
     width: 33%;
+  }
+
+  /* line 270, ../scss/styles.scss */
+  .subscribe .subscribe-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 25px;
+  }
+
+  /* line 279, ../scss/styles.scss */
+  .bottom-box-2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* line 282, ../scss/styles.scss */
+  .bottom-box-2 li {
+    line-height: 30px;
+  }
+  /* line 282, ../scss/styles.scss */
+  .bottom-box-2 li a {
+    color: #636363;
   }
 }

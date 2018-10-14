@@ -19,31 +19,14 @@
  * needs please refer to http://www.magento.com for more information.
  *
  * @category    design
- * @package     base_default
+ * @package     rwd_default
  * @copyright   Copyright (c) 2006-2018 Magento, Inc. (http://www.magento.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<?php
-/**
- * Language switcher template
- *
- * @see Mage_Page_Block_Switch
- */
-?>
-<?php if(count($this->getStores())>1): ?>
-    <div class="form-language">
-
-        <div class="drop-down-button"> <?php echo $this->__('Your language') ?> </div>
-
-                <ul class="drop-down-content">
-                    <?php foreach ($this->getStores() as $_lang): ?>
-                        <?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? ' class="selected"' : '' ?>
-                        <li <?php echo $_selected ?>>
-                            <a href="<?php echo $_lang->getCurrentUrl() ?>"><?php echo $this->escapeHtml($_lang->getName()) ?></a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-
+<div class="footer-container">
+    <div class="footer">
+        <?php echo $this->getChildHtml() ?>
+        <address class="copyright"><?php echo $this->getCopyright() ?></address>
     </div>
-<?php endif; ?>
+</div>

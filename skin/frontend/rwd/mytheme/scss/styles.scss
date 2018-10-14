@@ -33,6 +33,24 @@ $mq-fixed-value: false;
 @import "framework";
 @import "core";
 
+//======= Reset CSS ============
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.hidden-element{display: none;} //Hide some element
+a{text-decoration: none;} // Remove underline of link
+ul{list-style: none;} // Remove list decoration
+.big{font-size: 25px;} //Special style for text
+
+//======== End reset CSS =========
+
 .header-menu-background {
   padding: $gap;
   background-color: #202833;
@@ -49,11 +67,23 @@ $mq-fixed-value: false;
       padding: 5px 0;
 
       //dropdown menu language
-      .language {
+      .form-language {
         .drop-down-content {
           display: none;
+          position: absolute;
+          background-color: #202833;
+          min-width: 100px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          li:hover{
+            background: #fff;
+            a{color:#202833};
+          }
         }
       }
+
+      .form-language:hover .drop-down-content{display: block;}
+      .form-language:active .drop-down-content{display: block;}
 
       .menu-item{
         flex: 1;
@@ -73,14 +103,92 @@ $mq-fixed-value: false;
 .page-header {
   max-width: $max-container-width;
   margin: 0 auto;
-  .logo-search-more{
+  .logo-search-widget{
     padding: $gap;
+
+    //logo
     .main-logo{
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
+    //search bar
+    .search-bar{
+      padding: $gap;
+      .category-button{
+        width: 140px;
+        border: none;
+        background: lightgrey;
+        border-radius: 5px 0 0 5px;
+        cursor: pointer;
+      }
+      .box-input{
+        display: flex;
+        .button-search{
+          border: none;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          background: #d13638;
+          color: #fff;
+          width: 30%;
+          cursor: pointer;
+        }
+      }
+    }
+
+  //  account cart
+    .account-cart{
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .skip-link{border: none;}
   }
+}
+
+//Form subscribe
+.subscribe{
+  width: 100%;
+  background-color: #d13638;
+  height: 120px;
+  color: #fff;
+  .subscribe-text{display: none;}
+  .subscribe-button{
+    background: #202833;
+    color: #fff;
+    border-radius: 0 30px 30px 0;
+    padding: 5px;
+    border: none;
+  }
+  .block-content{
+    display: flex;
+    padding-top: 40px;
+    width: 90%;
+    margin: auto;
+    input{
+      width: 100%;
+      border: none;
+      border-radius: 30px 0 0 30px;
+    }
+  }
+}
+
+
+
+// Copyright
+.footer address{
+  color: #636363;
+}
+
+// 3 box menu bottom
+.bottom-box-1, .bottom-box-2, .bottom-box-3 {
+  padding:10px;
+}
+.bottom-box-logo{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 // ================= Ipad 768 x 1024 =============
@@ -92,13 +200,85 @@ $mq-fixed-value: false;
       width: 45%;
     }
   }
+
+  .page-header {
+    .logo-search-widget{
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      //logo
+      .main-logo{
+        width: 20%;
+      }
+
+      //search bar
+      .search-bar{
+        width: 60%;
+        display: flex;
+        #search_mini_form{width: 100%;}
+      }
+
+      //  account cart
+      .account-cart{
+        width: 20%;
+      }
+    }
+  }
+
+  //Popup account
+  #header-account.skip-active{
+    top:80px;
+  }
+
+  //Form subscribe
+  .subscribe{
+    .subscribe-text{
+      display: block;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .block-content{
+      display: flex;
+      padding-top: 15px;
+      justify-content: center;
+    }
+  }
+
+  // 3 box menu bottom
+  .bottom-box-1, .bottom-box-2, .bottom-box-3 {
+    width: 32%;
+    float: left;
+    .title{padding: 20px 0;}
+  }
+
 }
 
 // ================= Laptop 1280 x 800 =============
 @include bp(min-width, $bp-xlarge + 1){
+  //Display all hidden element
+  .hidden-element{display: block;}
+
   .header-menu-container {
     .menu-top-left, .menu-top-right{
       width: 33%;
     }
+  }
+
+  //Form subscribe
+  .subscribe{
+    .subscribe-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-top: 25px;
+    }
+  }
+
+  // 3 box menu bottom
+  .bottom-box-2{
+    display: flex;
+    justify-content: space-around;
+    li{line-height: 30px;a{color:#636363;}}
   }
 }

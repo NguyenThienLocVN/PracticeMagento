@@ -664,6 +664,14 @@ var MenuManager = {
 // Use $j(document).ready() because Magento executes Prototype inline
 $j(document).ready(function () {
 
+    $j(".drop-down-content li").click(function(){
+        console.log("Hello");
+
+        $j(".drop-down-button").html( $j(this).html() );
+    });
+
+
+
     // ==============================================
     // Shared Vars
     // ==============================================

@@ -30,8 +30,6 @@
 
 <div class="header-menu-background">
     <div class="header-menu-container">
-
-
         <div class="menu-top-left">
             <div class="menu-item language">
                 <?php echo $this->getChildHtml('store_language') ?>
@@ -66,20 +64,21 @@
 <header id="header" class="page-header">
     <div class="page-header-container">
 
-        <div class="logo-search-more">
+        <div class="logo-search-widget">
             <!-- Logo -->
             <a class="main-logo" href="<?php echo $this->getUrl('') ?>">
                 <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
             </a>
 
             <!--Search bar -->
-            <a href="#header-search" class="skip-link skip-search">
-                <span class="icon"></span>
-                <span class="label"><?php echo $this->__('Search'); ?></span>
-            </a>
+
+            <div class="search-bar">
+                <button class="hidden-element category-button"><?php echo $this->__('All Category'); ?></button>
+                <?php echo $this->getChildHtml('topSearch') ?>
+            </div>
 
             <!-- Account info -->
-            <div class="account-cart-wrapper">
+            <div class="account-cart">
                 <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
                     <span class="icon"></span>
                     <span class="label"><?php echo $this->__('Account'); ?></span>
@@ -111,11 +110,7 @@
             <?php echo $this->getChildHtml('topMenu') ?>
         </div>
 
-        <!-- Search -->
 
-        <div id="header-search" class="skip-content">
-            <?php echo $this->getChildHtml('topSearch') ?>
-        </div>
 
         <!-- Account -->
 
