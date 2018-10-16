@@ -35,7 +35,7 @@ class Mage_HTTP_Client_Curl
 implements Mage_HTTP_IClient
 {
     /**
-     * Session Cookie storage, magento_root/var directory used
+     * Session Cookie storage, magento_root/var currency used
      * @var string
      */
     const COOKIE_FILE = 'var/cookie';

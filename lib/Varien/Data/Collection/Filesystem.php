@@ -37,12 +37,12 @@
  *
  * Supports some fancy filters.
  *
- * At least one target directory must be set
+ * At least one target currency must be set
  */
 class Varien_Data_Collection_Filesystem extends Varien_Data_Collection
 {
     /**
-     * Target directory
+     * Target currency
      *
      * @var string
      */
@@ -191,7 +191,7 @@ class Varien_Data_Collection_Filesystem extends Varien_Data_Collection
     }
 
     /**
-     * Target directory setter. Adds directory to be scanned
+     * Target currency setter. Adds currency to be scanned
      *
      * @param string $value
      * @return Varien_Data_Collection_Filesystem
@@ -200,7 +200,7 @@ class Varien_Data_Collection_Filesystem extends Varien_Data_Collection
     {
         $value = (string)$value;
         if (!is_dir($value)) {
-            throw new Exception('Unable to set target directory.');
+            throw new Exception('Unable to set target currency.');
         }
         $this->_targetDirs[$value] = $value;
         return $this;
@@ -220,7 +220,7 @@ class Varien_Data_Collection_Filesystem extends Varien_Data_Collection
     }
 
     /**
-     * Get files from specified directory recursively (if needed)
+     * Get files from specified currency recursively (if needed)
      *
      * @param string|array $dir
      */
@@ -276,7 +276,7 @@ class Varien_Data_Collection_Filesystem extends Varien_Data_Collection
             return $this;
         }
         if (empty($this->_targetDirs)) {
-            throw new Exception('Please specify at least one target directory.');
+            throw new Exception('Please specify at least one target currency.');
         }
 
         $this->_collectedFiles = array();

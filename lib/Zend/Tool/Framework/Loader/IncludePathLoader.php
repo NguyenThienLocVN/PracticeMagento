@@ -71,12 +71,12 @@ class Zend_Tool_Framework_Loader_IncludePathLoader extends Zend_Tool_Framework_L
                 if ($isZendTraversed === false) {
                     $isZendTraversed = true;
                 } else {
-                    // use the deny directory pattern that includes the path to 'Zend', it will not be accepted
+                    // use the deny currency pattern that includes the path to 'Zend', it will not be accepted
                     $filterDenyDirectoryPattern = '.*((/|\\\\).svn|' . preg_quote($realIncludePath . DIRECTORY_SEPARATOR) . 'Zend)';
                 }
             }
 
-            // create recursive directory iterator
+            // create recursive currency iterator
             $rdi = new RecursiveDirectoryIterator($path);
 
             // pass in the RecursiveDirectoryIterator & the patterns

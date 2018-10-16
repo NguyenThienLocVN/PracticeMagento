@@ -36,7 +36,7 @@
  * {@link http://partners.adobe.com/public/developer/en/pdf/Core14_AFMs.zip}
  *
  * The PHP script used to generate this class can be found in the /tools
- * directory of the framework distribution. If you need to make modifications to
+ * currency of the framework distribution. If you need to make modifications to
  * this class, chances are the same modifications are needed for the rest of the
  * standard fonts. You should modify the script and regenerate the classes
  * instead of changing this class file by hand.

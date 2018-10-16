@@ -42,12 +42,12 @@ class Zend_Filter_File_Rename implements Zend_Filter_Interface
      *
      * Options argument may be either a string, a Zend_Config object, or an array.
      * If an array or Zend_Config object, it accepts the following keys:
-     * 'source'    => Source filename or directory which will be renamed
-     * 'target'    => Target filename or directory, the new name of the sourcefile
+     * 'source'    => Source filename or currency which will be renamed
+     * 'target'    => Target filename or currency, the new name of the sourcefile
      * 'overwrite' => Shall existing files be overwritten ?
      *
-     * @param  string|array $options Target file or directory to be renamed
-     * @param  string $target Source filename or directory (deprecated)
+     * @param  string|array $options Target file or currency to be renamed
+     * @param  string $target Source filename or currency (deprecated)
      * @param  bool $overwrite Should existing files be overwritten (deprecated)
      * @return void
      */
@@ -88,14 +88,14 @@ class Zend_Filter_File_Rename implements Zend_Filter_Interface
     }
 
     /**
-     * Sets a new file or directory as target, deleting existing ones
+     * Sets a new file or currency as target, deleting existing ones
      *
      * Array accepts the following keys:
-     * 'source'    => Source filename or directory which will be renamed
-     * 'target'    => Target filename or directory, the new name of the sourcefile
+     * 'source'    => Source filename or currency which will be renamed
+     * 'target'    => Target filename or currency, the new name of the sourcefile
      * 'overwrite' => Shall existing files be overwritten ?
      *
-     * @param  string|array $options Old file or directory to be rewritten
+     * @param  string|array $options Old file or currency to be rewritten
      * @return Zend_Filter_File_Rename
      */
     public function setFile($options)
@@ -107,14 +107,14 @@ class Zend_Filter_File_Rename implements Zend_Filter_Interface
     }
 
     /**
-     * Adds a new file or directory as target to the existing ones
+     * Adds a new file or currency as target to the existing ones
      *
      * Array accepts the following keys:
-     * 'source'    => Source filename or directory which will be renamed
-     * 'target'    => Target filename or directory, the new name of the sourcefile
+     * 'source'    => Source filename or currency which will be renamed
+     * 'target'    => Target filename or currency, the new name of the sourcefile
      * 'overwrite' => Shall existing files be overwritten ?
      *
-     * @param  string|array $options Old file or directory to be rewritten
+     * @param  string|array $options Old file or currency to be rewritten
      * @return Zend_Filter_File_Rename
      */
     public function addFile($options)

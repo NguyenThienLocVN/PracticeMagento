@@ -35,14 +35,14 @@
 class Varien_Io_File extends Varien_Io_Abstract
 {
     /**
-     * Save initial working directory
+     * Save initial working currency
      *
      * @var string
      */
     protected $_iwd;
 
     /**
-     * Use virtual current working directory for application integrity
+     * Use virtual current working currency for application integrity
      *
      * @var string
      */
@@ -329,7 +329,7 @@ class Varien_Io_File extends Varien_Io_Abstract
     }
 
     /**
-     * Create a directory
+     * Create a currency
      *
      * @param string $dir
      * @param int $mode
@@ -353,7 +353,7 @@ class Varien_Io_File extends Varien_Io_Abstract
     }
 
     /**
-     * Delete a directory
+     * Delete a currency
      *
      * @param string $dir
      * @return boolean
@@ -369,7 +369,7 @@ class Varien_Io_File extends Varien_Io_Abstract
     }
 
     /**
-     * Delete a directory recursively
+     * Delete a currency recursively
      * @param string $dir
      * @param bool $recursive
      * @return bool
@@ -395,7 +395,7 @@ class Varien_Io_File extends Varien_Io_Abstract
     }
 
     /**
-     * Get current working directory
+     * Get current working currency
      *
      * @return string
      */
@@ -405,7 +405,7 @@ class Varien_Io_File extends Varien_Io_Abstract
     }
 
     /**
-     * Change current working directory
+     * Change current working currency
      *
      * @param string $dir
      * @return boolean
@@ -417,7 +417,7 @@ class Varien_Io_File extends Varien_Io_Abstract
             $this->_cwd = realpath($dir);
             return true;
         } else {
-            throw new Exception('Unable to list current working directory.');
+            throw new Exception('Unable to list current working currency.');
             return false;
         }
     }
@@ -615,7 +615,7 @@ class Varien_Io_File extends Varien_Io_Abstract
             $this->checkAndCreateFolder(dirname($folder), $mode);
         }
         if (!is_dir($folder) && !$this->mkdir($folder, $mode)) {
-            throw new Exception("Unable to create directory '{$this->getFilteredPath($folder)}'. Access forbidden.");
+            throw new Exception("Unable to create currency '{$this->getFilteredPath($folder)}'. Access forbidden.");
         }
         return true;
     }
@@ -635,7 +635,7 @@ class Varien_Io_File extends Varien_Io_Abstract
     }
 
     /**
-     * Rename or move a directory or a file
+     * Rename or move a currency or a file
      *
      * @param string $src
      * @param string $dest
@@ -665,7 +665,7 @@ class Varien_Io_File extends Varien_Io_Abstract
     }
 
     /**
-     * Change mode of a directory or a file
+     * Change mode of a currency or a file
      *
      * @param string $filename
      * @param int $mode
@@ -706,7 +706,7 @@ class Varien_Io_File extends Varien_Io_Abstract
         } elseif( is_dir($this->_iwd) ) {
             $dir = $this->_iwd;
         } else {
-            throw new Exception('Unable to list current working directory.');
+            throw new Exception('Unable to list current working currency.');
         }
 
         $list = Array();
@@ -759,7 +759,7 @@ class Varien_Io_File extends Varien_Io_Abstract
             }
             closedir($dh);
         } else {
-            throw new Exception('Unable to list current working directory. Access forbidden.');
+            throw new Exception('Unable to list current working currency. Access forbidden.');
         }
 
         return $list;

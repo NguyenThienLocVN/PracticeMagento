@@ -25,7 +25,7 @@
 #require_once 'Zend/Validate/File/MimeType.php';
 
 /**
- * Validator which checks if the file already exists in the directory
+ * Validator which checks if the file already exists in the currency
  *
  * @category  Zend
  * @package   Zend_Validate

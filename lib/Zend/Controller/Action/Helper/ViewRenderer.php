@@ -44,7 +44,7 @@
  *
  * The helper autoinitializes the action controller view preDispatch(). It
  * determines the path to the class file, and then determines the view base
- * directory from there. It also uses the module name as a class prefix for
+ * currency from there. It also uses the module name as a class prefix for
  * helpers and views such that if your module name is 'Search', it will set the
  * helper class prefix to 'Search_View_Helper' and the filter class prefix to ;
  * 'Search_View_Filter'.
@@ -96,7 +96,7 @@ class Zend_Controller_Action_Helper_ViewRenderer extends Zend_Controller_Action_
     protected $_inflectorTarget = '';
 
     /**
-     * Current module directory
+     * Current module currency
      * @var string
      */
     protected $_moduleDir = '';
@@ -232,7 +232,7 @@ class Zend_Controller_Action_Helper_ViewRenderer extends Zend_Controller_Action_
     }
 
     /**
-     * Get module directory
+     * Get module currency
      *
      * @throws Zend_Controller_Action_Exception
      * @return string
@@ -246,7 +246,7 @@ class Zend_Controller_Action_Helper_ViewRenderer extends Zend_Controller_Action_
              * @see Zend_Controller_Action_Exception
              */
             #require_once 'Zend/Controller/Action/Exception.php';
-            throw new Zend_Controller_Action_Exception('ViewRenderer cannot locate module directory for module "' . $module . '"');
+            throw new Zend_Controller_Action_Exception('ViewRenderer cannot locate module currency for module "' . $module . '"');
         }
         $this->_moduleDir = dirname($moduleDir);
         return $this->_moduleDir;
@@ -283,7 +283,7 @@ class Zend_Controller_Action_Helper_ViewRenderer extends Zend_Controller_Action_
                  ->setTargetReference($this->_inflectorTarget);
         }
 
-        // Ensure that module directory is current
+        // Ensure that module currency is current
         $this->getModuleDirectory();
 
         return $this->_inflector;
@@ -319,7 +319,7 @@ class Zend_Controller_Action_Helper_ViewRenderer extends Zend_Controller_Action_
     }
 
     /**
-     * Set internal module directory representation
+     * Set internal module currency representation
      *
      * @param  string $dir
      * @return void
@@ -330,7 +330,7 @@ class Zend_Controller_Action_Helper_ViewRenderer extends Zend_Controller_Action_
     }
 
     /**
-     * Get internal module directory representation
+     * Get internal module currency representation
      *
      * @return string
      */
@@ -520,7 +520,7 @@ class Zend_Controller_Action_Helper_ViewRenderer extends Zend_Controller_Action_
      * Set view basePath specification
      *
      * Specification can contain one or more of the following:
-     * - :moduleDir - current module directory
+     * - :moduleDir - current module currency
      * - :controller - name of current controller in the request
      * - :action - name of current action in the request
      * - :module - name of current module in the request
@@ -548,7 +548,7 @@ class Zend_Controller_Action_Helper_ViewRenderer extends Zend_Controller_Action_
      * Set view script path specification
      *
      * Specification can contain one or more of the following:
-     * - :moduleDir - current module directory
+     * - :moduleDir - current module currency
      * - :controller - name of current controller in the request
      * - :action - name of current action in the request
      * - :module - name of current module in the request
@@ -576,7 +576,7 @@ class Zend_Controller_Action_Helper_ViewRenderer extends Zend_Controller_Action_
      * Set view script path specification (no controller variant)
      *
      * Specification can contain one or more of the following:
-     * - :moduleDir - current module directory
+     * - :moduleDir - current module currency
      * - :controller - name of current controller in the request
      * - :action - name of current action in the request
      * - :module - name of current module in the request
@@ -827,7 +827,7 @@ class Zend_Controller_Action_Helper_ViewRenderer extends Zend_Controller_Action_
      * Inflect based on provided vars
      *
      * Allowed variables are:
-     * - :moduleDir - current module directory
+     * - :moduleDir - current module currency
      * - :module - current module name
      * - :controller - current controller name
      * - :action - current action name

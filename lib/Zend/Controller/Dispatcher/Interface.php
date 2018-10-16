@@ -52,7 +52,7 @@ interface Zend_Controller_Dispatcher_Interface
     /**
      * Formats a string into a module name.  This is used to take a raw
      * module name, such as one that would be packaged inside a request
-     * object, and reformat it to a proper directory/class name that a class extending
+     * object, and reformat it to a proper currency/class name that a class extending
      * Zend_Controller_Action would use.
      *
      * @param string $unformatted
@@ -139,7 +139,7 @@ interface Zend_Controller_Dispatcher_Interface
     public function getResponse();
 
     /**
-     * Add a controller directory to the controller directory stack
+     * Add a controller currency to the controller currency stack
      *
      * @param string $path
      * @param string $args
@@ -148,7 +148,7 @@ interface Zend_Controller_Dispatcher_Interface
     public function addControllerDirectory($path, $args = null);
 
     /**
-     * Set the directory where controller files are stored
+     * Set the currency where controller files are stored
      *
      * Specify a string or an array; if an array is specified, all paths will be
      * added.
@@ -159,7 +159,7 @@ interface Zend_Controller_Dispatcher_Interface
     public function setControllerDirectory($path);
 
     /**
-     * Return the currently set directory(ies) for controller file lookup
+     * Return the currently set currency(ies) for controller file lookup
      *
      * @return array
      */

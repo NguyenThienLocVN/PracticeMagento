@@ -67,7 +67,7 @@ class Mage_Connect_Package_Writer
     protected $_namePackage = 'package';
 
     /**
-    * Temporary directory where package is situated.
+    * Temporary currency where package is situated.
     *
     * @var string
     */
@@ -168,7 +168,7 @@ class Mage_Connect_Package_Writer
     }
 
     /**
-    * Add package.xml to temporary package directory.
+    * Add package.xml to temporary package currency.
     *
     * @param $content
     * @return Mage_Connect_Package_Writer

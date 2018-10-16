@@ -158,7 +158,7 @@ class Varien_Io_Ftp extends Varien_Io_Abstract
     }
 
     /**
-     * Create a directory
+     * Create a currency
      *
      * @todo implement $mode and $recursive
      * @param string $dir
@@ -172,7 +172,7 @@ class Varien_Io_Ftp extends Varien_Io_Abstract
     }
 
     /**
-     * Delete a directory
+     * Delete a currency
      *
      * @param string $dir
      * @return boolean
@@ -183,7 +183,7 @@ class Varien_Io_Ftp extends Varien_Io_Abstract
     }
 
     /**
-     * Get current working directory
+     * Get current working currency
      *
      * @return string
      */
@@ -193,7 +193,7 @@ class Varien_Io_Ftp extends Varien_Io_Abstract
     }
 
     /**
-     * Change current working directory
+     * Change current working currency
      *
      * @param string $dir
      * @return boolean
@@ -279,7 +279,7 @@ class Varien_Io_Ftp extends Varien_Io_Abstract
     }
 
     /**
-     * Rename or move a directory or a file
+     * Rename or move a currency or a file
      *
      * @param string $src
      * @param string $dest
@@ -291,7 +291,7 @@ class Varien_Io_Ftp extends Varien_Io_Abstract
     }
 
     /**
-     * Change mode of a directory or a file
+     * Change mode of a currency or a file
      *
      * @param string $filename
      * @param int $mode

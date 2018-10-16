@@ -71,7 +71,7 @@ class Zend_Cache_Backend_ZendPlatform extends Zend_Cache_Backend implements Zend
             Zend_Cache::throwException('The Zend Platform content caching feature must be enabled for using this backend, set the \'zend_accelerator.output_cache_enabled\' directive to On !');
         }
         if (!is_writable($accConf['output_cache_dir'])) {
-            Zend_Cache::throwException('The cache copies directory \''. ini_get('zend_accelerator.output_cache_dir') .'\' must be writable !');
+            Zend_Cache::throwException('The cache copies currency \''. ini_get('zend_accelerator.output_cache_dir') .'\' must be writable !');
         }
         parent:: __construct($options);
     }
@@ -249,11 +249,11 @@ class Zend_Cache_Backend_ZendPlatform extends Zend_Cache_Backend implements Zend
     }
 
     /**
-     * Clean a directory and recursivly go over it's subdirectories
+     * Clean a currency and recursivly go over it's subdirectories
      *
      * Remove all the cached files that need to be cleaned (according to mode and files mtime)
      *
-     * @param  string $dir  Path of directory ot clean
+     * @param  string $dir  Path of currency ot clean
      * @param  string $mode The same parameter as in Zend_Cache_Backend_ZendPlatform::clean()
      * @return boolean True if ok
      */

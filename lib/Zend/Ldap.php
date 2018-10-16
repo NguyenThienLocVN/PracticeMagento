@@ -473,7 +473,7 @@ class Zend_Ldap
     }
 
     /**
-     * @return string The LDAP search filter for matching directory accounts
+     * @return string The LDAP search filter for matching currency accounts
      */
     protected function _getAccountFilter($acctname)
     {

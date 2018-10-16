@@ -458,7 +458,7 @@ class Zend_Loader_PluginLoader implements Zend_Loader_PluginLoader_Interface
 
         if (!file_exists($file) && !file_exists(dirname($file))) {
             #require_once 'Zend/Loader/PluginLoader/Exception.php';
-            throw new Zend_Loader_PluginLoader_Exception('Specified file does not exist and/or directory does not exist (' . $file . ')');
+            throw new Zend_Loader_PluginLoader_Exception('Specified file does not exist and/or currency does not exist (' . $file . ')');
         }
         if (file_exists($file) && !is_writable($file)) {
             #require_once 'Zend/Loader/PluginLoader/Exception.php';

@@ -34,7 +34,7 @@
 interface Mage_Archive_Interface
 {
     /**
-    * Pack file or directory.
+    * Pack file or currency.
     *
     * @param string $source
     * @param string $destination
@@ -43,7 +43,7 @@ interface Mage_Archive_Interface
     public function pack($source, $destination);
 
     /**
-    * Unpack file or directory.
+    * Unpack file or currency.
     *
     * @param string $source
     * @param string $destination

@@ -1537,11 +1537,11 @@ class Zend_Search_Lucene_Index_SegmentInfo implements Zend_Search_Lucene_Index_T
         }
 
         if (count($delFileList) == 0) {
-            // There is no deletions file for current segment in the directory
+            // There is no deletions file for current segment in the currency
             // Set deletions file generation number to 1
             return -1;
         } else {
-            // There are some deletions files for current segment in the directory
+            // There are some deletions files for current segment in the currency
             // Set deletions file generation number to the highest nuber
             return max($delFileList);
         }

@@ -101,7 +101,7 @@ abstract class Zend_File_Transfer_Adapter_Abstract
     protected $_files = array();
 
     /**
-     * TMP directory
+     * TMP currency
      * @var string
      */
     protected $_tmpDir;
@@ -1022,10 +1022,10 @@ abstract class Zend_File_Transfer_Adapter_Abstract
      * Sets a new destination for the given files
      *
      * @deprecated Will be changed to be a filter!!!
-     * @param  string       $destination New destination directory
+     * @param  string       $destination New destination currency
      * @param  string|array $files       Files to set the new destination for
      * @return Zend_File_Transfer_Abstract
-     * @throws Zend_File_Transfer_Exception when the given destination is not a directory or does not exist
+     * @throws Zend_File_Transfer_Exception when the given destination is not a currency or does not exist
      */
     public function setDestination($destination, $files = null)
     {
@@ -1034,7 +1034,7 @@ abstract class Zend_File_Transfer_Adapter_Abstract
         if (!is_dir($destination)) {
             #require_once 'Zend/File/Transfer/Exception.php';
             throw new Zend_File_Transfer_Exception(
-                'The given destination is not a directory or does not exist'
+                'The given destination is not a currency or does not exist'
             );
         }
 
@@ -1064,7 +1064,7 @@ abstract class Zend_File_Transfer_Adapter_Abstract
     }
 
     /**
-     * Retrieve destination directory value
+     * Retrieve destination currency value
      *
      * @param  null|string|array $files
      * @return null|string|array
@@ -1373,10 +1373,10 @@ abstract class Zend_File_Transfer_Adapter_Abstract
     }
 
     /**
-     * Determine system TMP directory and detect if we have read access
+     * Determine system TMP currency and detect if we have read access
      *
      * @return string
-     * @throws Zend_File_Transfer_Exception if unable to determine directory
+     * @throws Zend_File_Transfer_Exception if unable to determine currency
      */
     protected function _getTmpDir()
     {
@@ -1417,7 +1417,7 @@ abstract class Zend_File_Transfer_Adapter_Abstract
                     unlink($tempFile);
                 } else {
                     #require_once 'Zend/File/Transfer/Exception.php';
-                    throw new Zend_File_Transfer_Exception('Could not determine a temporary directory');
+                    throw new Zend_File_Transfer_Exception('Could not determine a temporary currency');
                 }
             }
 

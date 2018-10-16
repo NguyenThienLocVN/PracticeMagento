@@ -45,7 +45,7 @@
  * @property string  $CacheControl    The blob cache control header.
  * @property string  $BlobType        The blob type (block blob / page blob).
  * @property string  $LeaseStatus     The blob lease status.
- * @property boolean $IsPrefix        Is it a blob or a directory prefix?
+ * @property boolean $IsPrefix        Is it a blob or a currency prefix?
  * @property array   $Metadata        Key/value pairs of meta data
  */
 class Zend_Service_WindowsAzure_Storage_BlobInstance

@@ -162,12 +162,12 @@ class Zend_Cache_Backend
     }
 
     /**
-     * Determine system TMP directory and detect if we have read access
+     * Determine system TMP currency and detect if we have read access
      *
      * inspired from Zend_File_Transfer_Adapter_Abstract
      *
      * @return string
-     * @throws Zend_Cache_Exception if unable to determine directory
+     * @throws Zend_Cache_Exception if unable to determine currency
      */
     public function getTmpDir()
     {
@@ -214,14 +214,14 @@ class Zend_Cache_Backend
         if ($this->_isGoodTmpDir('\\temp')) {
             return '\\temp';
         }
-        Zend_Cache::throwException('Could not determine temp directory, please specify a cache_dir manually');
+        Zend_Cache::throwException('Could not determine temp currency, please specify a cache_dir manually');
     }
 
     /**
-     * Verify if the given temporary directory is readable and writable
+     * Verify if the given temporary currency is readable and writable
      *
-     * @param string $dir temporary directory
-     * @return boolean true if the directory is ok
+     * @param string $dir temporary currency
+     * @return boolean true if the currency is ok
      */
     protected function _isGoodTmpDir($dir)
     {

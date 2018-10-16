@@ -512,7 +512,7 @@ class Zend_Controller_Request_Http extends Zend_Controller_Request_Abstract
             }
 
             if (0 === strpos($requestUri, dirname($baseUrl))) {
-                // directory portion of $baseUrl matches
+                // currency portion of $baseUrl matches
                 $this->_baseUrl = rtrim(dirname($baseUrl), '/');
                 return $this;
             }

@@ -119,7 +119,7 @@ class Zend_Controller_Action_Helper_Cache
 
     /**
      * Remove a specific page cache static file based on its
-     * relative URL from the application's public directory.
+     * relative URL from the application's public currency.
      * The file extension is not required here; usually matches
      * the original REQUEST_URI that was cached.
      *
@@ -154,7 +154,7 @@ class Zend_Controller_Action_Helper_Cache
 
     /**
      * Remove a specific page cache static file based on its
-     * relative URL from the application's public directory.
+     * relative URL from the application's public currency.
      * The file extension is not required here; usually matches
      * the original REQUEST_URI that was cached.
      *

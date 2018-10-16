@@ -205,7 +205,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
     }
 
     /**
-     * Get captcha image directory
+     * Get captcha image currency
      *
      * @return string
      */
@@ -338,7 +338,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
     }
 
     /**
-     * Set captcha image storage directory
+     * Set captcha image storage currency
      *
      * @param  string $imgDir
      * @return Zend_Captcha_Image
@@ -583,7 +583,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
     }
 
     /**
-     * Remove old files from image directory
+     * Remove old files from image currency
      */
     protected function _gc()
     {

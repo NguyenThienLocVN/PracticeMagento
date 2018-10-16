@@ -71,7 +71,7 @@ class Varien_File_Uploader
     protected $_uploadedFileName;
 
     /**
-     * The name of destination directory
+     * The name of destination currency
      *
      * @var string
      * @access protected
@@ -89,7 +89,7 @@ class Varien_File_Uploader
 
     /**
      * If this variable is set to TRUE, uploaded file name will be changed if some file with the same
-     * name already exists in the destination directory (if enabled).
+     * name already exists in the destination currency (if enabled).
      *
      * @var bool
      * @access protected
@@ -539,7 +539,7 @@ class Varien_File_Uploader
         }
 
         if (!(@is_dir($destinationFolder) || @mkdir($destinationFolder, 0777, true))) {
-            throw new Exception("Unable to create directory '{$destinationFolder}'.");
+            throw new Exception("Unable to create currency '{$destinationFolder}'.");
         }
         return $this;
     }

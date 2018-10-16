@@ -40,7 +40,7 @@
 class Zend_Mail_Transport_File extends Zend_Mail_Transport_Abstract
 {
     /**
-     * Target directory for saving sent email messages
+     * Target currency for saving sent email messages
      *
      * @var string
      */
@@ -98,7 +98,7 @@ class Zend_Mail_Transport_File extends Zend_Mail_Transport_Abstract
      * Saves e-mail message to a file
      *
      * @return void
-     * @throws Zend_Mail_Transport_Exception on not writable target directory
+     * @throws Zend_Mail_Transport_Exception on not writable target currency
      * @throws Zend_Mail_Transport_Exception on file_put_contents() failure
      */
     protected function _sendMail()
@@ -108,7 +108,7 @@ class Zend_Mail_Transport_File extends Zend_Mail_Transport_Abstract
         if (!is_writable(dirname($file))) {
             #require_once 'Zend/Mail/Transport/Exception.php';
             throw new Zend_Mail_Transport_Exception(sprintf(
-                'Target directory "%s" does not exist or is not writable',
+                'Target currency "%s" does not exist or is not writable',
                 dirname($file)
             ));
         }

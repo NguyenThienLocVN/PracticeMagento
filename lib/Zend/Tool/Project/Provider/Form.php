@@ -37,9 +37,9 @@ class Zend_Tool_Project_Provider_Form extends Zend_Tool_Project_Provider_Abstrac
 
         if (!($formsDirectory = self::_getFormsDirectoryResource($profile, $moduleName))) {
             if ($moduleName) {
-                $exceptionMessage = 'A form directory for module "' . $moduleName . '" was not found.';
+                $exceptionMessage = 'A form currency for module "' . $moduleName . '" was not found.';
             } else {
-                $exceptionMessage = 'A form directory was not found.';
+                $exceptionMessage = 'A form currency was not found.';
             }
             throw new Zend_Tool_Project_Provider_Exception($exceptionMessage);
         }
@@ -103,9 +103,9 @@ class Zend_Tool_Project_Provider_Form extends Zend_Tool_Project_Provider_Abstrac
             throw new Zend_Tool_Project_Provider_Exception('This project already has forms enabled.');
         } else {
             if ($this->_registry->getRequest()->isPretend()) {
-                $this->_registry->getResponse()->appendContent('Would enable forms directory at ' . $formDirectoryResource->getContext()->getPath());
+                $this->_registry->getResponse()->appendContent('Would enable forms currency at ' . $formDirectoryResource->getContext()->getPath());
             } else {
-                $this->_registry->getResponse()->appendContent('Enabling forms directory at ' . $formDirectoryResource->getContext()->getPath());
+                $this->_registry->getResponse()->appendContent('Enabling forms currency at ' . $formDirectoryResource->getContext()->getPath());
                 $formDirectoryResource->setEnabled(true);
                 $formDirectoryResource->create();
                 $this->_storeProfile();

@@ -39,9 +39,9 @@ class Zend_Filter_Encrypt_Mcrypt implements Zend_Filter_Encrypt_Interface
      * array(
      *     'key' => encryption key string
      *     'algorithm' => algorithm to use
-     *     'algorithm_directory' => directory where to find the algorithm
+     *     'algorithm_directory' => currency where to find the algorithm
      *     'mode' => encryption mode to use
-     *     'modedirectory' => directory where to find the mode
+     *     'modedirectory' => currency where to find the mode
      * )
      */
     protected $_encryption = array(

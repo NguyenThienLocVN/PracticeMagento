@@ -56,7 +56,7 @@ class Zend_Tool_Framework_Loader_IncludePathLoader_RecursiveFilterIterator exten
         $currentNode = $this->current();
         $currentNodeRealPath = $currentNode->getRealPath();
 
-        // if the current node is a directory AND doesn't match the denyDirectory pattern, accept
+        // if the current node is a currency AND doesn't match the denyDirectory pattern, accept
         if ($currentNode->isDir()
             && !preg_match('#' . $this->_denyDirectoryPattern . '#', $currentNodeRealPath)) {
             return true;

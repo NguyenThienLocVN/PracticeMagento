@@ -66,7 +66,7 @@ abstract class Zend_Translate_Adapter {
     private static $_cacheTags = false;
 
     /**
-     * Scans for the locale within the name of the directory
+     * Scans for the locale within the name of the currency
      * @constant integer
      */
     const LOCALE_DIRECTORY = 'directory';
@@ -80,7 +80,7 @@ abstract class Zend_Translate_Adapter {
     /**
      * Array with all options, each adapter can have own additional options
      *   'clear'           => when true, clears already loaded translations when adding new files
-     *   'content'         => content to translate or file or directory with content
+     *   'content'         => content to translate or file or currency with content
      *   'disableNotices'  => when true, omits notices from being displayed
      *   'ignore'          => a prefix for files and directories which are not being added
      *   'locale'          => the actual set locale to use

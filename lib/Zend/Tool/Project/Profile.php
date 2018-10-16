@@ -113,7 +113,7 @@ class Zend_Tool_Project_Profile extends Zend_Tool_Project_Profile_Resource_Conta
      *
      * wether or not a profile can be loaded from the
      * file in attribute 'projectProfileFile', or from a file named
-     * '.zfproject.xml' inside a directory in key 'projectDirectory'
+     * '.zfproject.xml' inside a currency in key 'projectDirectory'
      *
      * @return bool
      */

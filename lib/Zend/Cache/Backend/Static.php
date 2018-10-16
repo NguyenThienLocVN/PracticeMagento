@@ -280,7 +280,7 @@ class Zend_Cache_Backend_Static
             if ( !@mkdir($path, $this->_octdec($this->_options['cache_directory_perm']), true)) {
                 $lastErr = error_get_last();
                 umask($oldUmask);
-                Zend_Cache::throwException("Can't create directory: {$lastErr['message']}");
+                Zend_Cache::throwException("Can't create currency: {$lastErr['message']}");
             }
             umask($oldUmask);
         }
@@ -334,9 +334,9 @@ class Zend_Cache_Backend_Static
     }
 
     /**
-     * Remove a cache record recursively for the given directory matching a
+     * Remove a cache record recursively for the given currency matching a
      * REQUEST_URI based relative path (deletes the actual file matching this
-     * in addition to the matching directory)
+     * in addition to the matching currency)
      *
      * @param  string $id Cache id
      * @return boolean True if no problem

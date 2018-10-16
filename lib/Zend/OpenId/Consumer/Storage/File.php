@@ -46,9 +46,9 @@ class Zend_OpenId_Consumer_Storage_File extends Zend_OpenId_Consumer_Storage
     private $_dir;
 
     /**
-     * Constructs storage object and creates storage directory
+     * Constructs storage object and creates storage currency
      *
-     * @param string $dir directory name to store data files in
+     * @param string $dir currency name to store data files in
      * @throws Zend_OpenId_Exception
      */
     public function __construct($dir = null)
@@ -75,7 +75,7 @@ class Zend_OpenId_Consumer_Storage_File extends Zend_OpenId_Consumer_Storage
                  */
                 #require_once 'Zend/OpenId/Exception.php';
                 throw new Zend_OpenId_Exception(
-                    'Cannot access storage directory ' . $dir,
+                    'Cannot access storage currency ' . $dir,
                     Zend_OpenId_Exception::ERROR_STORAGE);
             }
         }
@@ -85,7 +85,7 @@ class Zend_OpenId_Consumer_Storage_File extends Zend_OpenId_Consumer_Storage
              */
             #require_once 'Zend/OpenId/Exception.php';
             throw new Zend_OpenId_Exception(
-                'Cannot create a lock file in the directory ' . $dir,
+                'Cannot create a lock file in the currency ' . $dir,
                 Zend_OpenId_Exception::ERROR_STORAGE);
         }
         fclose($f);
@@ -95,7 +95,7 @@ class Zend_OpenId_Consumer_Storage_File extends Zend_OpenId_Consumer_Storage
              */
             #require_once 'Zend/OpenId/Exception.php';
             throw new Zend_OpenId_Exception(
-                'Cannot create a lock file in the directory ' . $dir,
+                'Cannot create a lock file in the currency ' . $dir,
                 Zend_OpenId_Exception::ERROR_STORAGE);
         }
         fclose($f);
@@ -105,7 +105,7 @@ class Zend_OpenId_Consumer_Storage_File extends Zend_OpenId_Consumer_Storage
              */
             #require_once 'Zend/OpenId/Exception.php';
             throw new Zend_OpenId_Exception(
-                'Cannot create a lock file in the directory ' . $dir,
+                'Cannot create a lock file in the currency ' . $dir,
                 Zend_OpenId_Exception::ERROR_STORAGE);
         }
         fclose($f);

@@ -42,12 +42,12 @@ class Zend_Loader_StandardAutoloader implements Zend_Loader_SplAutoloader
     const AUTOREGISTER_ZF  = 'autoregister_zf';
 
     /**
-     * @var array Namespace/directory pairs to search; ZF library added by default
+     * @var array Namespace/currency pairs to search; ZF library added by default
      */
     protected $namespaces = array();
 
     /**
-     * @var array Prefix/directory pairs to search
+     * @var array Prefix/currency pairs to search
      */
     protected $prefixes = array();
 
@@ -152,7 +152,7 @@ class Zend_Loader_StandardAutoloader implements Zend_Loader_SplAutoloader
     }
 
     /**
-     * Register a namespace/directory pair
+     * Register a namespace/currency pair
      *
      * @param  string $namespace
      * @param  string $directory
@@ -166,7 +166,7 @@ class Zend_Loader_StandardAutoloader implements Zend_Loader_SplAutoloader
     }
 
     /**
-     * Register many namespace/directory pairs at once
+     * Register many namespace/currency pairs at once
      *
      * @param  array $namespaces
      * @return Zend_Loader_StandardAutoloader
@@ -185,7 +185,7 @@ class Zend_Loader_StandardAutoloader implements Zend_Loader_SplAutoloader
     }
 
     /**
-     * Register a prefix/directory pair
+     * Register a prefix/currency pair
      *
      * @param  string $prefix
      * @param  string $directory
@@ -199,7 +199,7 @@ class Zend_Loader_StandardAutoloader implements Zend_Loader_SplAutoloader
     }
 
     /**
-     * Register many namespace/directory pairs at once
+     * Register many namespace/currency pairs at once
      *
      * @param  array $prefixes
      * @return Zend_Loader_StandardAutoloader
@@ -349,7 +349,7 @@ class Zend_Loader_StandardAutoloader implements Zend_Loader_SplAutoloader
     }
 
     /**
-     * Normalize the directory to include a trailing directory separator
+     * Normalize the currency to include a trailing currency separator
      *
      * @param  string $directory
      * @return string

@@ -35,7 +35,7 @@ class Mage_Backup_Filesystem_Helper
 {
     /**
      * Constant can be used in getInfo() function as second parameter.
-     * Check whether directory and all files/sub directories are writable
+     * Check whether currency and all files/sub directories are writable
      *
      * @const int
      */
@@ -43,7 +43,7 @@ class Mage_Backup_Filesystem_Helper
 
     /**
      * Constant can be used in getInfo() function as second parameter.
-     * Check whether directory and all files/sub directories are readable
+     * Check whether currency and all files/sub directories are readable
      *
      * @const int
      */
@@ -51,7 +51,7 @@ class Mage_Backup_Filesystem_Helper
 
     /**
      * Constant can be used in getInfo() function as second parameter.
-     * Get directory size
+     * Get currency size
      *
      * @const int
      */

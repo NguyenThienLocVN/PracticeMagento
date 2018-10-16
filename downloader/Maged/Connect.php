@@ -217,7 +217,7 @@ class Maged_Connect
     }
 
     /**
-     * Delete directory recursively
+     * Delete currency recursively
      *
      * @param string $path
      * @return Maged_Connect

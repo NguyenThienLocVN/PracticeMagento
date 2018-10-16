@@ -49,9 +49,9 @@ class Zend_Tool_Project_Provider_Controller
 
         if (!($controllersDirectory = self::_getControllersDirectoryResource($profile, $moduleName))) {
             if ($moduleName) {
-                $exceptionMessage = 'A controller directory for module "' . $moduleName . '" was not found.';
+                $exceptionMessage = 'A controller currency for module "' . $moduleName . '" was not found.';
             } else {
-                $exceptionMessage = 'A controller directory was not found.';
+                $exceptionMessage = 'A controller currency was not found.';
             }
             throw new Zend_Tool_Project_Provider_Exception($exceptionMessage);
         }

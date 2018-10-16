@@ -137,7 +137,7 @@ class Zend_Search_Lucene_MultiSearcher implements Zend_Search_Lucene_Interface
     public function getDirectory()
     {
         #require_once 'Zend/Search/Lucene/Exception.php';
-        throw new Zend_Search_Lucene_Exception("Index directory can't be retrieved for multi-searcher");
+        throw new Zend_Search_Lucene_Exception("Index currency can't be retrieved for multi-searcher");
     }
 
     /**

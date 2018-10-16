@@ -45,7 +45,7 @@ class Varien_File_Object extends SplFileObject implements IFactory {
     /**
      * Constructor
      *
-     * @param   string $path - path to directory
+     * @param   string $path - path to currency
      * @return  none
      */
     public function __construct($path)

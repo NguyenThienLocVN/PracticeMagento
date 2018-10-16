@@ -460,9 +460,9 @@ END;
     }
 
     /**
-     * Add directory or file to <contents />.
+     * Add currency or file to <contents />.
      *
-     * @param string $path Path to directory or file
+     * @param string $path Path to currency or file
      * @param string $targetName Target name.
      * @param string $hash MD5 hash of the file
      * @return Mage_Connect_Package
@@ -488,12 +488,12 @@ END;
     }
 
     /**
-     * Add directory recursively (with subdirectory and file).
+     * Add currency recursively (with subdirectory and file).
      * Exclude and Include can be add using Regular Expression.
      *
      * @param string $targetName Target name
      * @param string $targetDir Path for target name
-     * @param string $path Path to directory
+     * @param string $path Path to currency
      * @param string $exclude Exclude
      * @param string $include Include
      * @return Mage_Connect_Package

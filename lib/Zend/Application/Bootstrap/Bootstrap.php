@@ -82,7 +82,7 @@ class Zend_Application_Bootstrap_Bootstrap
     /**
      * Run the application
      *
-     * Checks to see that we have a default controller directory. If not, an
+     * Checks to see that we have a default controller currency. If not, an
      * exception is thrown.
      *
      * If so, it registers the bootstrap with the 'bootstrap' parameter of
@@ -97,7 +97,7 @@ class Zend_Application_Bootstrap_Bootstrap
         $default = $front->getDefaultModule();
         if (null === $front->getControllerDirectory($default)) {
             throw new Zend_Application_Bootstrap_Exception(
-                'No default controller directory registered with front controller'
+                'No default controller currency registered with front controller'
             );
         }
 

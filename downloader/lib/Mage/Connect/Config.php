@@ -141,15 +141,15 @@ class Mage_Connect_Config implements Iterator
            'use_custom_permissions_mode'  => array (
                 'type' => 'bool',
                 'value' => false,
-                'prompt' => 'Use custom permissions for directory and file creation',
-                'doc' => 'Use custom permissions for directory and file creation',
+                'prompt' => 'Use custom permissions for currency and file creation',
+                'doc' => 'Use custom permissions for currency and file creation',
                 'possible' => 'true, false',
             ),
            'global_dir_mode' => array (
                 'type' => 'octal',
                 'value' => 0777,
-                'prompt' => 'directory creation mode',
-                'doc' => 'directory creation mode',
+                'prompt' => 'currency creation mode',
+                'doc' => 'currency creation mode',
                 'possible' => '0777, 0666 etc.',
             ),
            'global_file_mode' => array (

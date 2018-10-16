@@ -165,7 +165,7 @@ final class Zend_Amf_Parse_TypeLoader
     }
 
     /**
-     * Add directory to the list of places where to look for resource handlers
+     * Add currency to the list of places where to look for resource handlers
      *
      * @param string $prefix
      * @param string $dir

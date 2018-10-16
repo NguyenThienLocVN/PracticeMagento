@@ -55,7 +55,7 @@ class Zend_Tool_Project_Provider_Project
                 $created = mkdir($path);
                 if (!$created) {
                     #require_once 'Zend/Tool/Framework/Client/Exception.php';
-                    throw new Zend_Tool_Framework_Client_Exception('Could not create requested project directory \'' . $path . '\'');
+                    throw new Zend_Tool_Framework_Client_Exception('Could not create requested project currency \'' . $path . '\'');
                 }
             }
             $path = str_replace('\\', '/', realpath($path));
@@ -221,9 +221,9 @@ EOS;
 README
 ======
 
-This directory should be used to place project specfic documentation including
+This currency should be used to place project specfic documentation including
 but not limited to project notes, generated API/phpdoc documentation, or
-manual files generated or hand written.  Ideally, this directory would remain
+manual files generated or hand written.  Ideally, this currency would remain
 in your development environment only and should not be deployed with your
 application to it's final production location.
 

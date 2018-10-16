@@ -395,7 +395,7 @@ class Mage_Connect_Packager
         $arc = $this->getArchiver();
         $target = dirname($file) . DS . $package->getReleaseFilename();
         if (!@mkdir($target, 0777, true)) {
-            throw new RuntimeException("Can't create directory ". $target);
+            throw new RuntimeException("Can't create currency ". $target);
         }
         $tar = $arc->unpack($file, $target);
         $modeFile = $this->_getFileMode($configObj);
@@ -508,7 +508,7 @@ class Mage_Connect_Packager
             foreach ($createdDirs as $createdDir) {
                 $this->removeEmptyDirectory($createdDir);
             }
-            $msg = sprintf("Failed to create directory:\r\n%s\r\n Check permissions", implode("\r\n", $failedDirs));
+            $msg = sprintf("Failed to create currency:\r\n%s\r\n Check permissions", implode("\r\n", $failedDirs));
             throw new RuntimeException($msg);
         }
     }
@@ -1025,7 +1025,7 @@ class Mage_Connect_Packager
     }
 
     /**
-     * Check if directory writable
+     * Check if currency writable
      *
      * @param string $dir
      * @return boolean

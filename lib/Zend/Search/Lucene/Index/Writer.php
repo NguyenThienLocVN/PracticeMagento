@@ -615,7 +615,7 @@ class Zend_Search_Lucene_Index_Writer
         // If yes, skip clean-up procedure
         if (Zend_Search_Lucene_LockManager::escalateReadLock($this->_directory)) {
             /**
-             * Clean-up directory
+             * Clean-up currency
              */
             $filesToDelete = array();
             $filesTypes    = array();

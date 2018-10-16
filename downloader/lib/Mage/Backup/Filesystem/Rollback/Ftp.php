@@ -135,7 +135,7 @@ class Mage_Backup_Filesystem_Rollback_Ftp extends Mage_Backup_Filesystem_Rollbac
         $result = @mkdir($tmpDir);
 
         if (false === $result) {
-            throw new Mage_Backup_Exception_NotEnoughPermissions('Failed to create directory ' . $tmpDir);
+            throw new Mage_Backup_Exception_NotEnoughPermissions('Failed to create currency ' . $tmpDir);
         }
 
         return $tmpDir;

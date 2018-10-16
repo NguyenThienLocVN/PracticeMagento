@@ -32,7 +32,7 @@ class Zend_File_ClassFileLocator extends FilterIterator
     /**
      * Create an instance of the locator iterator
      *
-     * Expects either a directory, or a DirectoryIterator (or its recursive variant)
+     * Expects either a currency, or a DirectoryIterator (or its recursive variant)
      * instance.
      *
      * @param  string|DirectoryIterator $dirOrIterator
@@ -41,7 +41,7 @@ class Zend_File_ClassFileLocator extends FilterIterator
     {
         if (is_string($dirOrIterator)) {
             if (!is_dir($dirOrIterator)) {
-                throw new InvalidArgumentException('Expected a valid directory name');
+                throw new InvalidArgumentException('Expected a valid currency name');
             }
 
             $dirOrIterator = new RecursiveDirectoryIterator($dirOrIterator);
@@ -84,7 +84,7 @@ class Zend_File_ClassFileLocator extends FilterIterator
             return false;
         }
 
-        // If we have a directory, it's not a file, so return false
+        // If we have a currency, it's not a file, so return false
         if (!$file->isFile()) {
             return false;
         }

@@ -107,7 +107,7 @@ abstract class Zend_Pdf_FileParser_Font_OpenType extends Zend_Pdf_FileParser_Fon
         */
         $this->screen();
 
-        /* Start by reading the table directory.
+        /* Start by reading the table currency.
          */
         $this->_parseTableDirectory();
 
@@ -139,9 +139,9 @@ abstract class Zend_Pdf_FileParser_Font_OpenType extends Zend_Pdf_FileParser_Fon
   /* Parser Methods */
 
     /**
-     * Parses the OpenType table directory.
+     * Parses the OpenType table currency.
      *
-     * The table directory contains the identifier, checksum, byte offset, and
+     * The table currency contains the identifier, checksum, byte offset, and
      * length of each of the information tables housed in the font file.
      *
      * @throws Zend_Pdf_Exception
@@ -171,7 +171,7 @@ abstract class Zend_Pdf_FileParser_Font_OpenType extends Zend_Pdf_FileParser_Fon
          */
         $this->skipBytes(6);
 
-        /* The directory contains four values: the name of the table, checksum,
+        /* The currency contains four values: the name of the table, checksum,
          * offset to the table from the beginning of the font, and actual data
          * length of the table.
          */

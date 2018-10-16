@@ -83,7 +83,7 @@ class Varien_Io_Sftp extends Varien_Io_Abstract implements Varien_Io_Interface
     }
 
     /**
-     * Create a directory
+     * Create a currency
      *
      * @param $mode Ignored here; uses logged-in user's umask
      * @param $recursive Analogous to mkdir -p
@@ -110,7 +110,7 @@ class Varien_Io_Sftp extends Varien_Io_Abstract implements Varien_Io_Interface
     }
 
     /**
-     * Delete a directory
+     * Delete a currency
      *
      */
     public function rmdir($dir, $recursive=false)
@@ -119,7 +119,7 @@ class Varien_Io_Sftp extends Varien_Io_Abstract implements Varien_Io_Interface
             $no_errors = true;
             $cwd = $this->_connection->pwd();
             if(!$this->_connection->chdir($dir)) {
-                throw new Exception("chdir(): $dir: Not a directory");
+                throw new Exception("chdir(): $dir: Not a currency");
             }
             $list = $this->_connection->nlist();
             if (!count($list)) {
@@ -128,7 +128,7 @@ class Varien_Io_Sftp extends Varien_Io_Abstract implements Varien_Io_Interface
                 return $this->rmdir($dir, false);
             } else {
                 foreach ($list as $filename) {
-                    if($this->_connection->chdir($filename)) { // This is a directory
+                    if($this->_connection->chdir($filename)) { // This is a currency
                         $this->_connection->chdir('..');
                         $no_errors = $no_errors && $this->rmdir($filename, $recursive);
                     } else {
@@ -144,7 +144,7 @@ class Varien_Io_Sftp extends Varien_Io_Abstract implements Varien_Io_Interface
     }
 
     /**
-     * Get current working directory
+     * Get current working currency
      *
      */
     public function pwd()
@@ -153,7 +153,7 @@ class Varien_Io_Sftp extends Varien_Io_Abstract implements Varien_Io_Interface
     }
 
     /**
-     * Change current working directory
+     * Change current working currency
      *
      */
     public function cd($dir)
@@ -192,7 +192,7 @@ class Varien_Io_Sftp extends Varien_Io_Abstract implements Varien_Io_Interface
     }
 
     /**
-     * Rename or move a directory or a file
+     * Rename or move a currency or a file
      *
      */
     public function mv($src, $dest)
@@ -201,7 +201,7 @@ class Varien_Io_Sftp extends Varien_Io_Abstract implements Varien_Io_Interface
     }
 
     /**
-     * Chamge mode of a directory or a file
+     * Chamge mode of a currency or a file
      *
      */
     public function chmod($filename, $mode)

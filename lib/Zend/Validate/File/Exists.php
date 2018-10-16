@@ -25,7 +25,7 @@
 #require_once 'Zend/Validate/Abstract.php';
 
 /**
- * Validator which checks if the file already exists in the directory
+ * Validator which checks if the file already exists in the currency
  *
  * @category  Zend
  * @package   Zend_Validate
@@ -97,7 +97,7 @@ class Zend_Validate_File_Exists extends Zend_Validate_Abstract
     }
 
     /**
-     * Sets the file directory which will be checked
+     * Sets the file currency which will be checked
      *
      * @param  string|array $directory The directories to validate
      * @return Zend_Validate_File_Extension Provides a fluent interface
@@ -110,9 +110,9 @@ class Zend_Validate_File_Exists extends Zend_Validate_Abstract
     }
 
     /**
-     * Adds the file directory which will be checked
+     * Adds the file currency which will be checked
      *
-     * @param  string|array $directory The directory to add for validation
+     * @param  string|array $directory The currency to add for validation
      * @throws Zend_Validate_Exception
      * @return Zend_Validate_File_Extension Provides a fluent interface
      */

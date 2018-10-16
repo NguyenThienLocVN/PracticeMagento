@@ -41,21 +41,21 @@ class Mage_Archive_Tar extends Mage_Archive_Abstract implements Mage_Archive_Int
     const TAR_BLOCK_SIZE = 512;
 
     /**
-     * Keep file or directory for packing.
+     * Keep file or currency for packing.
      *
      * @var string
      */
     protected $_currentFile;
 
     /**
-     * Keep path to file or directory for packing.
+     * Keep path to file or currency for packing.
      *
      * @var mixed
      */
     protected $_currentPath;
 
     /**
-     * Skip first level parent directory. Example:
+     * Skip first level parent currency. Example:
      *   use test/fip.php instead test/test/fip.php;
      *
      * @var mixed
@@ -255,7 +255,7 @@ class Mage_Archive_Tar extends Mage_Archive_Abstract implements Mage_Archive_Int
     }
 
     /**
-     * Walk through directory and add to tar file or directory.
+     * Walk through currency and add to tar file or currency.
      * Result is packed string on TAR format.
      *
      * @deprecated after 1.7.0.0
@@ -443,7 +443,7 @@ class Mage_Archive_Tar extends Mage_Archive_Abstract implements Mage_Archive_Int
                     $mkdirResult = @mkdir($dirname, 0777, true);
 
                     if (false === $mkdirResult) {
-                        throw new Mage_Exception('Failed to create directory ' . $dirname);
+                        throw new Mage_Exception('Failed to create currency ' . $dirname);
                     }
                 }
 
@@ -456,7 +456,7 @@ class Mage_Archive_Tar extends Mage_Archive_Abstract implements Mage_Archive_Int
                     $mkdirResult = @mkdir($currentFile, $header['mode'], true);
 
                     if (false === $mkdirResult) {
-                        throw new Mage_Exception('Failed to create directory ' . $currentFile);
+                        throw new Mage_Exception('Failed to create currency ' . $currentFile);
                     }
                 }
                 $list[] = $currentFile . DS;

@@ -79,7 +79,7 @@ interface Mage_Backup_Interface
     public function getType();
 
     /**
-     * Set path to directory where backups stored
+     * Set path to currency where backups stored
      *
      * @param string $backupsDir
      * @return Mage_Backup_Interface

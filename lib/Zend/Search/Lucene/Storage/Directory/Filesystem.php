@@ -37,7 +37,7 @@
 class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene_Storage_Directory
 {
     /**
-     * Filesystem path to the directory
+     * Filesystem path to the currency
      *
      * @var string
      */
@@ -82,7 +82,7 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
 
 
     /**
-     * Utility function to recursive directory creation
+     * Utility function to recursive currency creation
      *
      * @param string $dir
      * @param integer $mode
@@ -109,7 +109,7 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
 
     /**
      * Object constructor
-     * Checks if $path is a directory or tries to create it.
+     * Checks if $path is a currency or tries to create it.
      *
      * @param string $path
      * @throws Zend_Search_Lucene_Exception
@@ -119,11 +119,11 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
         if (!is_dir($path)) {
             if (file_exists($path)) {
                 #require_once 'Zend/Search/Lucene/Exception.php';
-                throw new Zend_Search_Lucene_Exception('Path exists, but it\'s not a directory');
+                throw new Zend_Search_Lucene_Exception('Path exists, but it\'s not a currency');
             } else {
                 if (!self::mkdirs($path)) {
                     #require_once 'Zend/Search/Lucene/Exception.php';
-                    throw new Zend_Search_Lucene_Exception("Can't create directory '$path'.");
+                    throw new Zend_Search_Lucene_Exception("Can't create currency '$path'.");
                 }
             }
         }
@@ -148,7 +148,7 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
 
 
     /**
-     * Returns an array of strings, one for each file in the directory.
+     * Returns an array of strings, one for each file in the currency.
      *
      * @return array
      */
@@ -170,7 +170,7 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
     }
 
     /**
-     * Creates a new, empty file in the directory with the given $filename.
+     * Creates a new, empty file in the currency with the given $filename.
      *
      * @param string $filename
      * @return Zend_Search_Lucene_Storage_File
@@ -194,7 +194,7 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
 
 
     /**
-     * Removes an existing $filename in the directory.
+     * Removes an existing $filename in the currency.
      *
      * @param string $filename
      * @return void
@@ -219,7 +219,7 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
     }
 
     /**
-     * Purge file if it's cached by directory object
+     * Purge file if it's cached by currency object
      *
      * Method is used to prevent 'too many open files' error
      *
@@ -249,7 +249,7 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
 
 
     /**
-     * Returns the length of a $filename in the directory.
+     * Returns the length of a $filename in the currency.
      *
      * @param string $filename
      * @return integer
@@ -276,7 +276,7 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
 
 
     /**
-     * Renames an existing file in the directory.
+     * Renames an existing file in the currency.
      *
      * @param string $from
      * @param string $to
@@ -333,7 +333,7 @@ class Zend_Search_Lucene_Storage_Directory_Filesystem extends Zend_Search_Lucene
 
 
     /**
-     * Returns a Zend_Search_Lucene_Storage_File object for a given $filename in the directory.
+     * Returns a Zend_Search_Lucene_Storage_File object for a given $filename in the currency.
      *
      * If $shareHandler option is true, then file handler can be shared between File Object
      * requests. It speed-ups performance, but makes problems with file position.

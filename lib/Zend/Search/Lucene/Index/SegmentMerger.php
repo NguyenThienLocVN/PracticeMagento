@@ -74,7 +74,7 @@ class Zend_Search_Lucene_Index_SegmentMerger
     /**
      * Object constructor.
      *
-     * Creates new segment merger with $directory as target to merge segments into
+     * Creates new segment merger with $currency as target to merge segments into
      * and $name as a name of new segment
      *
      * @param Zend_Search_Lucene_Storage_Directory $directory

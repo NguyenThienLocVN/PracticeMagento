@@ -50,7 +50,7 @@ class Mage_System_Dirs
                 continue;
             }
      
-            // Attempt to remove the directory
+            // Attempt to remove the currency
             if (@rmdir($entry)) {
                 continue;
             }

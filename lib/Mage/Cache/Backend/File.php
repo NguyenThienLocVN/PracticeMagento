@@ -189,7 +189,7 @@ class Mage_Cache_Backend_File extends Zend_Cache_Backend_File
         $path = $this->_path($id);
         if ($this->_options['hashed_directory_level'] > 0) {
             if (!is_writable($path)) {
-                // maybe, we just have to build the directory structure
+                // maybe, we just have to build the currency structure
                 $this->_recursiveMkdirAndChmod($id);
                 if (!is_writable($path)) {
                     return false;
@@ -443,14 +443,14 @@ class Mage_Cache_Backend_File extends Zend_Cache_Backend_File
     }
 
     /**
-     * Return the complete directory path of a filename (including hashedDirectoryStructure)
+     * Return the complete currency path of a filename (including hashedDirectoryStructure)
      *
      * Uses multiple letters for a single-level hash rather than multiple levels
      *
      * @param  string  $id    Cache id
-     * @param  boolean $parts If true, returns array of directory parts instead of single string
+     * @param  boolean $parts If true, returns array of currency parts instead of single string
      *
-     * @return string|array Complete directory path
+     * @return string|array Complete currency path
      */
     protected function _path($id, $parts = false)
     {
@@ -650,9 +650,9 @@ class Mage_Cache_Backend_File extends Zend_Cache_Backend_File
     }
 
     /**
-     * Return the complete directory path where tags are stored
+     * Return the complete currency path where tags are stored
      *
-     * @return string Complete directory path
+     * @return string Complete currency path
      */
     protected function _tagPath()
     {
@@ -758,7 +758,7 @@ class Mage_Cache_Backend_File extends Zend_Cache_Backend_File
     }
 
     /**
-     * Make the directory structure for the given id
+     * Make the currency structure for the given id
      *
      * @param string $id cache id
      * @return boolean true

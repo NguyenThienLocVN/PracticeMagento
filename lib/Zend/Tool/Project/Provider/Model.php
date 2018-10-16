@@ -37,9 +37,9 @@ class Zend_Tool_Project_Provider_Model extends Zend_Tool_Project_Provider_Abstra
 
         if (!($modelsDirectory = self::_getModelsDirectoryResource($profile, $moduleName))) {
             if ($moduleName) {
-                $exceptionMessage = 'A model directory for module "' . $moduleName . '" was not found.';
+                $exceptionMessage = 'A model currency for module "' . $moduleName . '" was not found.';
             } else {
-                $exceptionMessage = 'A model directory was not found.';
+                $exceptionMessage = 'A model currency was not found.';
             }
             throw new Zend_Tool_Project_Provider_Exception($exceptionMessage);
         }

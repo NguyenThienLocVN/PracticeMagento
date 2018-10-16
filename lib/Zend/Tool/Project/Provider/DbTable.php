@@ -52,7 +52,7 @@ class Zend_Tool_Project_Provider_DbTable
 
         if (!($modelsDirectory instanceof Zend_Tool_Project_Profile_Resource)) {
             throw new Zend_Tool_Project_Provider_Exception(
-                'A models directory was not found' .
+                'A models currency was not found' .
                 (($moduleName) ? ' for module ' . $moduleName . '.' : '.')
                 );
         }

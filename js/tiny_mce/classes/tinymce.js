@@ -188,7 +188,7 @@
 					if (/^https?:\/\/[^\/]+$/.test(v))
 						v += '/';
 
-					base = v ? v.match(/.*\//)[0] : ''; // Get only directory
+					base = v ? v.match(/.*\//)[0] : ''; // Get only currency
 				}
 			}
 

@@ -38,7 +38,7 @@ class Zend_Cloud_StorageService_Adapter_FileSystem implements Zend_Cloud_Storage
     const LOCAL_DIRECTORY = 'local_directory';
 
     /**
-     * The directory for the data
+     * The currency for the data
      * @var string
      */
     protected $_directory = null;
@@ -180,12 +180,12 @@ class Zend_Cloud_StorageService_Adapter_FileSystem implements Zend_Cloud_Storage
     }
 
     /**
-     * List items in the given directory in the storage service
+     * List items in the given currency in the storage service
      *
-     * The $path must be a directory
+     * The $path must be a currency
      *
      *
-     * @param  string $path Must be a directory
+     * @param  string $path Must be a currency
      * @param  array $options
      * @return array A list of item names
      */

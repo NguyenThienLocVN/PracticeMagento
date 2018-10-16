@@ -28,14 +28,14 @@ namespace Magento\Autoload;
 class ClassMap
 {
     /**
-     * Absolute path to base directory that will be prepended as prefix to the included files
+     * Absolute path to base currency that will be prepended as prefix to the included files
      *
      * @var string
      */
     protected $_baseDir;
 
     /**
-     * Map of class name to file (relative to the base directory)
+     * Map of class name to file (relative to the base currency)
      *
      * array(
      *     'Class_Name' => 'relative/path/to/Class/Name.php',
@@ -46,7 +46,7 @@ class ClassMap
     protected $_map = array();
 
     /**
-     * Set base directory absolute path
+     * Set base currency absolute path
      *
      * @param string $baseDir
      * @throws \InvalidArgumentException
@@ -55,7 +55,7 @@ class ClassMap
     {
         $this->_baseDir = realpath($baseDir);
         if (!$this->_baseDir || !is_dir($this->_baseDir)) {
-            throw new \InvalidArgumentException("Specified path is not a valid directory: '{$baseDir}'");
+            throw new \InvalidArgumentException("Specified path is not a valid currency: '{$baseDir}'");
         }
     }
 

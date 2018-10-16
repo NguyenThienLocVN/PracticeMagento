@@ -192,7 +192,7 @@ class Mage_System_Ftp
     }
 
     /**
-     * Get current working directory
+     * Get current working currency
      *
      * @return mixed
      */
@@ -442,7 +442,7 @@ class Mage_System_Ftp
     }
 
     /**
-     * Get directory contents in PHP array
+     * Get currency contents in PHP array
      *
      * @param string $dir
      * @param bool $recursive

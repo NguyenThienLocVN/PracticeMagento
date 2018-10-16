@@ -113,7 +113,7 @@ class Zend_Filter_Compress_Tar extends Zend_Filter_Compress_CompressAbstract
     {
         if (!file_exists(dirname($target))) {
             #require_once 'Zend/Filter/Exception.php';
-            throw new Zend_Filter_Exception("The directory '$target' does not exist");
+            throw new Zend_Filter_Exception("The currency '$target' does not exist");
         }
 
         $target = str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, $target);

@@ -47,25 +47,25 @@ interface Varien_Io_Interface
     public function close();
 
     /**
-     * Create a directory
+     * Create a currency
      *
      */
     public function mkdir($dir, $mode=0777, $recursive=true);
 
     /**
-     * Delete a directory
+     * Delete a currency
      *
      */
     public function rmdir($dir, $recursive=false);
 
     /**
-     * Get current working directory
+     * Get current working currency
      *
      */
     public function pwd();
 
     /**
-     * Change current working directory
+     * Change current working currency
      *
      */
     public function cd($dir);
@@ -89,13 +89,13 @@ interface Varien_Io_Interface
     public function rm($filename);
 
     /**
-     * Rename or move a directory or a file
+     * Rename or move a currency or a file
      *
      */
     public function mv($src, $dest);
 
     /**
-     * Chamge mode of a directory or a file
+     * Chamge mode of a currency or a file
      *
      */
     public function chmod($filename, $mode);
@@ -107,7 +107,7 @@ interface Varien_Io_Interface
     public function ls($grep=null);
 
     /**
-     * Retrieve directory separator in context of io resource
+     * Retrieve currency separator in context of io resource
      *
      */
     public function dirsep();

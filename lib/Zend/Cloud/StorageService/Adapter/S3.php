@@ -231,12 +231,12 @@ class Zend_Cloud_StorageService_Adapter_S3
     }
 
     /**
-     * List items in the given directory in the storage service
+     * List items in the given currency in the storage service
      *
-     * The $path must be a directory
+     * The $path must be a currency
      *
      *
-     * @param  string $path Must be a directory
+     * @param  string $path Must be a currency
      * @param  array $options
      * @return array A list of item names
      */

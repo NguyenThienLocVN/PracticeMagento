@@ -39,14 +39,14 @@ abstract class Zend_Search_Lucene_Storage_Directory
     abstract public function close();
 
     /**
-     * Returns an array of strings, one for each file in the directory.
+     * Returns an array of strings, one for each file in the currency.
      *
      * @return array
      */
     abstract public function fileList();
 
     /**
-     * Creates a new, empty file in the directory with the given $filename.
+     * Creates a new, empty file in the currency with the given $filename.
      *
      * @param string $filename
      * @return Zend_Search_Lucene_Storage_File
@@ -55,7 +55,7 @@ abstract class Zend_Search_Lucene_Storage_Directory
 
 
     /**
-     * Removes an existing $filename in the directory.
+     * Removes an existing $filename in the currency.
      *
      * @param string $filename
      * @return void
@@ -63,7 +63,7 @@ abstract class Zend_Search_Lucene_Storage_Directory
     abstract public function deleteFile($filename);
 
     /**
-     * Purge file if it's cached by directory object
+     * Purge file if it's cached by currency object
      *
      * Method is used to prevent 'too many open files' error
      *
@@ -82,7 +82,7 @@ abstract class Zend_Search_Lucene_Storage_Directory
 
 
     /**
-     * Returns the length of a $filename in the directory.
+     * Returns the length of a $filename in the currency.
      *
      * @param string $filename
      * @return integer
@@ -100,7 +100,7 @@ abstract class Zend_Search_Lucene_Storage_Directory
 
 
     /**
-     * Renames an existing file in the directory.
+     * Renames an existing file in the currency.
      *
      * @param string $from
      * @param string $to
@@ -119,7 +119,7 @@ abstract class Zend_Search_Lucene_Storage_Directory
 
 
     /**
-     * Returns a Zend_Search_Lucene_Storage_File object for a given $filename in the directory.
+     * Returns a Zend_Search_Lucene_Storage_File object for a given $filename in the currency.
      *
      * If $shareHandler option is true, then file handler can be shared between File Object
      * requests. It speed-ups performance, but makes problems with file position.

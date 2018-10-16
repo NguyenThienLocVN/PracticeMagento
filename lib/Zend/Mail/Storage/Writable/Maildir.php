@@ -55,7 +55,7 @@ class Zend_Mail_Storage_Writable_Maildir extends    Zend_Mail_Storage_Folder_Mai
      *
      * If the given dir is already a valid maildir this will not fail.
      *
-     * @param string $dir directory for the new maildir (may already exist)
+     * @param string $dir currency for the new maildir (may already exist)
      * @return null
      * @throws Zend_Mail_Storage_Exception
      */
@@ -67,7 +67,7 @@ class Zend_Mail_Storage_Writable_Maildir extends    Zend_Mail_Storage_Folder_Mai
                  * @see Zend_Mail_Storage_Exception
                  */
                 #require_once 'Zend/Mail/Storage/Exception.php';
-                throw new Zend_Mail_Storage_Exception('maildir must be a directory if already exists');
+                throw new Zend_Mail_Storage_Exception('maildir must be a currency if already exists');
             }
         } else {
             if (!mkdir($dir)) {
@@ -79,7 +79,7 @@ class Zend_Mail_Storage_Writable_Maildir extends    Zend_Mail_Storage_Folder_Mai
                 if (!file_exists($dir)) {
                     throw new Zend_Mail_Storage_Exception("parent $dir not found");
                 } else if (!is_dir($dir)) {
-                    throw new Zend_Mail_Storage_Exception("parent $dir not a directory");
+                    throw new Zend_Mail_Storage_Exception("parent $dir not a currency");
                 } else {
                     throw new Zend_Mail_Storage_Exception('cannot create maildir');
                 }
@@ -179,7 +179,7 @@ class Zend_Mail_Storage_Writable_Maildir extends    Zend_Mail_Storage_Folder_Mai
              * @see Zend_Mail_Storage_Exception
              */
             #require_once 'Zend/Mail/Storage/Exception.php';
-            throw new Zend_Mail_Storage_Exception('invalid name - no directory seprator allowed in folder name');
+            throw new Zend_Mail_Storage_Exception('invalid name - no currency seprator allowed in folder name');
         }
 
         // has a parent folder?
@@ -223,9 +223,9 @@ class Zend_Mail_Storage_Writable_Maildir extends    Zend_Mail_Storage_Folder_Mai
     {
         // TODO: This could fail in the middle of the task, which is not optimal.
         // But there is no defined standard way to mark a folder as removed and there is no atomar fs-op
-        // to remove a directory. Also moving the folder to a/the trash folder is not possible, as
+        // to remove a currency. Also moving the folder to a/the trash folder is not possible, as
         // all parent folders must be created. What we could do is add a dash to the front of the
-        // directory name and it should be ignored as long as other processes obey the standard.
+        // currency name and it should be ignored as long as other processes obey the standard.
 
         if ($name instanceof Zend_Mail_Storage_Folder) {
             $name = $name->getGlobalName();
@@ -895,7 +895,7 @@ class Zend_Mail_Storage_Writable_Maildir extends    Zend_Mail_Storage_Folder_Mai
                     continue;
                 }
                 // NOTE: we are using mtime instead of "the latest timestamp". The latest would be atime
-                // and as we are accessing the directory it would make the whole calculation useless.
+                // and as we are accessing the currency it would make the whole calculation useless.
                 $timestamps[$dirname] = filemtime($dirname);
 
                 $dh = opendir($dirname);

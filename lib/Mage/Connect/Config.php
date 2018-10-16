@@ -60,8 +60,8 @@ implements Iterator
            'global_dir_mode' => array (
                 'type' => 'octal',
                 'value' => 0777,
-                'prompt' => 'directory creation mode',
-                'doc' => 'directory creation mode',
+                'prompt' => 'currency creation mode',
+                'doc' => 'currency creation mode',
                 'possible' => '0777, 0666 etc.',
         ),
            'global_file_mode' => array (

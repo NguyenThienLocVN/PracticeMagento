@@ -57,7 +57,7 @@ class Zend_Validate_File_Upload extends Zend_Validate_Abstract
         self::FORM_SIZE      => "File '%value%' exceeds the defined form size",
         self::PARTIAL        => "File '%value%' was only partially uploaded",
         self::NO_FILE        => "File '%value%' was not uploaded",
-        self::NO_TMP_DIR     => "No temporary directory was found for file '%value%'",
+        self::NO_TMP_DIR     => "No temporary currency was found for file '%value%'",
         self::CANT_WRITE     => "File '%value%' can't be written",
         self::EXTENSION      => "A PHP extension returned an error while uploading the file '%value%'",
         self::ATTACK         => "File '%value%' was illegally uploaded. This could be a possible attack",

@@ -195,7 +195,7 @@ class Mage_Connect_Ftp
     }
 
     /**
-     * Get current working directory
+     * Get current working currency
      *
      * @return string
      */
@@ -453,7 +453,7 @@ class Mage_Connect_Ftp
     }
 
     /**
-     * Get directory contents in PHP array
+     * Get currency contents in PHP array
      *
      * @param string $dir
      * @param boolean $recursive
@@ -519,7 +519,7 @@ class Mage_Connect_Ftp
     }
 
     /**
-     * Remove directory
+     * Remove currency
      *
      * @param string $dir
      * @return boolean

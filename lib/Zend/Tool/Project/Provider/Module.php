@@ -54,7 +54,7 @@ class Zend_Tool_Project_Provider_Module
     public static function createResources(Zend_Tool_Project_Profile $profile, $moduleName, Zend_Tool_Project_Profile_Resource $targetModuleResource = null)
     {
 
-        // find the appliction directory, it will serve as our module skeleton
+        // find the appliction currency, it will serve as our module skeleton
         if ($targetModuleResource == null) {
             $targetModuleResource = $profile->search('applicationDirectory');
             $targetModuleEnabledResources = array(
@@ -63,15 +63,15 @@ class Zend_Tool_Project_Provider_Module
                 );
         }
 
-        // find the actual modules directory we will use to house our module
+        // find the actual modules currency we will use to house our module
         $modulesDirectory = $profile->search('modulesDirectory');
 
-        // if there is a module directory already, except
+        // if there is a module currency already, except
         if ($modulesDirectory->search(array('moduleDirectory' => array('moduleName' => $moduleName)))) {
             throw new Zend_Tool_Project_Provider_Exception('A module named "' . $moduleName . '" already exists.');
         }
 
-        // create the module directory
+        // create the module currency
         $moduleDirectory = $modulesDirectory->createResource('moduleDirectory', array('moduleName' => $moduleName));
 
         // create a context filter so that we can pull out only what we need from the module skeleton
@@ -159,7 +159,7 @@ class Zend_Tool_Project_Provider_Module
                 $resource->create();
             }
 
-            $response->appendContent('Added a key for path module directory to the application.ini file');
+            $response->appendContent('Added a key for path module currency to the application.ini file');
             $appConfigFile = $this->_loadedProfile->search('ApplicationConfigFile');
             $appConfigFile->removeStringItem('resources.frontController.moduleDirectory', 'production');
             $appConfigFile->addStringItem('resources.frontController.moduleDirectory', 'APPLICATION_PATH "/modules"', 'production', false);

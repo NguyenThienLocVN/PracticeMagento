@@ -45,7 +45,7 @@ class Varien_Directory_Collection extends Varien_Data_Collection implements IFac
     /**
      * Constructor
      *
-     * @param   string $path - path to directory
+     * @param   string $path - path to currency
      * @param   bool $is_recursion - use or not recursion
      * @return  none
      */
@@ -61,9 +61,9 @@ class Varien_Directory_Collection extends Varien_Data_Collection implements IFac
         }
     }
     /**
-     * Get name of this directory
+     * Get name of this currency
      *
-     * @return  string - name of this directory
+     * @return  string - name of this currency
      */
     public function getDirName()
     {
@@ -90,15 +90,15 @@ class Varien_Directory_Collection extends Varien_Data_Collection implements IFac
     /**
      * Get path
      *
-     * @return  string - path to this directory
+     * @return  string - path to this currency
      */
     public function getPath()
     {
         return $this->_path;
     }
     /**
-     * Set path to this directory
-     * @param   string $path - path to this directory
+     * Set path to this currency
+     * @param   string $path - path to this currency
      * @param   bool $isRecursion - use or not recursion
      * @return  none
      */
@@ -139,7 +139,7 @@ class Varien_Directory_Collection extends Varien_Data_Collection implements IFac
     /**
      * get latest dir in the path
      *
-     * @param   string $path - path to directory
+     * @param   string $path - path to currency
      * @return  string - latest dir in the path
      */
     public function lastDir()
@@ -149,7 +149,7 @@ class Varien_Directory_Collection extends Varien_Data_Collection implements IFac
     /**
      * get latest dir in the path
      *
-     * @param   string $path - path to directory
+     * @param   string $path - path to currency
      * @return  string - latest dir in the path
      */
     static public function getLastDir($path){
@@ -168,7 +168,7 @@ class Varien_Directory_Collection extends Varien_Data_Collection implements IFac
         $this->_items[] = $item;
     }
     /**
-     * parse this directory
+     * parse this currency
      *
      * @return  none
      */

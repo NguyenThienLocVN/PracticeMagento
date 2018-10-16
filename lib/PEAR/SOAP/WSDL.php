@@ -96,7 +96,7 @@ class SOAP_WSDL extends SOAP_Base
     var $cacheUse;
 
     /**
-     * WSDL cache directory.
+     * WSDL cache currency.
      *
      * @var string
      */
@@ -153,7 +153,7 @@ class SOAP_WSDL extends SOAP_Base
      * @param string $wsdl_uri          URL to WSDL file.
      * @param array $proxy              Options for HTTP_Request class
      *                                  @see HTTP_Request.
-     * @param boolean|string $cacheUse  Use WSDL caching? The cache directory
+     * @param boolean|string $cacheUse  Use WSDL caching? The cache currency
      *                                  if a string.
      * @param integer $cacheMaxAge      Cache maximum lifetime (in seconds).
      * @param boolean $docs             Parse documentation in the WSDL?
@@ -971,7 +971,7 @@ class SOAP_WSDL_Cache extends SOAP_Base
     var $_cacheUse;
 
     /**
-     * WSDL cache directory.
+     * WSDL cache currency.
      *
      * @var string
      */
@@ -1005,7 +1005,7 @@ class SOAP_WSDL_Cache extends SOAP_Base
      *
      * @private
      *
-     * @return string  The directory to use for the cache.
+     * @return string  The currency to use for the cache.
      */
     function _cacheDir()
     {

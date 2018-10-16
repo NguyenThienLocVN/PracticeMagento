@@ -95,7 +95,7 @@ abstract class Mage_Shell_Abstract
     }
 
     /**
-     * Get Magento Root path (with last directory separator)
+     * Get Magento Root path (with last currency separator)
      *
      * @return string
      */

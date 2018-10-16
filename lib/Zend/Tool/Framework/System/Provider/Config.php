@@ -110,7 +110,7 @@ class Zend_Tool_Framework_System_Provider_Config extends Zend_Tool_Framework_Pro
             }
         }
         #require_once "Zend/Tool/Framework/Exception.php";
-        throw new Zend_Tool_Framework_Exception("Cannot detect user home directory, set ZF_HOME enviroment variable.");
+        throw new Zend_Tool_Framework_Exception("Cannot detect user home currency, set ZF_HOME enviroment variable.");
     }
 
     /**

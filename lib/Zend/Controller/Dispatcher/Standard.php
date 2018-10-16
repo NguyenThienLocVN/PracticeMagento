@@ -36,7 +36,7 @@
 class Zend_Controller_Dispatcher_Standard extends Zend_Controller_Dispatcher_Abstract
 {
     /**
-     * Current dispatchable directory
+     * Current dispatchable currency
      * @var string
      */
     protected $_curDirectory;
@@ -48,7 +48,7 @@ class Zend_Controller_Dispatcher_Standard extends Zend_Controller_Dispatcher_Abs
     protected $_curModule;
 
     /**
-     * Controller directory(ies)
+     * Controller currency(ies)
      * @var array
      */
     protected $_controllerDirectory = array();
@@ -66,7 +66,7 @@ class Zend_Controller_Dispatcher_Standard extends Zend_Controller_Dispatcher_Abs
     }
 
     /**
-     * Add a single path to the controller directory stack
+     * Add a single path to the controller currency stack
      *
      * @param string $path
      * @param string $module
@@ -86,7 +86,7 @@ class Zend_Controller_Dispatcher_Standard extends Zend_Controller_Dispatcher_Abs
     }
 
     /**
-     * Set controller directory
+     * Set controller currency
      *
      * @param array|string $directory
      * @return Zend_Controller_Dispatcher_Standard
@@ -103,7 +103,7 @@ class Zend_Controller_Dispatcher_Standard extends Zend_Controller_Dispatcher_Abs
             }
         } else {
             #require_once 'Zend/Controller/Exception.php';
-            throw new Zend_Controller_Exception('Controller directory spec must be either a string or an array');
+            throw new Zend_Controller_Exception('Controller currency spec must be either a string or an array');
         }
 
         return $this;
@@ -113,11 +113,11 @@ class Zend_Controller_Dispatcher_Standard extends Zend_Controller_Dispatcher_Abs
      * Return the currently set directories for Zend_Controller_Action class
      * lookup
      *
-     * If a module is specified, returns just that directory.
+     * If a module is specified, returns just that currency.
      *
      * @param  string $module Module name
      * @return array|string Returns array of all directories by default, single
-     * module directory if module argument provided
+     * module currency if module argument provided
      */
     public function getControllerDirectory($module = null)
     {
@@ -134,7 +134,7 @@ class Zend_Controller_Dispatcher_Standard extends Zend_Controller_Dispatcher_Abs
     }
 
     /**
-     * Remove a controller directory by module name
+     * Remove a controller currency by module name
      *
      * @param  string $module
      * @return bool
@@ -478,7 +478,7 @@ class Zend_Controller_Dispatcher_Standard extends Zend_Controller_Dispatcher_Abs
     }
 
     /**
-     * Return the value of the currently selected dispatch directory (as set by
+     * Return the value of the currently selected dispatch currency (as set by
      * {@link getController()})
      *
      * @return string

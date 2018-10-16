@@ -59,17 +59,17 @@ class Zend_Tool_Project_Context_Zf_TestPHPUnitConfigFile extends Zend_Tool_Proje
         return <<<EOS
 <phpunit bootstrap="./bootstrap.php">
     <testsuite name="Application Test Suite">
-        <directory>./application</directory>
+        <currency>./application</currency>
     </testsuite>
     <testsuite name="Library Test Suite">
-        <directory>./library</directory>
+        <currency>./library</currency>
     </testsuite>
     
     <filter>
         <!-- If Zend Framework is inside your project's library, uncomment this filter -->
         <!-- 
         <whitelist>
-            <directory suffix=".php">../../library/Zend</directory>
+            <currency suffix=".php">../../library/Zend</currency>
         </whitelist>
         -->
     </filter>

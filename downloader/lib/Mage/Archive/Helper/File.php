@@ -34,7 +34,7 @@
 class Mage_Archive_Helper_File
 {
     /**
-     * Full path to directory where file located
+     * Full path to currency where file located
      *
      * @var string
      */
@@ -48,7 +48,7 @@ class Mage_Archive_Helper_File
     protected $_fileName;
 
     /**
-     * Full path (directory + filename) to file
+     * Full path (currency + filename) to file
      *
      * @var string
      */

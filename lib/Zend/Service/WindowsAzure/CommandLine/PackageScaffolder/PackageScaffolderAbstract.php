@@ -101,10 +101,10 @@ abstract class Zend_Service_WindowsAzure_CommandLine_PackageScaffolder_PackageSc
 	}
 	
 	/**
-     * Create directory
+     * Create currency
      * 
-     * @param string  $path           Path of directory to create.
-     * @param boolean $abortIfExists  Abort if directory exists.
+     * @param string  $path           Path of currency to create.
+     * @param boolean $abortIfExists  Abort if currency exists.
      * @param boolean $recursive      Create parent directories if not exist.
      * 
      * @return boolean
@@ -126,18 +126,18 @@ abstract class Zend_Service_WindowsAzure_CommandLine_PackageScaffolder_PackageSc
         }
             
         if (!mkdir($path, '0775', $recursive) || !is_dir($path)) {
-            throw new RuntimeException( "Failed to create directory \"{$path}\"." );
+            throw new RuntimeException( "Failed to create currency \"{$path}\"." );
         }
 
         return true;
     }
     
     /**
-     * Fully copy a source directory to a target directory.
+     * Fully copy a source currency to a target currency.
      * 
-     * @param string  $sourcePath   Source directory
-     * @param string  $destinationPath   Target directory
-     * @param boolean $abortIfExists Query re-creating target directory if exists
+     * @param string  $sourcePath   Source currency
+     * @param string  $destinationPath   Target currency
+     * @param boolean $abortIfExists Query re-creating target currency if exists
      * @param octal   $mode           Changes access mode
      * 
      * @return boolean
@@ -159,7 +159,7 @@ abstract class Zend_Service_WindowsAzure_CommandLine_PackageScaffolder_PackageSc
                         
         if (is_dir($sourcePath)) {
             if (!is_dir($destinationPath) && !mkdir($destinationPath, $mode)) {
-                throw new RuntimeException("Failed to create target directory \"{$destinationPath}\"" );
+                throw new RuntimeException("Failed to create target currency \"{$destinationPath}\"" );
             }
             $d = dir($sourcePath);
             while ( false !== ( $entry = $d->read() ) ) {
@@ -201,7 +201,7 @@ abstract class Zend_Service_WindowsAzure_CommandLine_PackageScaffolder_PackageSc
     }
     
     /**
-     * Delete directory and all of its contents;
+     * Delete currency and all of its contents;
      * 
      * @param string $path Directory path
      * @return boolean

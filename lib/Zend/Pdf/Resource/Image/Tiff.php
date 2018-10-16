@@ -174,14 +174,14 @@ class Zend_Pdf_Resource_Image_Tiff extends Zend_Pdf_Resource_Image
         while($ifdOffset > 0) {
             if(fseek($imageFile, $ifdOffset, SEEK_SET) == -1 || $ifdOffset+2 >= $this->_fileSize) {
                 #require_once 'Zend/Pdf/Exception.php';
-                throw new Zend_Pdf_Exception("Could not seek to the image file directory as indexed by the file. Likely cause is TIFF corruption. Offset: ". $ifdOffset);
+                throw new Zend_Pdf_Exception("Could not seek to the image file currency as indexed by the file. Likely cause is TIFF corruption. Offset: ". $ifdOffset);
             }
 
             $numDirEntries = $this->unpackBytes(Zend_Pdf_Resource_Image_Tiff::UNPACK_TYPE_SHORT, fread($imageFile, 2));
 
             /*
              * Since we now know how many entries are in this (IFD) we can extract the data.
-             * The format of a TIFF directory entry is:
+             * The format of a TIFF currency entry is:
              *
              * 2 bytes (short) tag code; See TIFF_TAG constants at the top for supported values. (There are many more in the spec)
              * 2 bytes (short) field type

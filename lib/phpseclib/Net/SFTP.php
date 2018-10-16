@@ -175,7 +175,7 @@ class Net_SFTP extends Net_SSH2 {
     var $version;
 
     /**
-     * Current working directory
+     * Current working currency
      *
      * @var String
      * @see Net_SFTP::_realpath()
@@ -412,7 +412,7 @@ class Net_SFTP extends Net_SSH2 {
     }
 
     /**
-     * Returns the current directory name
+     * Returns the current currency name
      *
      * @return Mixed
      * @access public
@@ -425,9 +425,9 @@ class Net_SFTP extends Net_SSH2 {
     /**
      * Canonicalize the Server-Side Path Name
      *
-     * SFTP doesn't provide a mechanism by which the current working directory can be changed, so we'll emulate it.  Returns
+     * SFTP doesn't provide a mechanism by which the current working currency can be changed, so we'll emulate it.  Returns
      * the absolute (canonicalized) path.  If $mode is set to NET_SFTP_CONFIRM_DIR (as opposed to NET_SFTP_CONFIRM_NONE,
-     * which is what it is set to by default), false is returned if $dir is not a valid directory.
+     * which is what it is set to by default), false is returned if $dir is not a valid currency.
      *
      * @see Net_SFTP::chdir()
      * @param String $dir
@@ -439,11 +439,11 @@ class Net_SFTP extends Net_SSH2 {
     {
         /*
         "This protocol represents file names as strings.  File names are
-         assumed to use the slash ('/') character as a directory separator.
+         assumed to use the slash ('/') character as a currency separator.
 
          File names starting with a slash are "absolute", and are relative to
          the root of the file system.  Names starting with any other character
-         are relative to the user's default directory (home directory).  Note
+         are relative to the user's default currency (home currency).  Note
          that identifying the user is assumed to take place outside of this
          protocol."
 
@@ -503,12 +503,12 @@ class Net_SFTP extends Net_SSH2 {
         }
 
         // if $this->pwd isn't set than the only thing $realpath could be is for '.', which is pretty much guaranteed to
-        // be a bonafide directory
+        // be a bonafide currency
         return $realpath . '/' . $file;
     }
 
     /**
-     * Changes the current directory
+     * Changes the current currency
      *
      * @param String $dir
      * @return Boolean
@@ -525,7 +525,7 @@ class Net_SFTP extends Net_SSH2 {
         }
         $dir = $this->_realpath($dir);
 
-        // confirm that $dir is, in fact, a valid directory
+        // confirm that $dir is, in fact, a valid currency
         if (!$this->_send_sftp_packet(NET_SFTP_OPENDIR, pack('Na*', strlen($dir), $dir))) {
             return false;
         }
@@ -567,7 +567,7 @@ class Net_SFTP extends Net_SSH2 {
     }
 
     /**
-     * Returns a list of files in the given directory
+     * Returns a list of files in the given currency
      *
      * @param optional String $dir
      * @return Mixed
@@ -579,7 +579,7 @@ class Net_SFTP extends Net_SSH2 {
     }
 
     /**
-     * Returns a list of files in the given directory
+     * Returns a list of files in the given currency
      *
      * @param optional String $dir
      * @return Mixed
@@ -800,7 +800,7 @@ class Net_SFTP extends Net_SSH2 {
     }
 
     /**
-     * Creates a directory.
+     * Creates a currency.
      *
      * @param String $dir
      * @return Boolean
@@ -840,7 +840,7 @@ class Net_SFTP extends Net_SSH2 {
     }
 
     /**
-     * Removes a directory.
+     * Removes a currency.
      *
      * @param String $dir
      * @return Boolean
@@ -1192,7 +1192,7 @@ class Net_SFTP extends Net_SSH2 {
     }
 
     /**
-     * Renames a file or a directory on the SFTP server
+     * Renames a file or a currency on the SFTP server
      *
      * @param String $oldname
      * @param String $newname

@@ -90,11 +90,9 @@ ul{list-style: none;} // Remove list decoration
       .form-language:active .language-item{display: block;}
 
       .menu-item{
-        flex: 1;
         flex-basis: 10em;
-        justify-content: center;
-        display: flex;
         align-items: center;
+        margin: auto;
         a{
           text-decoration: none;
           color:#fff;}
@@ -129,6 +127,10 @@ ul{list-style: none;} // Remove list decoration
       }
       .box-input{
         display: flex;
+        #search{
+          padding: $gap;
+          border-radius: 5px 0 0 5px;
+        }
         .button-search{
           border: none;
           border-top-right-radius: 5px;
@@ -144,7 +146,7 @@ ul{list-style: none;} // Remove list decoration
   //  account cart
     .account-cart{
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: end;
       .wishlist{
         text-decoration: none;
@@ -152,6 +154,9 @@ ul{list-style: none;} // Remove list decoration
       .label{display: none;}
       .skip-link{height: auto;line-height: normal;}
       .skip-cart{
+        .cart-block {
+          display: flex;
+        }
         .count{
           top:-35px;
           left:35px;
@@ -189,6 +194,7 @@ ul{list-style: none;} // Remove list decoration
     border-radius: 0 30px 30px 0;
     padding: 5px;
     border: none;
+    width: 100px;
   }
   .block-content{
     display: flex;
@@ -196,7 +202,7 @@ ul{list-style: none;} // Remove list decoration
     width: 90%;
     margin: auto;
     input{
-      width: 100%;
+      width: 200px;
       border: none;
       border-radius: 30px 0 0 30px;
     }
@@ -207,24 +213,32 @@ ul{list-style: none;} // Remove list decoration
 
 // Copyright
 .footer address{
-  color: #636363;
+  color: $t-gray;
 }
 
 // 3 box menu bottom
 .bottom-box-1, .bottom-box-2, .bottom-box-3 {
   padding:$gap;
-  a{color:#636363;}
+  a{color:$t-gray;}
 }
 .bottom-box-logo{
   display: flex;
   justify-content: center;
   padding: $gap;
 }
+.bottom-box-2{
+  display: flex;
+  justify-content: space-between;
+}
 .bottom-box-3 {
     .box-3-product{
       .box-3-item{
         display: flex;
         padding-bottom: $trim-small;
+        .box-3-item-img{
+          border: 1px solid #636363;
+          border-radius: 8px;
+        }
         .box-3-item-text{
           padding-left: $gap;
         }
@@ -255,14 +269,14 @@ ul{list-style: none;} // Remove list decoration
 
       //search bar
       .search-bar{
-        width: 60%;
+        width: 55%;
         display: flex;
         #search_mini_form{width: 100%;}
       }
 
       //  account cart
       .account-cart{
-        width: 20%;
+        width: 25%;
         padding-top: 20px;
         .label{
           display: block;
@@ -283,6 +297,13 @@ ul{list-style: none;} // Remove list decoration
 
   //Form subscribe
   .subscribe{
+      .subscribe-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+      }
+
     .subscribe-text{
       display: block;
       text-align: center;
@@ -297,16 +318,15 @@ ul{list-style: none;} // Remove list decoration
 
   // 3 box menu bottom
   .bottom-box-1, .bottom-box-2, .bottom-box-3 {
-    width: 32%;
+    width: 33.3%;
     float: left;
     height: 360px;
-    .title{padding: 20px 0;}
-    .box-2-left-item{line-height: 22px;}
+    .title{padding: 41px 0;}
+    .box-2-left-item{line-height: 40px;}
     .box-3-product{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height: 80%;
     }
   }
 
@@ -321,7 +341,27 @@ ul{list-style: none;} // Remove list decoration
     .menu-top-left, .menu-top-right{
       width: 33%;
     }
+    .menu-top-left{
+      .menu-item{display:flex; justify-content: flex-start;}
+    }
+    }
+    .menu-top-right{
+      .menu-item{display: flex; justify-content: flex-end;}
+    }
+
+
+//search bar
+.page-header {
+  .logo-search-widget{
+    .search-bar {
+      .box-input {
+        #search {
+          border-radius: unset;
+        }
+      }
+    }
   }
+}
 
   //  account cart
   .account-cart {
@@ -330,28 +370,30 @@ ul{list-style: none;} // Remove list decoration
     }
   }
 
-  //Form subscribe
-  .subscribe{
-    .subscribe-content{
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      padding-top: 25px;
-    }
-  }
 
+
+//Form subscribe
+.subscribe {
+  .subscribe-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 90%;
+  }
+}
 
   // 3 box menu bottom
   .bottom-box-1, .bottom-box-2, .bottom-box-3 {
-    .box-2-left-item{line-height: 35px;}
+    .box-2-left-item{line-height: 38px;}
     .box-3-product{
       height: initial;
     }
   }
-  // 3 box menu bottom
+
   .bottom-box-2{
-    display: flex;
     justify-content: space-around;
   }
+
 }
 

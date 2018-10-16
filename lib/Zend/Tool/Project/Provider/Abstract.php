@@ -91,7 +91,7 @@ abstract class Zend_Tool_Project_Provider_Abstract
             $profilePath = $this->_findProfileDirectory();
             if ($this->_hasProjectProviderDirectory($profilePath . DIRECTORY_SEPARATOR . '.zfproject.xml')) {
                 $profile = $this->_loadProfile();
-                // project providers directory resource
+                // project providers currency resource
                 $ppd = $profile->search('ProjectProvidersDirectory');
                 $ppd->loadProviders($this->_registry);
             }
@@ -114,12 +114,12 @@ abstract class Zend_Tool_Project_Provider_Abstract
     /**
      * _getProject is designed to find if there is project file in the context of where
      * the client has been called from..   The search order is as follows..
-     *    - traversing downwards from (PWD) - current working directory
+     *    - traversing downwards from (PWD) - current working currency
      *    - if an enpoint variable has been registered in teh client registry - key=workingDirectory
      *    - if an ENV variable with the key ZFPROJECT_PATH is found
      *
      * @param bool   $loadProfileFlag         Whether or not to throw an exception when no profile is found
-     * @param string $projectDirectory        The project directory to use to search
+     * @param string $projectDirectory        The project currency to use to search
      * @param bool   $searchParentDirectories Whether or not to search upper level direcotries
      * @return Zend_Tool_Project_Profile
      */
@@ -144,7 +144,7 @@ abstract class Zend_Tool_Project_Provider_Abstract
 
     protected function _findProfileDirectory($projectDirectory = null, $searchParentDirectories = true)
     {
-        // use the cwd if no directory was provided
+        // use the cwd if no currency was provided
         if ($projectDirectory == null) {
             $projectDirectory = getcwd();
         } elseif (realpath($projectDirectory) == false) {
@@ -179,7 +179,7 @@ abstract class Zend_Tool_Project_Provider_Abstract
     }
 
     /**
-     * Load the project profile from the current working directory, if not throw exception
+     * Load the project profile from the current working currency, if not throw exception
      *
      * @return Zend_Tool_Project_Profile
      */
@@ -188,7 +188,7 @@ abstract class Zend_Tool_Project_Provider_Abstract
         $profile = $this->_loadProfile();
         if ($profile === false) {
             #require_once 'Zend/Tool/Project/Provider/Exception.php';
-            throw new Zend_Tool_Project_Provider_Exception('A project profile was not found in the current working directory.');
+            throw new Zend_Tool_Project_Provider_Exception('A project profile was not found in the current working currency.');
         }
         return $profile;
     }

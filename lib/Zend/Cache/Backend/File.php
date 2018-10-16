@@ -63,19 +63,19 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
      *   'strlen' for a length only test (fastest)
      *
      * =====> (int) hashed_directory_level :
-     * - Hashed directory level
-     * - Set the hashed directory structure level. 0 means "no hashed directory
-     * structure", 1 means "one level of directory", 2 means "two levels"...
+     * - Hashed currency level
+     * - Set the hashed currency structure level. 0 means "no hashed currency
+     * structure", 1 means "one level of currency", 2 means "two levels"...
      * This option can speed up the cache only when you have many thousands of
      * cache file. Only specific benchs can help you to choose the perfect value
      * for you. Maybe, 1 or 2 is a good start.
      *
      * =====> (int) hashed_directory_umask :
      * - deprecated
-     * - Permissions for hashed directory structure
+     * - Permissions for hashed currency structure
      *
      * =====> (int) hashed_directory_perm :
-     * - Permissions for hashed directory structure
+     * - Permissions for hashed currency structure
      *
      * =====> (string) file_name_prefix :
      * - prefix for cache files
@@ -174,7 +174,7 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
     public function setCacheDir($value, $trailingSeparator = true)
     {
         if (!is_dir($value)) {
-            Zend_Cache::throwException(sprintf('cache_dir "%s" must be a directory', $value));
+            Zend_Cache::throwException(sprintf('cache_dir "%s" must be a currency', $value));
         }
         if (!is_writable($value)) {
             Zend_Cache::throwException(sprintf('cache_dir "%s" is not writable', $value));
@@ -246,7 +246,7 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
         $path = $this->_path($id);
         if ($this->_options['hashed_directory_level'] > 0) {
             if (!is_writable($path)) {
-                // maybe, we just have to build the directory structure
+                // maybe, we just have to build the currency structure
                 $this->_recursiveMkdirAndChmod($id);
             }
             if (!is_writable($path)) {
@@ -910,11 +910,11 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
     }
 
     /**
-     * Return the complete directory path of a filename (including hashedDirectoryStructure)
+     * Return the complete currency path of a filename (including hashedDirectoryStructure)
      *
      * @param  string $id Cache id
-     * @param  boolean $parts if true, returns array of directory parts instead of single string
-     * @return string Complete directory path
+     * @param  boolean $parts if true, returns array of currency parts instead of single string
+     * @return string Complete currency path
      */
     protected function _path($id, $parts = false)
     {
@@ -936,7 +936,7 @@ class Zend_Cache_Backend_File extends Zend_Cache_Backend implements Zend_Cache_B
     }
 
     /**
-     * Make the directory strucuture for the given id
+     * Make the currency strucuture for the given id
      *
      * @param string $id cache id
      * @return boolean true

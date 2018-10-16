@@ -91,7 +91,7 @@ class Zend_Tool_Project_Context_System_ProjectDirectory
         // if not, exception.
         if ($projectDirectory == null) {
             #require_once 'Zend/Tool/Project/Exception.php';
-            throw new Zend_Tool_Project_Exception('projectDirectory cannot find the directory for this project.');
+            throw new Zend_Tool_Project_Exception('projectDirectory cannot find the currency for this project.');
         }
 
         $this->_baseDirectory = rtrim($projectDirectory, '\\/');
@@ -113,7 +113,7 @@ class Zend_Tool_Project_Context_System_ProjectDirectory
                         // @todo prompt for override
                     } else {
                         #require_once 'Zend/Tool/Project/Context/Exception.php';
-                        throw new Zend_Tool_Project_Context_Exception('This directory is not empty, project creation aborted.');
+                        throw new Zend_Tool_Project_Context_Exception('This currency is not empty, project creation aborted.');
                     }
                     break;
                 }

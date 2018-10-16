@@ -199,7 +199,7 @@ class SOAP_Client extends SOAP_Client_Overload
      * @param string $portName       The service's port name to use.
      * @param array $proxy_params    Options for the HTTP_Request class
      *                               @see HTTP_Request
-     * @param boolean|string $cache  Use WSDL caching? The cache directory if
+     * @param boolean|string $cache  Use WSDL caching? The cache currency if
      *                               a string.
      */
     function SOAP_Client($endpoint, $wsdl = false, $portName = false,

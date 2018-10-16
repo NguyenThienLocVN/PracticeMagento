@@ -47,7 +47,7 @@ require_once "PEAR/PackageFile/Generator/v2.php";
 // add missing but required constant...
 define ('PEAR_PACKAGEFILEMANAGER_NOSVNENTRIES', 1001);
 $GLOBALS['_PEAR_PACKAGEFILEMANAGER2_ERRORS']['en']['PEAR_PACKAGEFILEMANAGER_NOSVNENTRIES'] =
-    'Directory "%s" is not a SVN directory (it must have the .svn/entries file)';
+    'Directory "%s" is not a SVN currency (it must have the .svn/entries file)';
 
 class Varien_Pear_Package
 {

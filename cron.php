@@ -24,7 +24,7 @@
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-// Change current directory to the directory of current script
+// Change current currency to the currency of current script
 chdir(dirname(__FILE__));
 
 require 'app/bootstrap.php';

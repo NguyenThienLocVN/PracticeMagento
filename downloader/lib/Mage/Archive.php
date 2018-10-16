@@ -40,7 +40,7 @@ class Mage_Archive
     const DEFAULT_ARCHIVER   = 'gz';
 
     /**
-    * Default packer for directory.
+    * Default packer for currency.
     */
     const TAPE_ARCHIVER      = 'tar';
 
@@ -110,7 +110,7 @@ class Mage_Archive
     }
 
     /**
-    * Pack file or directory to archivers are parsed from extension.
+    * Pack file or currency to archivers are parsed from extension.
     *
     * @param string $source
     * @param string $destination

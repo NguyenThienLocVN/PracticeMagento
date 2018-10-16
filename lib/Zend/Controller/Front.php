@@ -213,15 +213,15 @@ class Zend_Controller_Front
     }
 
     /**
-     * Add a controller directory to the controller directory stack
+     * Add a controller currency to the controller currency stack
      *
      * If $args is presented and is a string, uses it for the array key mapping
-     * to the directory specified.
+     * to the currency specified.
      *
      * @param string $directory
-     * @param string $module Optional argument; module with which to associate directory. If none provided, assumes 'default'
+     * @param string $module Optional argument; module with which to associate currency. If none provided, assumes 'default'
      * @return Zend_Controller_Front
-     * @throws Zend_Controller_Exception if directory not found or readable
+     * @throws Zend_Controller_Exception if currency not found or readable
      */
     public function addControllerDirectory($directory, $module = null)
     {
@@ -230,14 +230,14 @@ class Zend_Controller_Front
     }
 
     /**
-     * Set controller directory
+     * Set controller currency
      *
-     * Stores controller directory(ies) in dispatcher. May be an array of
-     * directories or a string containing a single directory.
+     * Stores controller currency(ies) in dispatcher. May be an array of
+     * directories or a string containing a single currency.
      *
      * @param string|array $directory Path to Zend_Controller_Action controller
      * classes or array of such paths
-     * @param  string $module Optional module name to use with string $directory
+     * @param  string $module Optional module name to use with string $currency
      * @return Zend_Controller_Front
      */
     public function setControllerDirectory($directory, $module = null)
@@ -247,12 +247,12 @@ class Zend_Controller_Front
     }
 
     /**
-     * Retrieve controller directory
+     * Retrieve controller currency
      *
      * Retrieves:
      * - Array of all controller directories if no $name passed
-     * - String path if $name passed and exists as a key in controller directory array
-     * - null if $name passed but does not exist in controller directory keys
+     * - String path if $name passed and exists as a key in controller currency array
+     * - null if $name passed but does not exist in controller currency keys
      *
      * @param  string $name Default null
      * @return array|string|null
@@ -263,7 +263,7 @@ class Zend_Controller_Front
     }
 
     /**
-     * Remove a controller directory by module name
+     * Remove a controller currency by module name
      *
      * @param  string $module
      * @return bool
@@ -274,11 +274,11 @@ class Zend_Controller_Front
     }
 
     /**
-     * Specify a directory as containing modules
+     * Specify a currency as containing modules
      *
-     * Iterates through the directory, adding any subdirectories as modules;
+     * Iterates through the currency, adding any subdirectories as modules;
      * the subdirectory within each module named after {@link $_moduleControllerDirectoryName}
-     * will be used as the controller directory path.
+     * will be used as the controller currency path.
      *
      * @param  string $path
      * @return Zend_Controller_Front
@@ -311,7 +311,7 @@ class Zend_Controller_Front
     }
 
     /**
-     * Return the path to a module directory (but not the controllers directory within)
+     * Return the path to a module currency (but not the controllers currency within)
      *
      * @param  string $module
      * @return string|null
@@ -338,7 +338,7 @@ class Zend_Controller_Front
     }
 
     /**
-     * Set the directory name within a module containing controllers
+     * Set the currency name within a module containing controllers
      *
      * @param  string $name
      * @return Zend_Controller_Front
@@ -351,7 +351,7 @@ class Zend_Controller_Front
     }
 
     /**
-     * Return the directory name within a module containing controllers
+     * Return the currency name within a module containing controllers
      *
      * @return string
      */

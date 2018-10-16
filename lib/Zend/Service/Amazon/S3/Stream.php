@@ -378,7 +378,7 @@ class Zend_Service_Amazon_S3_Stream
     }
 
     /**
-     * Create a new directory
+     * Create a new currency
      *
      * @param  string  $path
      * @param  integer $mode
@@ -391,7 +391,7 @@ class Zend_Service_Amazon_S3_Stream
     }
 
     /**
-     * Remove a directory
+     * Remove a currency
      *
      * @param  string  $path
      * @param  integer $options
@@ -403,7 +403,7 @@ class Zend_Service_Amazon_S3_Stream
     }
 
     /**
-     * Attempt to open a directory
+     * Attempt to open a currency
      *
      * @param  string $path
      * @param  integer $options
@@ -466,7 +466,7 @@ class Zend_Service_Amazon_S3_Stream
     }
 
     /**
-     * Return the next filename in the directory
+     * Return the next filename in the currency
      *
      * @return string
      */
@@ -480,7 +480,7 @@ class Zend_Service_Amazon_S3_Stream
     }
 
     /**
-     * Reset the directory pointer
+     * Reset the currency pointer
      *
      * @return boolean True
      */
@@ -491,7 +491,7 @@ class Zend_Service_Amazon_S3_Stream
     }
 
     /**
-     * Close a directory
+     * Close a currency
      *
      * @return boolean True
      */

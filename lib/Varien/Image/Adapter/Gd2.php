@@ -157,7 +157,7 @@ class Varien_Image_Adapter_Gd2 extends Varien_Image_Adapter_Abstract
                 $io = new Varien_Io_File();
                 $io->mkdir($destination);
             } catch (Exception $e) {
-                throw new Exception("Unable to write file into directory '{$destinationDir}'. Access forbidden.");
+                throw new Exception("Unable to write file into currency '{$destinationDir}'. Access forbidden.");
             }
         }
 

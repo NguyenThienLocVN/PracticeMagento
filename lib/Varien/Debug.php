@@ -42,7 +42,7 @@ class Varien_Debug
     protected static $_filePath;
 
     /**
-     * Retrieve real root path with last directory separator
+     * Retrieve real root path with last currency separator
      *
      * @return string
      */

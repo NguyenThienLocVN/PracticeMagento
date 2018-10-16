@@ -509,7 +509,7 @@ class Zend_Search_Lucene implements Zend_Search_Lucene_Interface
     {
         if ($directory === null) {
             #require_once 'Zend/Search/Lucene/Exception.php';
-            throw new Zend_Search_Exception('No index directory specified');
+            throw new Zend_Search_Exception('No index currency specified');
         }
 
         if (is_string($directory)) {
@@ -563,7 +563,7 @@ class Zend_Search_Lucene implements Zend_Search_Lucene_Interface
 
         if ($this->_generation == -1) {
             #require_once 'Zend/Search/Lucene/Exception.php';
-            throw new Zend_Search_Lucene_Exception('Index doesn\'t exists in the specified directory.');
+            throw new Zend_Search_Lucene_Exception('Index doesn\'t exists in the specified currency.');
         } else if ($this->_generation == 0) {
             $this->_readPre21SegmentsFile();
         } else {

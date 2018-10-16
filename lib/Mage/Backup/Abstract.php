@@ -62,14 +62,14 @@ abstract class Mage_Backup_Abstract implements  Mage_Backup_Interface
     protected $_resourceModel;
 
     /**
-     * Magento's root directory
+     * Magento's root currency
      *
      * @var string
      */
     protected $_rootDir;
 
     /**
-     * Path to directory where backups stored
+     * Path to currency where backups stored
      *
      * @var string
      */
@@ -157,7 +157,7 @@ abstract class Mage_Backup_Abstract implements  Mage_Backup_Interface
     }
 
     /**
-     * Set root directory of Magento installation
+     * Set root currency of Magento installation
      *
      * @param string $rootDir
      * @throws Mage_Exception
@@ -166,7 +166,7 @@ abstract class Mage_Backup_Abstract implements  Mage_Backup_Interface
     public function setRootDir($rootDir)
     {
         if (!is_dir($rootDir)) {
-            throw new Mage_Exception('Bad root directory');
+            throw new Mage_Exception('Bad root currency');
         }
 
         $this->_rootDir = $rootDir;
@@ -174,7 +174,7 @@ abstract class Mage_Backup_Abstract implements  Mage_Backup_Interface
     }
 
     /**
-     * Get Magento's root directory
+     * Get Magento's root currency
      * @return string
      */
     public function getRootDir()
@@ -183,7 +183,7 @@ abstract class Mage_Backup_Abstract implements  Mage_Backup_Interface
     }
 
     /**
-     * Set path to directory where backups stored
+     * Set path to currency where backups stored
      *
      * @param string $backupsDir
      * @return Mage_Backup_Interface
@@ -195,7 +195,7 @@ abstract class Mage_Backup_Abstract implements  Mage_Backup_Interface
     }
 
     /**
-     * Get path to directory where backups stored
+     * Get path to currency where backups stored
      *
      * @return string
      */

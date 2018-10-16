@@ -353,7 +353,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     /**
      * Given a base path, sets the script, helper, and filter paths relative to it
      *
-     * Assumes a directory structure of:
+     * Assumes a currency structure of:
      * <code>
      * basePath/
      *     scripts/
@@ -380,7 +380,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     /**
      * Given a base path, add script, helper, and filter paths relative to it
      *
-     * Assumes a directory structure of:
+     * Assumes a currency structure of:
      * <code>
      * basePath/
      *     scripts/
@@ -407,7 +407,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     /**
      * Adds to the stack of view script paths in LIFO order.
      *
-     * @param string|array The directory (-ies) to add.
+     * @param string|array The currency (-ies) to add.
      * @return Zend_View_Abstract
      */
     public function addScriptPath($path)
@@ -421,7 +421,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
      *
      * To clear all paths, use Zend_View::setScriptPath(null).
      *
-     * @param string|array The directory (-ies) to set as the path.
+     * @param string|array The currency (-ies) to set as the path.
      * @return Zend_View_Abstract
      */
     public function setScriptPath($path)
@@ -436,7 +436,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
      *
      * @param  string $name
      * @return false|string False if script not found
-     * @throws Zend_View_Exception if no script directory set
+     * @throws Zend_View_Exception if no script currency set
      */
     public function getScriptPath($name)
     {
@@ -444,7 +444,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
             $path = $this->_script($name);
             return $path;
         } catch (Zend_View_Exception $e) {
-            if (strstr($e->getMessage(), 'no view script directory set')) {
+            if (strstr($e->getMessage(), 'no view script currency set')) {
                 throw $e;
             }
 
@@ -523,9 +523,9 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     /**
      * Adds to the stack of helper paths in LIFO order.
      *
-     * @param string|array The directory (-ies) to add.
+     * @param string|array The currency (-ies) to add.
      * @param string $classPrefix Class prefix to use with classes in this
-     * directory; defaults to Zend_View_Helper
+     * currency; defaults to Zend_View_Helper
      * @return Zend_View_Abstract
      */
     public function addHelperPath($path, $classPrefix = 'Zend_View_Helper_')
@@ -538,7 +538,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
      *
      * To clear all paths, use Zend_View::setHelperPath(null).
      *
-     * @param string|array $path The directory (-ies) to set as the path.
+     * @param string|array $path The currency (-ies) to set as the path.
      * @param string $classPrefix The class prefix to apply to all elements in
      * $path; defaults to Zend_View_Helper
      * @return Zend_View_Abstract
@@ -633,9 +633,9 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     /**
      * Adds to the stack of filter paths in LIFO order.
      *
-     * @param string|array The directory (-ies) to add.
+     * @param string|array The currency (-ies) to add.
      * @param string $classPrefix Class prefix to use with classes in this
-     * directory; defaults to Zend_View_Filter
+     * currency; defaults to Zend_View_Filter
      * @return Zend_View_Abstract
      */
     public function addFilterPath($path, $classPrefix = 'Zend_View_Filter_')
@@ -648,7 +648,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
      *
      * To clear all paths, use Zend_View::setFilterPath(null).
      *
-     * @param string|array The directory (-ies) to set as the path.
+     * @param string|array The currency (-ies) to set as the path.
      * @param string $classPrefix The class prefix to apply to all elements in
      * $path; defaults to Zend_View_Filter
      * @return Zend_View_Abstract
@@ -963,14 +963,14 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     {
         if ($this->isLfiProtectionOn() && preg_match('#\.\.[\\\/]#', $name)) {
             #require_once 'Zend/View/Exception.php';
-            $e = new Zend_View_Exception('Requested scripts may not include parent directory traversal ("../", "..\\" notation)');
+            $e = new Zend_View_Exception('Requested scripts may not include parent currency traversal ("../", "..\\" notation)');
             $e->setView($this);
             throw $e;
         }
 
         if (0 == count($this->_path['script'])) {
             #require_once 'Zend/View/Exception.php';
-            $e = new Zend_View_Exception('no view script directory set; unable to determine location for view script');
+            $e = new Zend_View_Exception('no view script currency set; unable to determine location for view script');
             $e->setView($this);
             throw $e;
         }
@@ -1012,10 +1012,10 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     /**
      * Adds paths to the path stack in LIFO order.
      *
-     * Zend_View::_addPath($type, 'dirname') adds one directory
+     * Zend_View::_addPath($type, 'dirname') adds one currency
      * to the path stack.
      *
-     * Zend_View::_addPath($type, $array) adds one directory for
+     * Zend_View::_addPath($type, $array) adds one currency for
      * each array element value.
      *
      * In the case of filter and helper paths, $prefix should be used to
@@ -1031,7 +1031,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
     {
         foreach ((array) $path as $dir) {
             // attempt to strip any possible separator and
-            // append the system directory separator
+            // append the system currency separator
             $dir  = rtrim($dir, '/');
             $dir  = rtrim($dir, '\\');
             $dir .= '/';
@@ -1055,7 +1055,7 @@ abstract class Zend_View_Abstract implements Zend_View_Interface
      * Resets the path stack for helpers and filters.
      *
      * @param string $type The path type ('helper' or 'filter').
-     * @param string|array $path The directory (-ies) to set as the path.
+     * @param string|array $path The currency (-ies) to set as the path.
      * @param string $classPrefix Class prefix to apply to elements of $path
      */
     private function _setPath($type, $path, $classPrefix = null)

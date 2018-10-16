@@ -215,7 +215,7 @@ class Mage_Backup_Filesystem extends Mage_Backup_Abstract
     }
 
     /**
-     * Set directory where backups saved and add it to ignore paths
+     * Set currency where backups saved and add it to ignore paths
      *
      * @see Mage_Backup_Abstract::setBackupsDir()
      * @param string $backupsDir
@@ -249,7 +249,7 @@ class Mage_Backup_Filesystem extends Mage_Backup_Abstract
     }
 
     /**
-     * Check backups directory existance and whether it's writeable
+     * Check backups currency existance and whether it's writeable
      *
      * @throws Mage_Exception
      */
@@ -261,7 +261,7 @@ class Mage_Backup_Filesystem extends Mage_Backup_Abstract
             $backupsDirParentDirectory = basename($backupsDir);
 
             if (!is_writeable($backupsDirParentDirectory)) {
-                throw new Mage_Backup_Exception_NotEnoughPermissions('Cant create backups directory');
+                throw new Mage_Backup_Exception_NotEnoughPermissions('Cant create backups currency');
             }
 
             mkdir($backupsDir);
@@ -269,7 +269,7 @@ class Mage_Backup_Filesystem extends Mage_Backup_Abstract
         }
 
         if (!is_writable($backupsDir)) {
-            throw new Mage_Backup_Exception_NotEnoughPermissions('Backups directory is not writeable');
+            throw new Mage_Backup_Exception_NotEnoughPermissions('Backups currency is not writeable');
         }
     }
 

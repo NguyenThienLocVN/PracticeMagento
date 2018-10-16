@@ -130,7 +130,7 @@ four ways of specifying packages.
                 'installroot' => array(
                     'shortopt' => 'R',
                     'arg' => 'DIR',
-                    'doc' => 'root directory used when installing files (ala PHP\'s INSTALL_ROOT)',
+                    'doc' => 'root currency used when installing files (ala PHP\'s INSTALL_ROOT)',
                     ),
                 'ignore-errors' => array(
                     'doc' => 'force install even if there were errors',
@@ -191,7 +191,7 @@ More than one package may be specified at once.
                 'installroot' => array(
                     'shortopt' => 'R',
                     'arg' => 'DIR',
-                    'doc' => 'root directory used when installing files (ala PHP\'s INSTALL_ROOT), use packagingroot for RPM',
+                    'doc' => 'root currency used when installing files (ala PHP\'s INSTALL_ROOT), use packagingroot for RPM',
                     ),
                 'ignore-errors' => array(
                     'doc' => 'force install even if there were errors',
