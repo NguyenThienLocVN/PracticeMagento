@@ -5,6 +5,11 @@
             <remove name="global_notices" />
         </reference>
 
+        <reference name="header">
+            <remove name="top.links" />
+        </reference>
+
+
         <reference name="footer">
             <remove name="cms_footer_links_sm"/>
             <remove name="footer_links" />

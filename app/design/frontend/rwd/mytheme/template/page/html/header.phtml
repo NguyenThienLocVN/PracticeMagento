@@ -38,7 +38,7 @@
                 <?php echo $this->__('USD'); ?>
             </div>
             <div class="menu-item">
-                <a href="#"><?php echo $this->__('Login or Register'); ?></a>
+                <a href="<?php echo $this->getUrl('customer/account/login') ?>" class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getChildHtml('accountLinks') ?></a>
             </div>
         </div>
 
@@ -47,12 +47,11 @@
                 <a href=""><?php echo $this->__('Store Location'); ?></a>
             </div>
             <div class="menu-item">
-                <a href=""><?php echo $this->__('Track Offer'); ?></a>
+                <a href="<?php echo $this->getUrl('catalog/seo_sitemap/category/') ?>"><?php echo $this->__('Site Map'); ?></a>
             </div>
             <div class="menu-item">
                 <a href=""><?php echo $this->__('Setting'); ?></a>
             </div>
-
         </div>
 
 
@@ -79,9 +78,9 @@
 
             <!-- Account info -->
             <div class="account-cart">
-                <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
-                    <span class="icon"></span>
-                    <span class="label"><?php echo $this->__('Account'); ?></span>
+                <a href="<?php echo $this->getUrl('wishlist') ?>" data-target-element="#header-account" class="wishlist">
+                    <img class="icon" src="<?php echo $this->getSkinUrl('images/wishlist.png') ?>">
+                    <span class="label"><?php echo $this->__('WISHLIST'); ?></span>
                 </a>
 
                 <!-- Cart -->
