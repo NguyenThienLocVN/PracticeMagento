@@ -35,7 +35,8 @@
                 <?php echo $this->getChildHtml('store_language') ?>
             </div>
             <div class="menu-item">
-                <?php echo $this->__('USD'); ?>
+                <?php echo $currency_code = Mage::app()->getStore()->getCurrentCurrencyCode(); ?>
+                <?php echo $this->getChildHtml('header.currency') ?>
             </div>
             <div class="menu-item">
                 <a href="<?php echo $this->getUrl('customer/account/login') ?>" class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getChildHtml('accountLinks') ?></a>
@@ -53,10 +54,6 @@
                 <a href=""><?php echo $this->__('Setting'); ?></a>
             </div>
         </div>
-
-
-
-
     </div>
 </div>
 

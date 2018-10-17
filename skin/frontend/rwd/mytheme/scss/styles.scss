@@ -147,12 +147,13 @@ ul{list-style: none;} // Remove list decoration
     .account-cart{
       display: flex;
       justify-content: space-around;
-      align-items: end;
-      .wishlist{
-        text-decoration: none;
+      height: 30px;
+      .wishlist, .header-minicart a{
+        align-items: center;
       }
+      .wishlist .icon{padding: 5px;}
       .label{display: none;}
-      .skip-link{height: auto;line-height: normal;}
+      .skip-link{height: auto;line-height: normal;border:none;}
       .skip-cart{
         .cart-block {
           display: flex;
@@ -162,7 +163,6 @@ ul{list-style: none;} // Remove list decoration
           left:35px;
         }
       }
-      .icon{margin:auto;padding: 5px;}
     }
   }
 
@@ -198,11 +198,12 @@ ul{list-style: none;} // Remove list decoration
   }
   .block-content{
     display: flex;
+    justify-content: center;
     padding-top: 40px;
     width: 90%;
     margin: auto;
     input{
-      width: 200px;
+      width: 160px;
       border: none;
       border-radius: 30px 0 0 30px;
     }
@@ -236,8 +237,12 @@ ul{list-style: none;} // Remove list decoration
         display: flex;
         padding-bottom: $trim-small;
         .box-3-item-img{
-          border: 1px solid #636363;
-          border-radius: 8px;
+          img{
+            width: 80px;
+            height: 80px;
+            border: 1px solid #636363;
+            border-radius: 8px;
+          }
         }
         .box-3-item-text{
           padding-left: $gap;
@@ -248,11 +253,18 @@ ul{list-style: none;} // Remove list decoration
 
 // ================= Ipad 768 x 1024 =============
 @include bp(min-width, $bp-medium + 1){
-  .header-menu-container {
-    display: flex;
-    justify-content: space-between;
-    .menu-top-left, .menu-top-right{
-      width: 45%;
+  .header-menu-background {
+    .header-menu-container {
+      max-width: 706px;
+      display: flex;
+      justify-content: space-between;
+      .menu-top-left, .menu-top-right {
+        width: 45%;
+        .menu-item {
+          flex-basis: unset;
+          margin: unset;
+        }
+      }
     }
   }
 
@@ -276,8 +288,12 @@ ul{list-style: none;} // Remove list decoration
 
       //  account cart
       .account-cart{
-        width: 25%;
-        padding-top: 20px;
+        width: 30%;
+        align-items: center;
+        .wishlist, .header-minicart a{
+          display:flex;
+        }
+        .wishlist .icon{padding: unset;margin-right: 5px;}
         .label{
           display: block;
           line-height: 25px;
@@ -337,17 +353,30 @@ ul{list-style: none;} // Remove list decoration
   //Display all hidden element
   .hidden-element{display: block;}
 
+  //Top navigation
+  .header-menu-background {
   .header-menu-container {
-    .menu-top-left, .menu-top-right{
+    max-width: $max-content-width;
+    .menu-top-left, .menu-top-right {
       width: 33%;
     }
-    .menu-top-left{
-      .menu-item{display:flex; justify-content: flex-start;}
+    .menu-top-left {
+      .menu-item {
+        display: flex;
+        justify-content: flex-start;
+        flex-basis: 10em;
+      }
     }
+
+
+    .menu-top-right {
+      .menu-item {
+        display: flex;
+        justify-content: flex-end;
+      }
     }
-    .menu-top-right{
-      .menu-item{display: flex; justify-content: flex-end;}
-    }
+  }
+  }
 
 
 //search bar
@@ -385,14 +414,17 @@ ul{list-style: none;} // Remove list decoration
 
   // 3 box menu bottom
   .bottom-box-1, .bottom-box-2, .bottom-box-3 {
-    .box-2-left-item{line-height: 38px;}
-    .box-3-product{
+    .box-2-left-item {
+      line-height: 38px;
+    }
+    .box-3-product {
+      padding-left: 30px;
       height: initial;
     }
   }
 
   .bottom-box-2{
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
 }

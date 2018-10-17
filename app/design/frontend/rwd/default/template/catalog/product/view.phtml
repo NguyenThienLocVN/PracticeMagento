@@ -64,9 +64,12 @@
                     <?php echo $this->getTierPriceHtml() ?>
                 </div>
 
+
+
                 <div class="extra-info">
                     <?php echo $this->getReviewsSummaryHtml($_product, 'default', false)?>
                     <?php echo $this->getChildHtml('product_type_availability'); ?>
+                    <?php echo $_product->getData('product_brand'); ?>
                 </div>
 
                 <?php echo $this->getChildHtml('alert_urls') ?>

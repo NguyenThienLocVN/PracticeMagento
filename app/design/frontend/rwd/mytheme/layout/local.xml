@@ -7,6 +7,7 @@
 
         <reference name="header">
             <remove name="top.links" />
+            <!--<block type="page/switch" name="header.currency" template="directory/currency.phtml"/>-->
         </reference>
 
 
@@ -14,6 +15,7 @@
             <remove name="cms_footer_links_sm"/>
             <remove name="footer_links" />
             <remove name="footer_links2" />
+            <remove name="footer_currency" />
 
             <block type="core/template" name="block-bottom-center" template="block-bottom-center.phtml"/>
             <block type="core/template" name="block-bottom-right" template="block-bottom-right.phtml"/>
