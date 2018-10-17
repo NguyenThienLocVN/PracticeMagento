@@ -12548,33 +12548,33 @@ ul {
   padding: 5px 0;
 }
 /* line 71, ../scss/styles.scss */
-.header-menu-background .header-menu-container .menu-top-left .form-language .default-item::after, .header-menu-background .header-menu-container .menu-top-right .form-language .default-item::after {
+.header-menu-background .header-menu-container .menu-top-left .form-drop .default-item::after, .header-menu-background .header-menu-container .menu-top-right .form-drop .default-item::after {
   font: normal normal normal 14px/1 FontAwesome;
   content: "\f078";
 }
 /* line 75, ../scss/styles.scss */
-.header-menu-background .header-menu-container .menu-top-left .form-language .language-item, .header-menu-background .header-menu-container .menu-top-right .form-language .language-item {
+.header-menu-background .header-menu-container .menu-top-left .form-drop .drop-item, .header-menu-background .header-menu-container .menu-top-right .form-drop .drop-item {
   display: none;
   position: absolute;
   background-color: #202833;
-  min-width: 100px;
+  min-width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 /* line 82, ../scss/styles.scss */
-.header-menu-background .header-menu-container .menu-top-left .form-language .language-item li:hover, .header-menu-background .header-menu-container .menu-top-right .form-language .language-item li:hover {
+.header-menu-background .header-menu-container .menu-top-left .form-drop .drop-item li:hover, .header-menu-background .header-menu-container .menu-top-right .form-drop .drop-item li:hover {
   background: #fff;
 }
 /* line 84, ../scss/styles.scss */
-.header-menu-background .header-menu-container .menu-top-left .form-language .language-item li:hover a, .header-menu-background .header-menu-container .menu-top-right .form-language .language-item li:hover a {
+.header-menu-background .header-menu-container .menu-top-left .form-drop .drop-item li:hover a, .header-menu-background .header-menu-container .menu-top-right .form-drop .drop-item li:hover a {
   color: #202833;
 }
 /* line 89, ../scss/styles.scss */
-.header-menu-background .header-menu-container .menu-top-left .form-language:hover .language-item, .header-menu-background .header-menu-container .menu-top-right .form-language:hover .language-item {
+.header-menu-background .header-menu-container .menu-top-left .form-drop:hover .drop-item, .header-menu-background .header-menu-container .menu-top-right .form-drop:hover .drop-item {
   display: block;
 }
 /* line 90, ../scss/styles.scss */
-.header-menu-background .header-menu-container .menu-top-left .form-language:active .language-item, .header-menu-background .header-menu-container .menu-top-right .form-language:active .language-item {
+.header-menu-background .header-menu-container .menu-top-left .form-drop:active .drop-item, .header-menu-background .header-menu-container .menu-top-right .form-drop:active .drop-item {
   display: block;
 }
 /* line 92, ../scss/styles.scss */
@@ -12857,7 +12857,7 @@ ul {
   }
   /* line 340, ../scss/styles.scss */
   .bottom-box-1 .title, .bottom-box-2 .title, .bottom-box-3 .title {
-    padding: 41px 0;
+    padding: 40px 0;
   }
   /* line 341, ../scss/styles.scss */
   .bottom-box-1 .box-2-left-item, .bottom-box-2 .box-2-left-item, .bottom-box-3 .box-2-left-item {

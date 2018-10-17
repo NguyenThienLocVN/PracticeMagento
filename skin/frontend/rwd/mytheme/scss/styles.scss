@@ -67,16 +67,16 @@ ul{list-style: none;} // Remove list decoration
       padding: 5px 0;
 
       //dropdown menu language
-      .form-language {
+      .form-drop {
         .default-item::after{
           font: normal normal normal 14px/1 FontAwesome;
           content: "\f078";
         }
-        .language-item {
+        .drop-item {
           display: none;
           position: absolute;
           background-color: #202833;
-          min-width: 100px;
+          min-width: 80px;
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           z-index: 1;
           li:hover{
@@ -86,8 +86,8 @@ ul{list-style: none;} // Remove list decoration
         }
       }
 
-      .form-language:hover .language-item{display: block;}
-      .form-language:active .language-item{display: block;}
+      .form-drop:hover .drop-item{display: block;}
+      .form-drop:active .drop-item{display: block;}
 
       .menu-item{
         flex-basis: 10em;
@@ -337,7 +337,7 @@ ul{list-style: none;} // Remove list decoration
     width: 33.3%;
     float: left;
     height: 360px;
-    .title{padding: 41px 0;}
+    .title{padding: 40px 0;}
     .box-2-left-item{line-height: 40px;}
     .box-3-product{
       display: flex;
