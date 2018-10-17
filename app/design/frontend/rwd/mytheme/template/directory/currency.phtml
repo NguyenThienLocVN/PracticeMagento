@@ -1,24 +1,16 @@
-
-<?php var_dump($this->getCurrencyCount()); ?>
-<?php if(count($this->getStores())>1): ?>
-    <?php
-    $lis = "";
-    $selCurrency = $this->__('Currency');
-    foreach ($this->getStores() as $_lang):
-        if($_lang->getId() == $this->getCurrentStoreId()){
-            $selCurrency = $this->escapeHtml($_lang->getName());
-        }
-        $lis .= '<li><a href="'.$_lang->getCurrentUrl().'">'.$this->escapeHtml($_lang->getName()).'</a></li>';
-    endforeach;
-    ?>
-
+<?php  var_dump($this->getCurrencyCount())  ?>
+<?php if($this->getCurrencyCount() > 1): ?>
     <div class="form-language">
-        <ul id="select-language" title="<?php echo $this->__('Language') ?>" class="dropDownMenu">
-            <li class="default-item"><a><?php echo $selCurrency ?></a>
-                <ul class="language-item">
-                    <?php echo $lis ?>
-                </ul>
-            </li>
-        </ul>
+        <label for="custom-currency-selector"><?php echo $this->__('Your Currency:') ?></label>
+        <select onchange="window.location.href=this.value" name="custom-currency-selector" id="custom-currency-selector">
+            <?php foreach ($this->getCurrencies() as $_code => $_name): ?>
+                <option value="<?php echo $this->getSwitchCurrencyUrl($_code)?>"
+                    <?php if($_code == $this->getCurrentCurrencyCode()): ?>
+                        selected="SELECTED"
+                    <?php endif; ?>>
+                    <?php echo $_code ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
     </div>
 <?php endif; ?>

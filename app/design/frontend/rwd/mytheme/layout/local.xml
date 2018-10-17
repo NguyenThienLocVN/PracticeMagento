@@ -7,7 +7,7 @@
 
         <reference name="header">
             <remove name="top.links" />
-            <!--<block type="page/switch" name="header.currency" template="directory/currency.phtml"/>-->
+            <block type="directory/currency" name="currency" as="currency" template="directory/currency.phtml"/>
         </reference>
 
 

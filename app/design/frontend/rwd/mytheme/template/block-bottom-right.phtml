@@ -3,8 +3,14 @@
         <b>ON-SALE PRODUCTS</b>
     </div>
 
+
+    <?php $id1 = "907/9";
+        $product1 = Mage::getModel('catalog/product')
+        ->setStoreId(Mage::app()->getStore()->getId())
+        ->load($id1); ?>
+
     <div class="box-3-product">
-        <a class="box-3-item" href="">
+        <a class="box-3-item" href="<?php echo $productUrl = $product1->getProductUrl(); ?>">
             <div class="box-3-item-img">
                 <img src="<?php echo $this->getSkinUrl('images/pro1.png') ?>" alt="">
             </div>
@@ -18,8 +24,12 @@
         </a>
 
 
+        <?php $id2 = "908/9";
+        $product2 = Mage::getModel('catalog/product')
+            ->setStoreId(Mage::app()->getStore()->getId())
+            ->load($id2); ?>
 
-        <a class="box-3-item" href="">
+        <a class="box-3-item" href="<?php echo $productUrl = $product2->getProductUrl(); ?>">
             <div class="box-3-item-img">
                 <img src="<?php echo $this->getSkinUrl('images/pro2.png') ?>" alt="">
             </div>
