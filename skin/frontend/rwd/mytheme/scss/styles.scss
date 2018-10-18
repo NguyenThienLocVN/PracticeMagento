@@ -46,6 +46,7 @@ body{
 
 .hidden-element{display: none;} //Hide some element
 a{text-decoration: none;} // Remove underline of link
+a:hover{color:#d13638;}
 ul{list-style: none;} // Remove list decoration
 .big{font-size: 25px;} //Special style for text
 
@@ -233,20 +234,12 @@ ul{list-style: none;} // Remove list decoration
 }
 .bottom-box-3 {
     .box-3-product{
-      .box-3-item{
+      display: flex;
+      flex-direction: column;
+      .products-grid{
         display: flex;
-        padding-bottom: $trim-small;
-        .box-3-item-img{
-          img{
-            width: 80px;
-            height: 80px;
-            border: 1px solid #636363;
-            border-radius: 8px;
-          }
-        }
-        .box-3-item-text{
-          padding-left: $gap;
-        }
+        justify-content: space-between;
+        li{margin:10px;}
       }
     }
 }
@@ -338,14 +331,8 @@ ul{list-style: none;} // Remove list decoration
     float: left;
     height: 360px;
     .title{padding: 40px 0;}
-    .box-2-left-item{line-height: 40px;}
-    .box-3-product{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
+    .box-2-left-item{line-height: 2em;}
   }
-
 }
 
 // ================= Laptop 1280 x 800 =============
@@ -415,10 +402,9 @@ ul{list-style: none;} // Remove list decoration
   // 3 box menu bottom
   .bottom-box-1, .bottom-box-2, .bottom-box-3 {
     .box-2-left-item {
-      line-height: 38px;
+      line-height: 30px;
     }
     .box-3-product {
-      padding-left: 30px;
       height: initial;
     }
   }

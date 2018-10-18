@@ -1,0 +1,54 @@
+<?php $_helper = Mage::helper('catalog/category') ?>
+<?php $_categories = $_helper->getStoreCategories() ?>
+<?php if (count($_categories) > 0): ?>
+    <div class="bottom-box-2">
+        <ul class="box-2-left">
+            <li class="title"> <b><?php echo $this->__('CATEGORIES'); ?> </b> </li>
+            <?php foreach($_categories as $_category): ?>
+                <li class="box-2-left-item">
+                    <a href="<?php echo $_helper->getCategoryUrl($_category) ?>">
+                        <?php echo $_category->getName() ?>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+
+
+<?php
+$cat = Mage::getModel('catalog/category')->load(6);
+$subcats = $cat->getChildren(); ?>
+<ul class="box-2-left">
+    <li class="title"> <b><?php echo $this->__('HOT FOR MEN'); ?> </b> </li>
+<?php
+foreach(explode(',',$subcats) as $subCatid)
+{
+    $_category = Mage::getModel('catalog/category')->load($subCatid);
+    if($_category->getIsActive()) {
+        echo '<li class="box-2-left-item"><a href="'.$_category->getURL().'" title="View the products for the "'.$_category->getName().'" category">'.$_category->getName().'</a>';
+        $sub_cat = Mage::getModel('catalog/category')->load($_category->getId());
+        $sub_subcats = $sub_cat->getChildren();
+        foreach(explode(',',$sub_subcats) as $sub_subCatid)
+        {
+            $_sub_category = Mage::getModel('catalog/category')->load($sub_subCatid);
+            if($_sub_category->getIsActive()) {
+                echo '<li class="sub_cat"><a href="'.$_sub_category->getURL().'" title="View the products for the "'.$_sub_category->getName().'" category">'.$_sub_category->getName().'</a></li>';
+                $sub_sub_cat = Mage::getModel('catalog/category')->load($sub_subCatid);
+                $sub_sub_subcats = $sub_sub_cat->getChildren();
+                foreach(explode(',',$sub_sub_subcats) as $sub_sub_subCatid)
+                {
+                    $_sub_sub_category = Mage::getModel('catalog/category')->load($sub_sub_subCatid);
+                    if($_sub_sub_category->getIsActive()) {
+                        echo '<li class="sub_cat"><a href="'.$_sub_sub_category->getURL().'" title="View the products for the "'.$_sub_sub_category->getName().'" category">'.$_sub_sub_category->getName().'</a></li>';
+                    }
+                }
+            }
+        }
+        echo '</li>';
+    }
+}
+?>
+</ul>
+
+
+    </div>
+<?php endif; ?>

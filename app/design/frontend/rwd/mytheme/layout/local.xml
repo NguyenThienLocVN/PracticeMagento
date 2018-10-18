@@ -17,8 +17,14 @@
             <remove name="footer_links2" />
             <remove name="footer_currency" />
 
-            <block type="core/template" name="block-bottom-center" template="block-bottom-center.phtml"/>
-            <block type="core/template" name="block-bottom-right" template="block-bottom-right.phtml"/>
+            <!--Load category-->
+            <block type="catalog/navigation" name="catalog.category" template="catalog/category/teaser.phtml" />
+
+
+            <block type="cms/block" name="name_referenced_in_template" after="-">
+                <action method="setBlockId"><block_id>footer_product</block_id></action>
+            </block>
+
         </reference>
 
     </default>
